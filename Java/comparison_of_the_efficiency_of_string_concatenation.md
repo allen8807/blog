@@ -1,2 +1,3 @@
 # java 拼接字符串效率比较
-前段时间在整理项目里的一些log输出，想到
+前段时间在整理项目里的一些log输出，想到java字符串拼接效率问题，于是做了些测试。
+测试主要针对String直接相加，StringBuilder，StringBuffer和format比较
