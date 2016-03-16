@@ -1,3 +1,10 @@
-#Java 虚拟机规范(Java SE7版)
-####The Java Virtual Machine Specification SE7
+# Java 虚拟机规范(Java SE7版)
+#### The Java Virtual Machine Specification SE7
 
+### 第 1 章 引言
+* Java 语言是一门通用的、面向对象的、支持并发的程序语言。
+* Java 虚拟机是整个 Java 平台的基石,是 Java 技术用以实现硬件无关与操作系统无关的关键部分,是 Java 语言生成出极小体积的编译代码的运行平台,是保障用户机器免于恶意代码损害 的保护屏障。
+* Java 虚拟机与 Java 语言并没有必然的联系,它只与特定的二进制文件格式——Class 文件 格式所关联,Class 文件中包含了 Java 虚拟机指令集(或者称为字节码、Bytecodes)和符号 表,还有一些其他辅助信息。
+* 基于安全方面的考虑,Java 虚拟机要求在 Class 文件中使用了许多强制性的语法和结构化 约束,但任一门功能性语言都可以表示为一个能被 Java 虚拟机接收的有效的 Class 文件。作为 一个通用的、机器无关的执行平台,任何其他语言的实现者都可以将 Java 虚拟机作为他们语言的 产品交付媒介。
+
+### 第 2 章 Java 虚拟机结构
