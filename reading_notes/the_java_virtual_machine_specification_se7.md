@@ -21,3 +21,10 @@
 * 对于一个非零的、可数的任意浮点值,都可以表示为 s×m×2<sup>(e-N+1)</sup>的形式,其中 s 可以是 +1 或者-1,m 是一个小于 2N 的正整数,e 是一个介于 Emin=-(2<sup>K-1</sup>-2)和 Emax=2<sup>K-1</sup>-1 之间的整 数(包括 Emin 和 Emax)。这里的 N 和 K 两个参数的取值范围决定于当前采用的浮点数值集合。
 * 所有 Java 虚拟机的实现都必须支持两种标准的浮点数值集合:单精度浮点数集合和双精度浮 点数集合。另外,Java 虚拟机实现可以自由选择是否要支持单精度扩展指数集合和双精度扩展指 数集合,也可以选择支持其中的一种或全部。这些扩展指数集合可能在某些特定情况下代替标准浮 点数集合来表示 float 和 double 类型的数值。
 * 上述四种数值集合都不仅包含可数的非零值,还包括五个特殊的数值:正数零、负数零、正无 穷大、负无穷大和 NaN。
+* returnAddress 类型会被 Java 虚拟机的 jsr、ret 和 jsr_w 指令所使用。
+* 这几条指令以前主要被使用来实现 finally 语句块,后来改为冗余 finally 块代码的方式来实 现,甚至到了 JDK7 时,虚拟机已不允许 Class 文件内出现这几条指令。那相应地,returnAddress 类型就处 于名存实亡的状态。
+*  Java 虚拟机定义了 boolean 这种数据类型,但是只对它提供了非常有限的支持。在 Java 虚拟机中没有任何供 boolean 值专用的字节码指令,在 Java 语言之中涉及到 boolean 类型值的运算,在编译之后都使用 Java 虚拟机中的 int 数据类型来代替。
+*  Java 虚拟机直接支持 boolean 类型的数组,虚拟机的 newarray 指令可以创建这种数组。boolean 的数组类型的访问与修改共用 byte 类型数组的 baload 和 bastore 指令。
+*  在 Oracle 公司的虚拟机实现里,Java 语言里面的 boolean 数组将会被编码成 Java 虚拟机的 byte 数 组,每个 boolean 元素占 8 位长度。
+*  Java虚拟机中有三种引用类型:类类型(Class Types)、数组类型(Array Types)和 接口类型(Interface Types)。
+
