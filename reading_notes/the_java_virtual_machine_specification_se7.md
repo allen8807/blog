@@ -27,4 +27,5 @@
 *  Java 虚拟机直接支持 boolean 类型的数组,虚拟机的 newarray 指令可以创建这种数组。boolean 的数组类型的访问与修改共用 byte 类型数组的 baload 和 bastore 指令。
 *  在 Oracle 公司的虚拟机实现里,Java 语言里面的 boolean 数组将会被编码成 Java 虚拟机的 byte 数 组,每个 boolean 元素占 8 位长度。
 *  Java虚拟机中有三种引用类型:类类型(Class Types)、数组类型(Array Types)和 接口类型(Interface Types)。
+*  
 
