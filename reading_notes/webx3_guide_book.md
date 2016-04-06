@@ -32,7 +32,11 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * SpringExt:基于Spring,提供扩展组件的能力。它是整个框架的基础。
   * Webx Framework:基于Servlet API,提供基础的服务,例如:初始化Spring、初始化日志、接收请求、错误处理、开发模式等。Webx Framework只和servlet及spring相关——它不关心Web框架中常见的一些服务,例如Action处理、表单处理、模板渲染等。因此,事实上,你可以用Webx Framework来创建多种风格的Web框架。
   * Webx Turbine:基于Webx Framework,实现具体的网页功能,例如:Action处理、表单 处理、模板渲染等。
-通过pipeline, 理论上可以实现任何框架的功能。
+
+* 通过pipeline, 理论上可以实现任何框架的功能。
+* Webx框架是一个稳定、强大的Web框架。倒不是说它实现了所有的功能,而是它建立在 SpringExt的基础上,具有超强的扩展能力。你可以使用全部的Webx,也可以使用部分Webx。 你也可以比较容易地用SpringExt做出自己的可扩展组件。
+#### 第二章
+
 
 
 
