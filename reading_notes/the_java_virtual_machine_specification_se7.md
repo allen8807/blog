@@ -27,5 +27,11 @@
 *  Java 虚拟机直接支持 boolean 类型的数组,虚拟机的 newarray 指令可以创建这种数组。boolean 的数组类型的访问与修改共用 byte 类型数组的 baload 和 bastore 指令。
 *  在 Oracle 公司的虚拟机实现里,Java 语言里面的 boolean 数组将会被编码成 Java 虚拟机的 byte 数 组,每个 boolean 元素占 8 位长度。
 *  Java虚拟机中有三种引用类型:类类型(Class Types)、数组类型(Array Types)和 接口类型(Interface Types)。
-*  
+* 运行时数据区
+* Java 虚拟机定义了若干种程序运行期间会使用到的运行时数据区,其中有一些会随着虚拟机 启动而创建,随着虚拟机退出而销毁。
+  *  PC 寄存器
+    *  Java 虚拟机可以支持多条线程同时执行,每一条 Java 虚拟机线程都有自己的PC(Program Counter)寄存器。
+  *  Java 虚拟机栈
+    *  这个栈与线程同时创建,用于存储栈帧
+    *  栈帧可以在堆中分配,Java 虚拟机栈所使用的内存不需要保证是连 续的。
 
