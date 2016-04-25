@@ -82,5 +82,17 @@
 * 2.7 对象的表示
   * Java 虚拟机规范不强制规定对象的内部结构应当如何表示。
 * 2.8 浮点算法
-  * 
+  * 2.8.1 Java 虚拟机和 IEEE 754 中的浮点算法
+    * 在 Java 虚拟机中的浮点操作在遇到非法操作,如被零除(Divison By Zero)、上限溢出(Overflow)、下限溢出(Underflow)和非精确(Inexact)时,不会抛出exception、trap 或者其他 IEEE 754 异常情况中定义的信号。
+    * 在Java虚拟机中不支持IEEE754中的信号浮点比较(SignalingFloating-PointComparisons)。
+    * 在 Java 虚拟机中,舍入操作永远使用 IEEE 754 规范中定义的向最接近数舍入模式(Round To Nearest Mode),无法精确表示的结果将会舍入为最接近的可表示值来 保证此值的最低有效位为零(A Zero Least-Significant Bit),这种模式也是 IEEE 754 中的默认模式。
+    * 不过在 Java 虚拟机里面,将浮点数转化为整型数是使用向零舍入(Round Toward Zero),这点属于特别定义,并不意味着 Java 虚拟机要改变浮点运算的舍入模式。
+    * 在Java虚拟机中不支持IEEE754的单精度扩展和双精度扩展格式(SingleExtended Or Double Extended Format),但是在双精度浮点数集合和双精度扩展指数集合 (Double And Double Extended-Exponent Value Sets,§2.3.2)范围与单 精度扩展指数格式的表示方位会有重叠。
+  * 2.8.2 浮点模式
+    * 每一个方法都有一项属性称为浮点模式(Floating-Point Mode),取值有两种,要么是 FP-strict 模式要么是非 FP-strict 模式。
+  * 2.8.3 数值集合转换
+    * 在一些特定场景下,支持扩展指数集合的 Java 虚拟机实现数值在标准浮点数集合与扩展指数 集合之间的映射关系是允许和必要的,这种映射操作就称为数值集合转换。数值集合转换并非数据 类型转换,而是在同一种数据类型之中不同数值集合的映射操作。
+    * 
+
+
 
