@@ -139,10 +139,16 @@
     * 因此,大多数对于 boolean、byte、short 和 char 类型数据的操作,实际上都是使用相应的对 int 类型作为运 算类型(Computational Type)。
   * 2.11.2 加载和存储指令
     * 加载和存储指令用于将数据从栈帧(§2.6)的局部变量表(§2.6.1)和操作数栈之间来回 传输(§2.6.2)
-      * 将一个局部变量加载到操作栈的指令包括有:iload等 
-      * 将一个数值从操作数栈存储到局部变量表的指令包括有:istore等
-      * 将一个常量加载到操作数栈的指令包括有: bipush, sipush, ldc,ldc_w,ldc2_w, aconst_null、iconst_m1等
+      * 将一个局部变量加载到操作栈的指令包括有:`iload、iload_<n>`等 
+      * 将一个数值从操作数栈存储到局部变量表的指令包括有:`istore、istore_<n>`等
+      * 将一个常量加载到操作数栈的指令包括有:`bipush、sipush、ldc、ldc_w、ldc2_w、 aconst_null、iconst_m1、iconst_<i>、lconst_<l>、fconst_<f>、dconst_<d>`等
       * 扩充局部变量表的访问索引的指令:wide
+    * 上面所列举的指令助记符中,有一部分是以尖括号结尾的(例如 `iload_<n>`),这些指令助
+记符实际上是代表了一组指令(例如 `iload_<n>`,它代表了 `iload_0、iload_1、iload_2 和 iload_3` 这几条指令)。
+    * 在尖括号之间的字母制定了指令隐 操作数的 数据类型,`<i>`代表是 int 形数据,`<l>`代表 long 型,`<f>`代表 float 型,`<d>`代表 double 型。
+
+
+
 
 
 
