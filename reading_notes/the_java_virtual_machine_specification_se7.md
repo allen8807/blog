@@ -146,6 +146,76 @@
     * 上面所列举的指令助记符中,有一部分是以尖括号结尾的(例如 `iload_<n>`),这些指令助
 记符实际上是代表了一组指令(例如 `iload_<n>`,它代表了 `iload_0、iload_1、iload_2 和 iload_3` 这几条指令)。
     * 在尖括号之间的字母制定了指令隐 操作数的 数据类型,`<i>`代表是 int 形数据,`<l>`代表 long 型,`<f>`代表 float 型,`<d>`代表 double 型。
+  * 2.11.3 运算指令
+    * 算术指令用于对两个操作数栈上的值进行某种特定运算,并把结果重新存入到操作栈顶。
+    * 大体 上运算指令可以分为两种:对整型数据进行运算的指令与对浮点型数据进行运算的指令,无论是那 种算术指令,都是使用 Java 虚拟机的数字类型的。
+    * 数据没有直接支持 byte、short、char 和 boolean 类型(§2.11.1)的算术指令,对于这些数据的运算,都是使用操作 int 类型的指令。
+    *  整数与浮点数的算术指令在溢出和被零除的时候也有各自不同的行为,
+    *  所有的算术指令包括:
+      *  加法指令:iadd、ladd、fadd、dadd
+      *  减法指令:isub、lsub、fsub、dsub
+      *  乘法指令:imul、lmul、fmul、dmul
+      *  除法指令:idiv、ldiv、fdiv、ddiv
+      *  求余指令:irem、lrem、frem、drem
+      *  取反指令:ineg、lneg、fneg、dneg
+      *  位移指令:ishl、ishr、iushr、lshl、lshr、lushr
+      *  按位或指令:ior、lor
+      *  按位与指令:iand、land
+      *  按位异或指令:ixor、lxor
+      *  局部变量自增指令:iinc
+      *  比较指令:dcmpg、dcmpl、fcmpg、fcmpl、lcmp
+    *  Java 虚拟机没有明确规定整型数据溢出的情况,但是规定了在处理整型数据时,只有除法指令(idiv 和 ldiv)以及求余指令(irem 和 lrem)出现除数为零时会导致虚拟机抛出异常,如 果发生了这种情况,虚拟机将会抛出 ArithmeitcException 异常。
+    *  Java 虚拟机在处理浮点数时,必须遵循 IEEE 754 规范中所规定行为限制。也就是说 Java 虚拟机要求完全支持 IEEE 754 中定义的非正规浮点数值(Denormalized Floating-Point Numbers,§2.3.2)和逐级下溢(Gradual Underflow)。
+    *  Java 虚拟机要求在进行浮点数运算时,所有的运算结果都必须舍入到适当的进度,非精确的结果必须舍入为可被表示的最接近的精确值,如果有两种可表示的形式与该值一样接近,那将优先 选择最低有效位为零的。这种舍入模式也是 IEEE 754 规范中的默认舍入模式,称为向最接近数 舍入模式(§2.8.1)。
+    *  在把浮点数转换为整数时,Java 虚拟机使用 IEEE 754 标准中的向零舍入模式(§2.8.1), 这种模式的舍入结果会导致数字被截断,所有小数部分的有效字节都会被丢弃掉。向零舍入模式将 在目标数值类型中选择一个最接近,但是不大于原值的数字来作为最精确的舍入结果。
+    *  Java 虚拟机在处理浮点数运算时,不会抛出任何运行时异常(这里所讲的是 Java 的异常, 请勿与 IEEE 754 规范中的浮点异常互相混淆),当一个操作产生溢出时,将会使用有符号的无穷 大来表示,如果某个操作结果没有明确的数学定义的话,将会时候 NaN 值来表示。所有使用 NaN 值作为操作数的算术操作,结果都会返回 NaN。
+    *  在对 long 类型数值进行比较时,虚拟机采用带符号的比较方式,而对浮点数值进行比较时 (dcmpg、dcmpl、fcmpg、fcmpl),虚拟机采用 IEEE 754 规范说定义的无信号比较 (Nonsignaling Comparisons)方式。
+  *  2.11.4 类型转换指令
+    *  类型转换指令可以将两种 Java 虚拟机数值类型进行相互转换,这些转换操作一般用于实现用 户代码的显式类型转换操作,或者用来处理 Java 虚拟机字节码指令集中指令非完全独立独立的问 题(§2.11.1)。
+    *  Java 虚拟机**直接支持**(译者注:“直接支持”意味着转换时无需显式的转换指令)以下数值 的**宽化类型转换(Widening Numeric Conversions,小范围类型向大范围类型的安全转换)**:
+      *  int类型到long、float或者double类型
+      *  long类型到float、double类型
+      *  float类型到double类型
+    *  窄化类型转换(Narrowing Numeric Conversions)指令包括有:i2b、i2c、i2s、l2i、f2i、f2l、d2i、d2l 和 d2f。窄化类型转换可能会导致转换结果产生不同的正负号、不同的数 量级,转换过程很可能会导致数值丢失精度。
+    *  在将 int 或 long 类型窄化转换为整数类型 T 的时候,转换过程仅仅是简单的丢弃除最低位N 个字节以外的内容,N 是类型 T 的数据类型长度,这将可能导致转换结果与输入值有不同的正负号(译者注:在高位字节符号位被丢弃了)。
+    *  在将一个浮点值转窄化转换为整数类型 T(T 限于 int 或 long 类型之一)的时候,将遵循以下转换规则:
+      *  如果浮点值是NaN,那转换结果就是int或long类型的0
+      *  否则,如果浮点值不是无穷大的话,浮点值使用IEEE754的向零舍入模式(§2.8.1)取整,获得整数值 v,这时候可能有两种情况:
+          *  如果T是long类型,并且转换结果在long类型的表示范围之内,那就转换为long类型数值 v
+          *  如果T是int类型,并且转换结果在int类型的表示范围之内,那就转换为int类型数值 v
+      *  否则:
+          *  如果转换结果v的值太小(包括足够小的负数以及负无穷大的情况),无法使用T类 型表示的话,那转换结果取 int 或 long 类型所能表示的最小数字。
+          *  如果转换结果v的值太大(包括足够大的正数以及正无穷大的情况),无法使用T类 型表示的话,那转换结果取 int 或 long 类型所能表示的最大数字。
+    *  从 double 类型到 float 类型做窄化转换的过程与 IEEE 754 中定义的一致,通过 IEEE 754 向最接近数舍入模式(§2.8.1)舍入得到一个可以使用 float 类型表示的数字。
+      *  如果转换结果 的绝对值太小无法使用 float 来表示的话,将返回 float 类型的正负零。
+      *  如果转换结果的绝对值 太大无法使用 float 来表示的话,将返回 float 类型的正负无穷大
+      *  对于 double 类型的 NaN 值将就规定转换为 float 类型的 NaN 值。
+    *  尽管可能发生上限溢出、下限溢出和精度丢失等情况,但是 Java 虚拟机中数值类型的窄化转 换永远不可能导致虚拟机抛出运行时异常(此处的异常是指《Java 虚拟机规范》中定义的异常, 请读者不要与 IEEE 754 中定义的浮点异常信号产生混淆)。
+  *  2.11.5 对象创建与操作
+    *  虽然类实例和数组都是对象,但 Java 虚拟机对类实例和数组的创建与操作使用了不同的字节 码指令:
+      *  创建类实例的指令:new
+      *   创建数组的指令:newarray,anewarray,multianewarray
+      *   访问类字段(static字段,或者称为类变量)和实例字段(非static字段,或者成为实例变量)的指令:getfield、putfield、getstatic、putstatic
+      *   把一个数组元素加载到操作数栈的指令:baload、caload、saload、iaload、laload、faload、daload、aaload
+      *   将一个操作数栈的值储存到数组元素中的指令:bastore、castore、sastore、iastore、fastore、dastore、aastore
+      *   取数组长度的指令:arraylength
+      *   检查类实例类型的指令:instanceof、checkcast
+  *   2.11.6 操作数栈管理指令
+    *   Java 虚拟机提供了一些用于直接操作操作数栈的指令,包括:pop、pop2、dup、dup2、dup_x1、dup2_x1、dup_x2、dup2_x2 和 swap。
+  *   2.11.7 控制转移指令
+    *  控制转移指令可以让 Java 虚拟机有条件或无条件地从指定指令而不是控制转移指令的下一 条指令继续执行程序。
+    *  控制转移指令包括有:
+        *  条件分支:ifeq、iflt、ifle、ifne、ifgt、ifge、ifnull、ifnonnull、if_icmpeq、 if_icmpne、if_icmplt, if_icmpgt、if_icmple、if_icmpge、if_acmpeq 和 if_acmpne。
+        *   复合条件分支:tableswitch、lookupswitch
+        *   无条件分支:goto、goto_w、jsr、jsr_w、ret
+    *   在 Java 虚拟机中有专门的指令集用来处理 int 和 reference 类型的条件分支比较操作,为了可以无需明显标识一个实体值是否 null,也有专门的指令用来检测 null 值(§2.4)。
+    *   boolean 类型、byte 类型、char 类型和 short 类型的条件分支比较操作,都使用 int 类型的比较指令来完成
+    *   对于 long 类型、float 类型和 double 类型的条件分支比较操作,则会**先执行相应类型的比较运算指令**(§2.11.3),运算指令会返回一个整形值到操作数栈中,随 后再执行 int 类型的条件分支比较操作来完成整个分支跳转。
+    *   由于各种类型的比较最终都会转化 为 int 类型的比较操作,基于 int 类型比较的这种重要性,Java 虚拟机提供了非常丰富的 int 类型的条件分支指令。
+    *   所有 int 类型的条件分支转移指令进行的都是有符号的比较操作。
+
+
+
 
 
 
