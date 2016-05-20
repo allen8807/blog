@@ -277,7 +277,25 @@ int align2grain(int i, int grain) {
     return ((i + grain-1) & ~(grain-1));
 }
 ```
-  *  
+  *  算术运算使用到的操作数都是从操作数栈中弹出的,运算结果被压回操作数栈中。在内部运算 时,中间运算(Arithmetic Subcomputations)的结果可以被当作操作数使用。
+  *  ~x == −1^x。
+  *  整个方法的编译代码如下:
+ ```
+ Method int align2grain(int,int)
+ 0 iload_1
+ 1 iload_2
+ 2 iadd
+ 3 iconst_1
+ 4 isub
+ 5 iload_2
+ 6 iconst_1
+ 7 isub
+ 8 iconst_m1
+ 9 ixor
+ 10 iand
+ 11 ireturn
+ ```
+* 3.4 访问运行时常量池
 
 
 
