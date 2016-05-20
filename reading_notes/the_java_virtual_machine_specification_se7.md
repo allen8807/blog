@@ -303,7 +303,83 @@ int align2grain(int i, int grain) {
   *  Java 语言中还有很多其他的控制结构 (if-then-else、do、while、break 以及 continue)也有特定的编译规则。
   *  通常情况下,Java 虚拟机对 int 类型数据提供的支持最为完善
   *  虚拟机对各种数据类型的控制结构采用了相似的方式编译,只是根据不同数据类型使用不同的指令来访问。这么做多少会使编译代码效率降低,因为这样可能需要更多的 Java 虚拟机指令来实现。
-  *  
+  *  以下为对比
+  *  int情况
+```java
+void whileInt() {
+    int i = 0;
+    while (i < 100) {
+           i++;
+  } 
+}
+//编译代码如下
+Method void whileInt()
+0 iconst_0
+1 istore_1
+2 goto 8
+5 iinc 1 1
+8 iload_1
+9 bipush 100
+11 if_icmplt 5
+14 return
+```
+ *  double情况
+
+    ```java
+void whileDouble() {
+    double i = 0.0;
+    while (i < 100.1) {
+    i++; 
+    }
+}
+ //编译代码如下
+Method void whileDouble()
+0 dconst_0
+1 dstore_1
+2 goto 9
+5 dload_1
+6 dconst_1
+7 dadd
+8 dstore_1
+9 dload_1
+10 ldc2_w #4 // Push double constant 100.1
+13 dcmpg // To do the compare and branch we have to use...
+14 iflt 5 // ...two instructions
+17 return
+```
+  * 每个浮点型数据都有两条比较指令:对于 float 类型是 fcmpl 和 fcmpg 指令,对于 double 是 dcmpl 和 dcmpg 指令。这些指令语义相似,仅仅在对待 NaN 变量时有所区别。NaN 是无序的, 所以如果有其中一个操作数为 NaN,则所有浮点型的比较指令都失败1。无论是比较操作是否会因 为遇到 NaN 值而失败,编译器都会根据不同的操作数类型来选择不同的比较指令
+  * “比较失败(ComparisonsFail)”的意思是比较指令返回“fail(对于fcmpl为-1, 而 fcmpg 为 1)”的结果到操作数栈,而不是抛出异常。在 Java 虚拟机指令集中,所有的算术比较指令都不会抛 出异常。
+  * 无论是否因参数 d 传入了 NaN 值而导致的比较失败,dcmpl 指令都会向操作 数栈压入一个 int 型值,使程序进入 ifle 指令的分支。
+* 3.6 接收参数
+  * 如果传递了 n 个参数给某个实例方法,则当前栈帧会按照约定的顺序接收这些参数,将它们 保存为方法的第 1 个至第 n 个局部变量之中。
+  * 按照约定,实例方法需要传递一个自身实例的引用作为第 0 个局部变量。在 Java 语言中自身 实例可以通过 this 关键字来访问。
+ 
+
+```java
+int addTwo(int i, int j) {
+    return i + j;
+}
+ 
+Method int addTwo(int,int)
+0 iload_1 // Push value of local variable 1 (i)
+1 iload_2 // Push value of local variable 2 (j)
+2 iadd // Add; leave int result on operand stack
+3 ireturn // Return int result
+```
+
+ * 类(static)方法不需要传递实例引用,所以它们不需要使用第 0 个局部变量来保存 this 关键字。
+ 
+```java
+static int addTwoStatic(int i, int j) {
+    return i + j;
+}
+ 
+Method int addTwoStatic(int,int)
+0 iload_0
+1 iload_1
+2 iadd
+3 ireturn
+```
 
 
 
