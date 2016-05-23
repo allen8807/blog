@@ -381,6 +381,25 @@ Method int addTwoStatic(int,int)
 ```
   * 两段代码唯一的区别是,后者方法保存参数到局部变量表时,是从编号为 0 的局部变量开始 而不是 1。
 * 3.7 方法调用
+  * 对普通实例方法调用是在运行时根据对象类型进行分派的(相当于在 C++中所说的“虚方法”),这类方法通过调用 invokevirtual 指令实现,每条 invokevirtual 指令都会带有一个表示索 引的参数,运行时常量池在该索引处的项为某个方法的符号引用,这个符号引用可以提供方法所在 对象的类型的内部二进制名称、方法名称和方法描述符
+  * 下面这个例子中定义了一个 实例方法 add12and13()来调用前面的 addTwo()方法,如下:
+    ```java
+int add12and13() {
+    return addTwo(12, 13);
+}
+//编译后代码如下:
+Method int add12and13()
+0 aload_0 // Push local variable 0 (this)
+1 bipush 12 // Push int constant 12
+3 bipush 13 // Push int constant 13
+5 invokevirtual #4 // Method Example.addtwo(II)I
+8 ireturn // Return int on top of operand stack; it is the int
+result of addTwo()
+```
+  * 方法调用过程的第一步是将当前实例的自身引用 “this” 压入到操作数栈中。传递给方法的参数随后入栈。
+  * 当调用方法时,Java 虚拟机会创建一个新的栈帧, 传递给方法的参数作为新的帧的对应局部变量的初始值。
+  * 最后,当 addTwo()方法执行结束、方法返回时,int 型的返回值被压入方法调用者的栈帧 的操作数栈,即 add12and13()方法的操作数栈中。
+  * 由于调用 的 addTwo()方法返回的 int 值被压入当前操作数栈的栈顶,ireturn 指令将会把当前操作数栈 的栈顶值(此处就是 addTwo()的返回值)压入调用 add12and13()方法的操作数栈。
 
 
 
