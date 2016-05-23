@@ -380,6 +380,7 @@ Method int addTwoStatic(int,int)
 3 ireturn
 ```
   * 两段代码唯一的区别是,后者方法保存参数到局部变量表时,是从编号为 0 的局部变量开始 而不是 1。
+* 3.7 方法调用
 
 
 
