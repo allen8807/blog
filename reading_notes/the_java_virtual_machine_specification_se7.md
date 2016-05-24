@@ -413,6 +413,12 @@ result of addTwo()
   * multianewarray 指令的第一个操作数是运行时常量池索引,它表示将要被创建的数组的成 员类型。第二个操作数是需要创建的数组的实际维数。multianewarray 指令可以用于创建所有 类型的多维数组,譬如 create3DArray 中展示的。注意,多维数组也只是一个对象,所以使用aload_1 指令加载,使用 areturn 指令返回,更多关于数组类的命名信息在§2.9 章节中讨论。
   * 所有的数组都有一个与之关联的长度属性,通过 arraylength 指令访问。
 * 3.10 编译 switch 语句
+  * Java 虚拟机的 tableswitch 和 lookupswitch 指令都只能支持 int 类型的条件值。选择 支持 int 类型是因为 byte、char 和 short 类型的值都会被隐式展为 int 型。
+  * 当 switch 语句中的 case 分支的条件值比较稀疏时,tableswitch 指令的空间使用率偏低。 这种情况下将使用 lookupswitch 指令来替代。
+  * 当 switch 语句中的 case 分支的条件值比较稀疏时,tableswitch 指令的空间使用率偏低。 这种情况下将使用 lookupswitch 指令来替代。
+  * Java 虚拟机规定的 lookupswitch 指令的索引表必须根据 key 值排序,这样使用(如采用 二分搜索)将会比直接使用线性扫描搜索来得更有效率。
+  * 在从索引表确定分支偏移量的过程中, lookupswitch 指令是把条件值与不同的 key 的进行比较,而 tableswitch 指令则只需要索引 值进行一次范围检查。因此,在如果不需要考虑空间效率时,tableswitch 指令相比 lookupswitch 指令有更高的执行效率。
+* 3.11 使用操作数栈
   * 
 
 
