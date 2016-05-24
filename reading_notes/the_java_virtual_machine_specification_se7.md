@@ -412,6 +412,8 @@ result of addTwo()
   * anewarray 指令也可以用于创建多维数组的第一维。不过我们也可以选择采用 multianewarray 指令一次性创建多维数组。
   * multianewarray 指令的第一个操作数是运行时常量池索引,它表示将要被创建的数组的成 员类型。第二个操作数是需要创建的数组的实际维数。multianewarray 指令可以用于创建所有 类型的多维数组,譬如 create3DArray 中展示的。注意,多维数组也只是一个对象,所以使用aload_1 指令加载,使用 areturn 指令返回,更多关于数组类的命名信息在§2.9 章节中讨论。
   * 所有的数组都有一个与之关联的长度属性,通过 arraylength 指令访问。
+* 3.10 编译 switch 语句
+  * 
 
 
 
