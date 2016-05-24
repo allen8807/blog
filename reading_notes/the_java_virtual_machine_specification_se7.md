@@ -422,7 +422,45 @@ result of addTwo()
   * Java 虚拟机为方便使用操作数栈,提供了的大量的不区分操作数栈数据类型的指令。
   * 这些指 令都很常用,因为 Java 虚拟机是基于栈的虚拟机,大量操作是建立在操作数栈的基础之上的。
   * Java 虚拟机不允许作用于操作数栈的指令修改或者拆分那些不可拆分操作数(如存放 long 或 double 的操作数)。
-  * 
+* 3.12 抛出异常和处理异常
+  * 程序中使用 throw 关键字来抛出异常,它的编译过程很简单
+  * try-catch 结构的编译也同样简单。try 语句块被编译后似乎没有生成任何指令,就像它没有出现过一样。
+  ```java
+  void catchOne() {
+    try {
+           tryItOut();
+    } catch (TestExc e) {
+handleExc(e);
+}
+}
+//编译后代码如下:
+Method void catchOne()
+0 aload_0 // Beginning of try block
+1 invokevirtual #6 // Method Example.tryItOut()V
+4 return // End of try block; normal return
+5 astore_1 // Store thrown value in local variable 1 6 aload_0 // Push this
+7 aload_1 // Push thrown value
+8 invokevirtual #5 // Invoke handler method:
+// Example.handleExc(LTestExc;)V
+11 return // Return after handling TestExc Exception table:
+From To Target Type
+0 4 5 Class TestExc
+  ```
+  * 在 try 语句块之后,Java 虚拟机代码实现的一个 catch 语句
+  * 在 catch 语句块里,调用 handleExc()方法的指令和正常的方法调用完全一样。不过,每 个 catch 语句块的会使编译器在异常表中增加一个成员(即一个异常处理器,§2.10, § 4.7.3)。
+  * catchOne()方法的异常表中有一个成员,这个成员对应 catchOne()方法 catch 语 句块的一个可捕获的异常参数( 例中为 TestExc 的实例)。
+  * 如果抛出的异常不是 TestExc 实例,那么 catchOne() 的 catch 语句块则不能捕获它,这个异常将被抛出给 catchOne()方法的调用者。
+  * 如果 try 语句包 有多个 catch 语句块,那么在编译代码中,多个 catch 语句块的内容将 连续排列,在异常表中也会有对应的连续排列的成员,它们的排列的顺序和源码中的 catch 语句 块出现的顺序一致。
+  * try-catch 语句的嵌套关系只体现在异常表之中,Java 虚拟机 身并不要求异常表中成员 (§2.10)的顺序,但是编译器需要保证 try-catch 语句是有结构顺序的,编译器会根据 catch 语句在代码中的顺序对异常处理表进行排序,以保证在代码任何位置抛出的任何异常,都会被最接 近异常抛出位置的、可处理该异常的 catch 语句块所处理。
+  * 还有一个微妙之处需要注意,catch 语句块的处理范围包括 from 但不包括 to 所表示的偏移 量 身(§4.7.3)。
+* 3.13 编译 finally 语句块
+  * 很早之前(JDK1.4.2之前)的SunJavac已经不再为finally语句生成jsr和ret指令了, 而是改为在每个分支之后冗余代码的形式来实现 finally 语句,所以在这节开头作者需要特别说明。在版 号为 51.0(JDK 7的Class文件)的Class文件中,甚至还明确禁止了指令流中出现jsr、jsr_w指令。
+  * 编译 try-finally 语句和编译 try-catch 语句基 相同。在代码执行完 try 语句之前(无 论有没有抛出异常),finally 语句块中的内容都会被执行
+  * 有四种方式可以让程序退出 try 语句:
+    * 1.语句块所有正常执行结束;
+    * 2.通过 return 语句退 出方法;
+    * 3.通过 break 或 continue 语句退出循环;(循环中嵌套的try语句会被终止)
+    * 4.抛出异常。
 
 
 
