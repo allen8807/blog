@@ -97,6 +97,13 @@ xmlns:loaders="http://www.alibaba.com/schema/services/resource-loading/loaders">
       ```
   * 上面的配置文件和前例中使用Spring Schema的配置文件差别很小。没错,SpringExt Schema 和Spring Schema是完全兼容的!唯一的差别是,我们把ResourceLoader和<resource- loading>所属的namespace分开了,然后将ResourceLoader的配置放在专属的namespace “loaders”中。
 
+待补充
+
+
+
+* 2.3. SpringExt其它特性
+  * SpringExt实际上是一个增强了的Spring的ApplicationContext容器。除了提供前面所说 的Schema扩展机制以外,SpringExt还提供了一个增强的Resource Loading机制。前文例 子中所说的Resource Loading服务是Webx中的真实功能,而且它能完全取代Spring原有 的ResourceLoader功能 —— 也就是说,应用程序并不需要直接调用ResourceLoading服务, 它们可以直接使用Spring本身的ResourceLoader功能,其背后的ResourceLoading机制就会 默默地工作。
+
 
 
 
