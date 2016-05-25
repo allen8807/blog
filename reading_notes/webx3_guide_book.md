@@ -105,6 +105,11 @@ xmlns:loaders="http://www.alibaba.com/schema/services/resource-loading/loaders">
   * SpringExt实际上是一个增强了的Spring的ApplicationContext容器。除了提供前面所说 的Schema扩展机制以外,SpringExt还提供了一个增强的Resource Loading机制。前文例 子中所说的Resource Loading服务是Webx中的真实功能,而且它能完全取代Spring原有 的ResourceLoader功能 —— 也就是说,应用程序并不需要直接调用ResourceLoading服务, 它们可以直接使用Spring本身的ResourceLoader功能,其背后的ResourceLoading机制就会 默默地工作。
 
 
+待补充
+
+#### 第 5 章 Resource Loading服务指南
+* Webx框架中,包含了一套用来查找和装载资源的服务 —— Resource Loading服务。
+* 
 
 
  
