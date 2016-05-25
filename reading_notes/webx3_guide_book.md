@@ -54,7 +54,9 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   ```
     * 以上是一个典型的Spring beans的配置方案。这种方案简单易行,很好地体现了Spring的基 础理念:IoC(Inversion of Control,依赖反转). ResourceLoadingServiceImpl并不依赖 FileResourceLoader和WebappResourceLoader,它只依赖它们的接口ResourceLoader。
     * ![webx_2_1](../image/webx_2_1.png)
-    * Spring的配置文件会依赖于服务实现类的公开API。装配者除非查看源代码 (如ResourceLoadingServiceImpl的源码)或者API文档才能精确地获知这些API的细节。这 有什么问题呢?
+    *  如图所示。虚线左边代表“服务提供者”的职责,虚线右边代表“服务使用者”(即“装配
+     者”)的职责。
+    * 从图中可以看到,Spring的配置文件会依赖于服务实现类的公开API。装配者除非查看源代码 (如ResourceLoadingServiceImpl的源码)或者API文档才能精确地获知这些API的细节。这 有什么问题呢?
       * 没有检验机制,错误必须等到运行时才会被发现。装配者仅从spring配置文件中,无法直观地 了解这个配置文件有没有写对?例如:应该从constructor args注入却配成了从properties注 入;写错了property的名称;注入了错误的类型等等。
       *  无法了解更多约束条件。即使装配者查看API源码,也未必能了解到某些约束条件,例如:哪 些properties是必须填写的,哪些是可选的,哪些是互斥的?
       *  当服务的实现被改变时,Spring配置文件可能会失败。因为Spring配置文件是直接依赖于服务 的实现,而不是接口的。接口相对稳定,而实现是可被改变的。另一方面,这个问题也会阻碍 服务提供者改进他们的服务实现。
@@ -78,6 +80,7 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * `服务的实现细节对装配者隐藏。`当服务实现改变时,只要XML Schema是不变的,那么 Spring的配置就不会受到影响。
 * 所有的schema都会有一个“解释器”和它对应(即BeanDefinitionParser)。这个解 释器负责将符合schema定义的XML配置,转换成Spring能解读的beans定义。解释器是由服务 的开发者来提供的 —— 在本例中,ResourceLoadingService的开发者会提供这个解释器。
 * ![webx_2_2](../image/webx_2_2.png)
+* 如图所示,虚线右侧的装配者,不再需要了解服务具体实现类的API,它只要遵循标准的XML Schema定义来书写spring配置文件,就可以得到正确的配置。这样一来,虚线左侧的服务提供 者就有自由可以改变服务的实现类,他相信只要服务的接口和XML Schema不改变,服务的使 用者就不会受影响。
 * 将和具体实现相关的工作,例如提供类名、property名称和类型等工作,交还给服务的提供 者,使服务的使用者(即装配者)可以用它所能理解的语言来装配服务,这是Spring Schema 所带来的核心价值。
 
  
