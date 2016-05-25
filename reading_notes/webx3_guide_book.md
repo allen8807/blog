@@ -78,11 +78,26 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * 它是可验证的。你不需要等到运行时就能验证其正确性。任何一个支持XML Schema的标准 XML编辑器,包括Eclipse自带的XML编辑器,都可以告诉你配置的对错。
   * 包含更多约束条件。例如,XML Schema可以告诉你,哪些参数是可选的,哪些是必须填 的;参数的类型是什么等等。
   * `服务的实现细节对装配者隐藏。`当服务实现改变时,只要XML Schema是不变的,那么 Spring的配置就不会受到影响。
-* 所有的schema都会有一个“解释器”和它对应(即BeanDefinitionParser)。这个解 释器负责将符合schema定义的XML配置,转换成Spring能解读的beans定义。解释器是由服务 的开发者来提供的 —— 在本例中,ResourceLoadingService的开发者会提供这个解释器。
-* ![webx_2_2](../image/webx_2_2.png)
-* 如图所示,虚线右侧的装配者,不再需要了解服务具体实现类的API,它只要遵循标准的XML Schema定义来书写spring配置文件,就可以得到正确的配置。这样一来,虚线左侧的服务提供 者就有自由可以改变服务的实现类,他相信只要服务的接口和XML Schema不改变,服务的使 用者就不会受影响。
-* 将和具体实现相关的工作,例如提供类名、property名称和类型等工作,交还给服务的提供 者,使服务的使用者(即装配者)可以用它所能理解的语言来装配服务,这是Spring Schema 所带来的核心价值。
-* Spring Schema有一个问题 —— 它是不可扩展的。
+  * 所有的schema都会有一个“解释器”和它对应(即BeanDefinitionParser)。这个解 释器负责将符合schema定义的XML配置,转换成Spring能解读的beans定义。解释器是由服务 的开发者来提供的 —— 在本例中,ResourceLoadingService的开发者会提供这个解释器。
+  * ![webx_2_2](../image/webx_2_2.png)
+  * 如图所示,虚线右侧的装配者,不再需要了解服务具体实现类的API,它只要遵循标准的XML Schema定义来书写spring配置文件,就可以得到正确的配置。这样一来,虚线左侧的服务提供 者就有自由可以改变服务的实现类,他相信只要服务的接口和XML Schema不改变,服务的使 用者就不会受影响。
+  * 将和具体实现相关的工作,例如提供类名、property名称和类型等工作,交还给服务的提供 者,使服务的使用者(即装配者)可以用它所能理解的语言来装配服务,这是Spring Schema 所带来的核心价值。
+  * Spring Schema有一个问题 —— 它是不可扩展的。
+  * 从本质意义来讲,Schema是API的另一种表现形式。你可以把Schema看作一种接口,而接口 的实质是服务的提供者与使用者之间的合约(contract)。可惜的是,我们只能在传统API层面 来贯彻OCP原则,却无法在Schema上同样遵循它。我们无法做到不修改老的schema,就添 加新的元素 —— 这导致Spring Schema的作用被大大削弱。
+* 2.1.3. SpringExt Schema
+  * SpringExt改进了Spring,使得Spring Schema可以被扩展。下面的例子对例 2.2 “用Spring Schema装配Resource Loading服务”作了少许修改,使之能被扩展。
+  * 用SpringExt Schema装配Resource Loading服务
+ ```xml
+<resource-loading id="resourceLoadingService" xmlns="http://www.alibaba.com/schema/services"
+xmlns:loaders="http://www.alibaba.com/schema/services/resource-loading/loaders"> <resource pattern="/file">
+<loaders:file-loader basedir="${user.home}" /> </resource>
+<resource pattern="/webroot"> <loaders:webapp-loader />
+    </resource>
+</resource-loading>
+      ```
+  * 上面的配置文件和前例中使用Spring Schema的配置文件差别很小。没错,SpringExt Schema 和Spring Schema是完全兼容的!唯一的差别是,我们把ResourceLoader和<resource- loading>所属的namespace分开了,然后将ResourceLoader的配置放在专属的namespace “loaders”中。
+
+
 
 
  
