@@ -35,8 +35,28 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
 
 * 通过pipeline, 理论上可以实现任何框架的功能。
 * Webx框架是一个稳定、强大的Web框架。倒不是说它实现了所有的功能,而是它建立在 SpringExt的基础上,具有超强的扩展能力。你可以使用全部的Webx,也可以使用部分Webx。 你也可以比较容易地用SpringExt做出自己的可扩展组件。
-#### 第二章
-
+#### 第二章 SpringExt
+* Webx是一套基于Java Servlet API的通用Web框架。Webx致力于提供一套极具扩展性的机 制,来满足Web应用不断变化和发展的需求。而SpringExt正是这种扩展性的基石。SpringExt扩 展了Spring,在Spring的基础上提供了一种扩展功能的新方法。
+* 2.1. 用SpringExt装配服务
+  * 2.1.1. Spring Beans
+  * 在Spring 2.0以前,你只能装配beans,就像下面这样:
+  ```xml
+  <bean id="resourceLoadingService" class="com.alibaba...ResourceLoadingServiceImpl"> <property name="mappings">
+<map>
+<entry key="/file" value-ref="fileLoader" /> <entry key="/webroot" value-ref="webappLoader" />
+        </map>
+    </property>
+</bean>
+<bean id="fileLoader" class="com.alibaba...FileResourceLoader"> <property name="basedir" value="${user.home}" />
+</bean>
+<bean id="webappLoader" class=" com.alibaba...WebappResourceLoader" />
+  ```
+    * 以上是一个典型的Spring beans的配置方案。这种方案简单易行,很好地体现了Spring的基 础理念:IoC(Inversion of Control,依赖反转). ResourceLoadingServiceImpl并不依赖 FileResourceLoader和WebappResourceLoader,它只依赖它们的接口ResourceLoader。
+    * Spring的配置文件会依赖于服务实现类的公开API。装配者除非查看源代码 (如ResourceLoadingServiceImpl的源码)或者API文档才能精确地获知这些API的细节。这 有什么问题呢?
+      * 没有检验机制,错误必须等到运行时才会被发现。装配者仅从spring配置文件中,无法直观地 了解这个配置文件有没有写对?例如:应该从constructor args注入却配成了从properties注 入;写错了property的名称;注入了错误的类型等等。
+      *  无法了解更多约束条件。即使装配者查看API源码,也未必能了解到某些约束条件,例如:哪 些properties是必须填写的,哪些是可选的,哪些是互斥的?
+      *  当服务的实现被改变时,Spring配置文件可能会失败。因为Spring配置文件是直接依赖于服务 的实现,而不是接口的。接口相对稳定,而实现是可被改变的。另一方面,这个问题也会阻碍 服务提供者改进他们的服务实现。
+      *  难怪有人诟病Spring说它只不过是用XML来写程序代码而已。
 
 
 
