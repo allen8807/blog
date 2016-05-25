@@ -77,7 +77,7 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * 包含更多约束条件。例如,XML Schema可以告诉你,哪些参数是可选的,哪些是必须填 的;参数的类型是什么等等。
   * `服务的实现细节对装配者隐藏。`当服务实现改变时,只要XML Schema是不变的,那么 Spring的配置就不会受到影响。
 * 所有的schema都会有一个“解释器”和它对应(即BeanDefinitionParser)。这个解 释器负责将符合schema定义的XML配置,转换成Spring能解读的beans定义。解释器是由服务 的开发者来提供的 —— 在本例中,ResourceLoadingService的开发者会提供这个解释器。
-* 
+* ![webx_2_2](../image/webx_2_2.png)
 * 将和具体实现相关的工作,例如提供类名、property名称和类型等工作,交还给服务的提供 者,使服务的使用者(即装配者)可以用它所能理解的语言来装配服务,这是Spring Schema 所带来的核心价值。
 
  
