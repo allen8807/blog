@@ -109,7 +109,11 @@ xmlns:loaders="http://www.alibaba.com/schema/services/resource-loading/loaders">
 
 #### 第 5 章 Resource Loading服务指南
 * Webx框架中,包含了一套用来查找和装载资源的服务 —— Resource Loading服务。
-* 
+* Resource Loading服务从Spring ResourceLoader机制中扩展而来,并且和Spring框架融为一 体。因此,你不需要写特别的Java代码,就可以让所有利用Spring ResourceLoader机制的代 码,直接享用Webx所提供的新的Resource Loading机制。
+* 5.1. 资源概述
+  * 5.1.1. 什么是资源?
+    * 在一个稍具规模的应用程序中,经常要做的一件事,就是查找资源、读取资源的内容。这里所谓 的“资源”,是指存放在某一介质中,可以被程序利用的文件、数据。
+    * 
 
 
  
