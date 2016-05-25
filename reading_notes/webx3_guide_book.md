@@ -41,9 +41,10 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * 2.1.1. Spring Beans
   * 在Spring 2.0以前,你只能装配beans,就像下面这样:
   ```xml
-  <bean id="resourceLoadingService" class="com.alibaba...ResourceLoadingServiceImpl"> <property name="mappings">
-<map>
-<entry key="/file" value-ref="fileLoader" /> <entry key="/webroot" value-ref="webappLoader" />
+  <bean id="resourceLoadingService" class="com.alibaba...ResourceLoadingServiceImpl">
+  <property name="mappings">
+        <map>
+            <entry key="/file" value-ref="fileLoader" /> <entry key="/webroot" value-ref="webappLoader" />
         </map>
     </property>
 </bean>
@@ -58,7 +59,17 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
       *  当服务的实现被改变时,Spring配置文件可能会失败。因为Spring配置文件是直接依赖于服务 的实现,而不是接口的。接口相对稳定,而实现是可被改变的。另一方面,这个问题也会阻碍 服务提供者改进他们的服务实现。
       *  难怪有人诟病Spring说它只不过是用XML来写程序代码而已。
 *  2.1.2. Spring Schema
-
+  *  这种情况直到Spring 2.0发布以后,开始有所改观。因为Spring 2.0支持用XML Schema来定义 配置文件。同样的功能,用Spring Schema来定义,可能变成下面的样子:
+      ```xml
+    <resource-loading id="resourceLoadingService" xmlns="http://www.alibaba.com/schema/services/resource-loading">
+<resource pattern="/file">
+<file-loader basedir="${user.home}" />
+</resource>
+<resource pattern="/webroot">
+        <webapp-loader />
+    </resource>
+</resource-loading>
+      ```
 
 
 
