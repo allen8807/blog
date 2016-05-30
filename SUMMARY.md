@@ -8,5 +8,5 @@
    * [Java 虚拟机规范 (Java SE 7 版)Ch5_Ch7](reading_notes/the_java_virtual_machine_specification_se7_ch5_ch7.md)
    * [Webx框架指南](reading_notes/webx3_guide_book.md)
    * [唐才子传](reading_notes/tang_cai_zi_chuan.md)
-* 公开课笔记(open_course_notes/README.md)
+* [公开课笔记](open_course_notes/README.md)
 
