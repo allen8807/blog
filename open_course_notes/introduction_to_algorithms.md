@@ -1,2 +1,2 @@
-# Introduction_to_Algorithms.md
+# Introduction_to_Algorithms
 
