@@ -23,3 +23,5 @@
 * +- junit:junit:jar:4.11:test
 [INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 冲突
+
+mybatis配置名空间多打了一个空格。。。
