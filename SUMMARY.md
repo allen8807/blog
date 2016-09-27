@@ -11,6 +11,7 @@
     * [唐才子传](reading_notes/tang_cai_zi_chuan.md)
 * [公开课笔记](open_course_notes/README.md)
     * [Introduction\_to\_Algorithms](open_course_notes/introduction_to_algorithms.md)
+    * [麻省理工学院公开课：计算机科学及编程导论](open_course_notes/麻省理工学院公开课：计算机科学及编程导论.md)
 * [面试问题集](interview/README.md)
     * [ThreadPoolExecutor中策略的选择与工作队列的选择（java线程池）](interview/threadpoolexecutorzhong_ce_lve_de_xuan_ze_yu_gong_.md)
 * Spring 编年史
