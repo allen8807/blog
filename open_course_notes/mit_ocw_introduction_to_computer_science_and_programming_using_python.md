@@ -198,6 +198,25 @@
     * 可以做所有的事情
     * Turing complete language 这是被称为图灵完全化语言的特点
 
+## 第四课 函数抽象与递归简介
+2016-10-10
+* We have assignment,conditionals,I/O,looping constructs (for,while)
+* A language is Turing complete 一个语言应该是图灵完备的，就是说可以写出任何程序。（但不是可以easily写出任何程序）
+* 串行化编程，代码不易阅读，尤其是代码量很大的时候
+* We don't have Decomposition 分解, Abstraction抽象
+* 分解将代码模块化
+* 抽象让我们忽略细节
+* Functions
+    * break up into modules
+    * suppress detail 忽略细节
+    * create "new primitives" 本质是提供一种创建原语的思考方式
+    * 函数的目的是寻找计算的共同模式
+    * 加减乘除也是原语，是函数
+    * 抽象化，要规格化
+* def --keyword
+* Name(x)--define formal parameters 形参
+* return --keyword 控制转移
+* None --special vale
 
 
 
