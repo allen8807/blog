@@ -253,6 +253,34 @@ Farmyard problem
 * 有些问题可以容易想出递归的方法，但是不容易想出迭代的方法，自己选择正确的
 
 # 第五课 浮点数和二分法(逐次近似)
+2016-10-11
+* 计算机被认为擅长处理数字
+* integer
+    * arbitrary precison Python支持任意精度的整数
+    * Long
+    * Long数的运算结果也是Long
+* Float -- floating point -- real 浮点数
+    * 符合IEEE 754 floating point标准
+    * Scientific notation科学计数法的变体
+    * Mantissa exponent 尾数和指数
+    * 二进制系统
+    * significant 重要数 mantissa也被称为significant 
+    * 1 <= matissa <= 2  mantissa
+    * -1022: 1023 exponent
+    * 计算机是64 Bit
+        * 1 Bit sign 一位存放符号
+        * 11 exp     11位存放指数
+        * 52 mantissa 52位存放尾数
+    * 大约17位的10进制数字精度 17 decimal digits
+    * 超过这个精度的大部分语言都做不到
+* 1/8 = 0.125
+    * Base 10 : 1.25 * 10 ^ -1
+    * Base 2 : 1.0 * 2 ^ -3
+* 1/10 = 0.1 = 1 * 10 ^ -1
+    * Base 2 ? 无限长数字 这就是Python显示0.1会变成0.10000...01
+    * Python 内部调用 repr()显示数字将数字显示成string，对于float会round to 17 digits 
+
+
 
 
     
