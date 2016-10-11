@@ -279,6 +279,11 @@ Farmyard problem
 * 1/10 = 0.1 = 1 * 10 ^ -1
     * Base 2 ? 无限长数字 这就是Python显示0.1会变成0.10000...01
     * Python 内部调用 repr()显示数字将数字显示成string，对于float会round to 17 digits 
+    * 误差累计
+    * Worry about == on floats 对于浮点数不要做相等判断
+    * abs(a*a -2.0)< epsilon 通过这种方法进行浮点数相等的比较
+* 找平方根的方法 
+* Might not be an exact answer
 
 
 
