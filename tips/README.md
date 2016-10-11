@@ -25,4 +25,5 @@
   \[INFO\] \|  - org.hamcrest:hamcrest-core:jar:1.3:test
   冲突
 * mybatis 配置mapper时，包名空间前多打了一个空格，死活找不到类了，弄了2小时
+* mybatis 执行批量插入时，发现报语法错误，后来发现是不支持多语句，再后来发现是mysql链接时，没有配置allowMutiQueries=true的参数
 
