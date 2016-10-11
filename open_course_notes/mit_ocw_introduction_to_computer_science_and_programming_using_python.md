@@ -284,6 +284,21 @@ Farmyard problem
     * abs(a*a -2.0)< epsilon 通过这种方法进行浮点数相等的比较
 * 找平方根的方法 
 * Might not be an exact answer
+* Can't enumerate all guesses 因为实数是uncountable 
+* Guess,check,improve 
+* successive approximation 逐次逼近法
+    * guess = initial guess
+    * for iter in range(100)
+        * if f(guess) close enough : return guess
+        * else guess = better guess
+    * ERROR
+* Bisection method 二分法
+    * 解的范围是线性空间
+    * 每次逼近，epsilon大于0
+    * 程序示例
+* 改进方法会在下次讨论
+* 飞鸿雪泥按：二分法应该在均匀分布的线性解空间里表现的比较好
+
 
 
 
