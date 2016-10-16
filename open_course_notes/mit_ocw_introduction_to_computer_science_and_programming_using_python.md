@@ -299,7 +299,7 @@ Farmyard problem
 * 改进方法会在下次讨论
 * 飞鸿雪泥按：二分法应该在均匀分布的线性解空间里表现得比较好
 
-## 第六课 二分法，牛顿-拉普拉斯法，对于数组的简介
+## 第六课 二分法，牛顿-拉普森法，对于数组的简介
 2016-10-12
 * 二分法
     * 解空间是线性有序的 totally ordered
@@ -311,7 +311,12 @@ Farmyard problem
     * 解决方法，下界是0，上界是1和x里大的那个
 * 二分法迭代次数并不固定
 * 处理复杂问题我们关注收敛速率问题 speed of convergence
-
+* 二分法由古希腊人发明，一直到17世纪都是最先进的。
+* sqrt(x) 其实是解方程
+* f(guess) = guess^2 -x
+* f(guess) = 0 求这个根
+Isaac Newton Joseph Raphson
+Newton-Raphson 
 
 
     
