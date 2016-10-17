@@ -320,14 +320,24 @@ Farmyard problem
 * 猜一个数，然后找这个数处的切线，下一个猜想就是这个切线和x轴的交点
     * 大部分情况下，切线和x轴的交点是个更好的接近解的结果
     * 有时候切线与X轴没有交点，要注意
-* 高中时用了该方法求平方根
-* 导数，一阶导数是斜率
-* dy/dx
-* f'(guess_i_)=2*guess
-* guess_i+1_ =guess_i_ - f (guess_i_)/(2guess_i_)
-* f(3) = 9 - 16 = -7
-* guess_i+1_ = 3 -(-7/6) = 4.16666
-* 然后继续
+    * 高中时用了该方法求平方根
+    * 导数，一阶导数是斜率
+    * dy/dx
+    * f'(guess_i_)=2*guess
+    * guess_i+1_ =guess_i_ - f (guess_i_)/(2guess_i_)
+    * f(3) = 9 - 16 = -7
+    * guess_i+1_ = 3 -(-7/6) = 4.16666
+    * 然后继续
+* NR方法比二分法要快一些
+    * 复杂情况下效果更好
+* Ansers can be wrong 答案可能是错的
+    * 浮点数溢出
+* 数学很难，python简单
+* Non-scalar type 非基本类型 
+    * Tuples 元组
+    * Strings 字符串 
+    * Immutable 不可变的
+* Mutable -- List
 
     
 
