@@ -338,7 +338,19 @@ Farmyard problem
     * Strings 字符串 
     * Immutable 不可变的
 * Mutable -- List
-    * Techs=['MIT','CalTech']
+    * Techs=['MIT','Cal Tech']
+    * Ivys=['Harvard','Yale','Brown']
+    * Univs=[],univs.append(techs) 会把数组加到数组里去
+
+    * 以上的内存结构图
+    * 数组也是对象
+    * Flatten
+    * L=[1,'MIT',3.3,['*']]
+    * 数组里可以放各种对象
+* remove方法，改变了数组，数组的可变性
+
+## 第七课 数组以及可变性，字典，伪码，对于代码运行效率的简介
+
 
     
 
