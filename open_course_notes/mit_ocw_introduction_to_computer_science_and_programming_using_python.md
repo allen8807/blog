@@ -338,6 +338,7 @@ Farmyard problem
     * Strings 字符串 
     * Immutable 不可变的
 * Mutable -- List
+    * Techs=['MIT','CalTech']
 
     
 
