@@ -350,7 +350,20 @@ Farmyard problem
 * remove方法，改变了数组，数组的可变性
 
 ## 第七课 数组以及可变性，字典，伪码，对于代码运行效率的简介
-2016-10-17
+2016-10-18
+* Ivys[1] = -15 表示Ivys还是绑定原来的对象，而它的元素绑定了另一个对象
+* 数组是多相的 list can be heterogeneous 也就是说元素可以是多类型的
+* 不用小写的L命名变量
+* 两个变量指向同一个对象，对象改变，两个变量都可见
+* Dictionaries
+    * Mutable, heterogeneous
+    * Not ordered 
+    * Generalized the indexing 
+    * key-value pair (key ,value)
+    * 散列算法 hashing 可以在常数时间内找到key
+* 如何使用已经学过的东西帮助组织和优化代码
+
+
 
 
     
