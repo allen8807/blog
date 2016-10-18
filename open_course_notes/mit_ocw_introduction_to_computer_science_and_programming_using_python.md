@@ -361,7 +361,9 @@ Farmyard problem
     * Generalized the indexing 
     * key-value pair (key ,value)
     * 散列算法 hashing 可以在常数时间内找到key
-* 如何使用已经学过的东西帮助组织和优化代码
+* 后面要讲两个话题
+    * 如何使用已经学过的东西帮助组织和优化代码
+    * 如何计算算法效率
 
 
 
