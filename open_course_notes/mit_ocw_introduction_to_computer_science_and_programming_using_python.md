@@ -369,7 +369,18 @@ Farmyard problem
     * Pseudo code 伪代码 对步骤进行描述的语言，不是某种特定的语言
         * input value for base as float 输入一个浮点数作为底
         * input value for height as float
-        * 
+        * square-root of b*b + h*h
+            * save as a float in hyp
+        * print something out using value in hyp
+    * 1. 使用了模块概念
+    * 2.指定了数据类型
+    * 3.控制流
+    * 4.使用抽象，没有具体说如何求平方根（引入math库）
+* 先写伪代码，一堆数据，启动顺序
+* 别相信用户会按照规则来
+* 用伪代码把这些串起来之后就可以开始一些结构方面的优化了
+
+
 
 
     
