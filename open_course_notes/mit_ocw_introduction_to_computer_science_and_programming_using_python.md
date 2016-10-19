@@ -379,8 +379,20 @@ Farmyard problem
 * 先写伪代码，一堆数据，启动顺序
 * 别相信用户会按照规则来
 * 用伪代码把这些串起来之后就可以开始一些结构方面的优化了
-
-
+    * 两块代码的不同之处在哪？
+        * 做了两件事，一件是根据输入得到输出，另一件是输入不是正确类型该输出什么
+        * 将两件事分别封装
+        * 将一个方法放入一个模块
+        * 代码减少了，编译和阅读更容易
+        * 更重要的是separated out implementation from functionality, or implementation from use 将功能和实现分离了
+        * 这意味这如果要改变输出，并不需要改变方法只要改变输入即可
+        * 将用户和实现者分开了，这是创建方法的原因。用户不用关心实现的细节。实现和使用分离。
+* 养成解决问题前先写伪代码的习惯。修改伪代码的遗漏流程比修改代码的要容易的多
+* 用伪代码定义控制流，基本模块是哪些，模块间如何传参
+* What is the flow of control, what are the basic modules, what information needs to be passed between those modules in order to make the code work.
+* Efficiency 效率
+    * 给一个关于效率的基本认识
+    * 本课不会讲那些复杂的问题，只是想培养对效率的直觉
 
 
     
