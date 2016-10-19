@@ -392,9 +392,18 @@ Farmyard problem
 * What is the flow of control, what are the basic modules, what information needs to be passed between those modules in order to make the code work.
 * Efficiency 效率
     * 给一个关于效率的基本认识
-    * 本课不会讲那些复杂的问题，只是想培养对效率的直觉
-
-
+    * 本课不会讲那些复杂的问题，只讲基本的简单问题
+    * 让大家产生对处理效率问题的一些直觉 some intuition
+    * 能够制作一个关于各种算法分类的目录，当遇到问题时可以找到合适的那一类算法，并在其中找到解决问题的方法
+    * 打开台灯的同时，按下计算机按钮，灯光到达桌面的时候，计算机已经运算了两次（1.8GHz的mac air）
+    * 计算机很快，为什么还要效率？因为我们要处理的问题的复杂度的增长比计算机提速还要快。比如1秒处理半个G的数据。谷歌处理100亿的网页
+    * Sanjay Ghemawat 毕业于MIT，设计了能让Google快速搜索的算法
+    * 设计一个新算法是很难的，所以更好的方法是把问题映射到已经设计好的算法中去，并用这些算法来提高效率
+    * choice of algorithm 培养选择算法的能力 
+    * map problem into a class of algorithm 映射问题到一类算法
+* 有两个需要量化的东西 space & time
+    * how much memory to complete
+    * what is the number of basic steps needed as a function of the input size
     
 
     
