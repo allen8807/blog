@@ -404,6 +404,15 @@ Farmyard problem
 * 有两个需要量化的东西 space & time
     * how much memory to complete
     * what is the number of basic steps needed as a function of the input size
-    
+* 针对basic steps的两个假设
+    * random access model 取得内存中任意位置变量的时间是恒定的
+    * 基本的原始操作计算花费的时间是恒定的
+* 还要解决三个问题
+    * best case     min 意义不大
+    * worst case    max 很多情况就是最坏的，比如搜索不到的情况
+    * expected case avg
+* 不知道用户输入的分布
+* 下次课会很有趣，拿出了三个像汉诺塔的玩具
 
-    
+## 第八课 算法的复杂度：对数级，线性级，平方级，指数级
+2016-10-19
