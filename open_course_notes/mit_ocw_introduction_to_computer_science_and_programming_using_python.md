@@ -364,8 +364,12 @@ Farmyard problem
 * 后面要讲两个话题
     * 如何使用已经学过的东西帮助组织和优化代码
     * 如何计算算法效率
-
-
+* 如何组织代码
+    * 例子计算直角三角形的斜边
+    * Pseudo code 伪代码 对步骤进行描述的语言，不是某种特定的语言
+        * input value for base as float 输入一个浮点数作为底
+        * input value for height as float
+        * 
 
 
     
