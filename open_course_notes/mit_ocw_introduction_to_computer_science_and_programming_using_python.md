@@ -418,3 +418,4 @@ Farmyard problem
 2016-10-20
 * a sort of canonical algorithms 一系列权威算法
 * 一个好的设计者，最基本的事情就是学会把新问题映射到已知的领域里去
+* 如何推算出问题的复杂度的
