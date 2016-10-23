@@ -424,6 +424,7 @@ Farmyard problem
     * 程序就是简单的循环迭代 expl(a,b) = a^b
     * 这个程序执行了多少步 2+3b steps
     * 当b很大时，附加的2就不大了，常数3的影响也不大，真正要关注的是b
-    * 要关注的是随着问题规模的增长，解决问题花费的代价是怎么增长的
-    * 
-    *
+* 要关注的是随着问题规模的增长，解决问题花费的代价是怎么增长的
+* Rate of growth as size of problem grows
+    * Asymptotic notation 渐进表示法
+    * Big O notation 大O表示法
