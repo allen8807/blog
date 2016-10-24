@@ -432,4 +432,9 @@ Farmyard problem
     * f(x) ∈ O(n^2) f(x)的增长率不会超过n^2
         * n is a measure of the size of x
     * 最小的上界，最贴近增长率的上界 
-* Recursive exponentiation
+* Recursive exponentiation 递归法
+    * return a*expl(a,b-1)
+    * t(b) = 3 + t(b-1) = 3 + 3 + t(b-2) = 3k + t(b-k)
+    * Done b-k = 1 ,k = b-1
+        * 3(b-1)+ t(1) = 3(b-1)+2 = 3b - 1 
+    * O(b)
