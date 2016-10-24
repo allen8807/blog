@@ -427,4 +427,9 @@ Farmyard problem
 * 要关注的是随着问题规模的增长，解决问题花费的代价是怎么增长的
 * Rate of growth as size of problem grows
     * Asymptotic notation 渐进表示法
-    * Big O notation 大O表示法
+    * Big O notation 大O表示法 用的是大写的希腊字母omicron
+        * -the upper limit to the growth of a function as the input gets large
+    * f(x) ∈ O(n^2) f(x)的增长率不会超过n^2
+        * n is a measure of the size of x
+    * 最小的上界，最贴近增长率的上界 
+* Recursive exponentiation
