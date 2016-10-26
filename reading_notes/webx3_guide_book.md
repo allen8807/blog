@@ -29,7 +29,7 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * 考虑默认值和默认扩展。默认值和默认扩展应该是最安全、最常用的选择。对于默认值和默认扩展,用户在使用时不需要额外的配置。
 
 * Webx框架不仅鼓励层次化设计,它本身也是层次化的。你既可以使用全部的Webx框架,也可 以只使用部分的Webx框架。大体上,Webx框架可以划分成三个大层次。
-    * ![webx_2_1](../image/webx_1_2.png)
+    * ![webx_1_2](../image/webx_1_2.png)
 
   * SpringExt:基于Spring,提供扩展组件的能力。它是整个框架的基础。
   * Webx Framework:基于Servlet API,提供基础的服务,例如:初始化Spring、初始化日志、接收请求、错误处理、开发模式等。Webx Framework只和servlet及spring相关——它不关心Web框架中常见的一些服务,例如Action处理、表单处理、模板渲染等。因此,事实上,你可以用Webx Framework来创建多种风格的Web框架。
