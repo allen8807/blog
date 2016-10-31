@@ -99,7 +99,19 @@ xmlns:loaders="http://www.alibaba.com/schema/services/resource-loading/loaders">
       ```
   * 上面的配置文件和前例中使用Spring Schema的配置文件差别很小。没错,SpringExt Schema 和Spring Schema是完全兼容的!唯一的差别是,我们把ResourceLoader和<resource- loading>所属的namespace分开了,然后将ResourceLoader的配置放在专属的namespace “loaders”中。
 
-待补充
+  * 你无须通知ResourceLoadingService的作者去修改它的schema，一种全新的ResourceLoader扩展就这样被注入到ResourceLoadingService中。正如同你在程序代码里，无须通知ResourceLoadingService的作者去修改它的实现类，就可以创建一种新的、可被ResourceLoadingService调用的ResourceLoader实现类。这意味着，我们在Spring配置文件的层面上，也满足了**OCP（Open-Close-Principle）原则**。
+
+* 2.2 SpringExt原理
+  * 2.2.1. XML Schema中的秘密
+  ```xml
+<resource-loading>
+     ... 
+    <resource pattern="/db"> 
+        <loaders:database-loader connection="jdbc:mysql:mydb" /> 
+    </resource>
+ </resource-loading>
+  ```
+    * 	这里运用了XML Schema中的`<xsd:any>`定义，相当于说：`<resource>` element下面，可以跟任意多个`<loaders:*>` elements。
 
 
 
