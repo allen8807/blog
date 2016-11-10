@@ -458,4 +458,12 @@ Farmyard problem
         *  = 3 + 2*3 +4T(n-2) = ...
         *  = 3(1 + 2 + 4 + ... + 2^(k-1)) + 2^n (n-k)
         *  O(2^n) Exponential
+* n = 1000 计算机每秒10亿次计算
+* nanosecond speed
 
+| n = 1000 | nanosecond speed | 
+|:-- |:--- |
+| log | 10 nanoseconds | 10 millisecs |
+|  linear| 1 microseconds | 1 sec | 
+| quadratic | 1 milliseconds | 16 minutes |
+| exponential | 10^284 years | 
