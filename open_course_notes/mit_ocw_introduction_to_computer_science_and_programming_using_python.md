@@ -528,5 +528,6 @@ Farmyard problem
     * list is split into prefix & suffix ,prefix is sorted , suffix is not
 * 复杂度是多少？ N^2
 * Bubble sort 冒泡排序
+* 复杂度 N^2
 
 
