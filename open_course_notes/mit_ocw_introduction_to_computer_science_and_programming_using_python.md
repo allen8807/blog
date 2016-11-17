@@ -529,5 +529,8 @@ Farmyard problem
 * 复杂度是多少？ N^2
 * Bubble sort 冒泡排序
 * 复杂度 N^2
+* 两个算法哪个更好？
+    * 选择排序的交换次数很少
+* Divide and conquer algorithm 分治法 二分法是分治法的一个版本
 
 
