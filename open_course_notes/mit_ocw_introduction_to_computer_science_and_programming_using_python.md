@@ -533,4 +533,6 @@ Farmyard problem
     * 选择排序的交换次数很少
 * Divide and conquer algorithm 分治法 二分法是分治法的一个版本
 
+## 第十课 分治法，合并排序，异常
+2016-11-17
 
