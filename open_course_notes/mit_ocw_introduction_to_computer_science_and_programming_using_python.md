@@ -497,5 +497,5 @@ Farmyard problem
     * 1. pick the mid point
     * 2. check to see if this is the answer
     * 3. if not reduce to a smaller problem and repeat
-* 这个模板不仅是搜索的模版，也是解决
-* 这个模版不仅描述了二分法，实际也描述了对数级方法
+* 这个模板不仅是搜索的模版，也是解决一类问题的方法
+* 这个模版不仅描述了二分法，实际也描述了对数级方法的流程
