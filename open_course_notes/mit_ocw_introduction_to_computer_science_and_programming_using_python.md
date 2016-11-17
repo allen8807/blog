@@ -488,4 +488,12 @@ Farmyard problem
 2016-11-17
 * 已经看过许多算法，目标是让大家可以看到算法特性，并且映射到特定分类里去
 * 再一次讲二分法
-* 
+* 为什么一定会结束？
+* 如何实现列表list
+    * 数字列表，用数组形式 常数时间 （能这样的关键是数字占内存一样，所以可以随机访问）
+    * 如果是各种类型的呢？ 使用链表 线性时间 lisp是这么实现的 ，这种情况下，二分搜索就不是对数级的了
+    * Python不是这么实现的，它用盒状指针图 a box and pointer diagram ,list 里都是指针 ，这样又变成了数组形式
+* Generalize 二分法步骤
+    * 1. pick the mid point
+    * 2. check to see if this is the answer
+    * 3. if not reduce to a smaller problem and repeat
