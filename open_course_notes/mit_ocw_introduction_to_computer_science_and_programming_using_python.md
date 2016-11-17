@@ -518,11 +518,15 @@ Farmyard problem
     * k searchs of a list 
 | Linear case | sorted & search |
 |:-- |:--- |
-| K*N | N*logN + K*logN |
+| K*N | N \* logN + K * logN |
 
 * 来看排序算法
 * selection sort 选择排序 cell sort
     * 遍历列表，每次找后面最小的，记录位置，最后和当前位置的元素交换
-
+* 循环不变量 loop invariant
+    * 结构中，在每次循环中都为真的量，每次循环都不做改变的量
+    * list is split into prefix & suffix ,prefix is sorted , suffix is not
+* 复杂度是多少？ N^2
+* Bubble sort 冒泡排序
 
 
