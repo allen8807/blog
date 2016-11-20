@@ -534,5 +534,8 @@ Farmyard problem
 * Divide and conquer algorithm 分治法 二分法是分治法的一个版本
 
 ## 第十课 分治法，合并排序，异常
-2016-11-17
+2016-11-20
+* Search 
+* 首先复习上节课的内容
+
 
