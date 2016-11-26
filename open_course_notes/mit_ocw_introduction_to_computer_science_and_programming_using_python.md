@@ -594,4 +594,5 @@ Farmyard problem
         * Successive approximation ， 逐次逼近 Newton-Raphson迭代是一个好例子
         * Divide and conquer 分治法
     * 这些都在工具箱里，希望你能看到一个问题说出最适合解决这个问题的算法，并将问题映射到相应的案例里去
-* 
+* 谈谈Python语法里最后一个异常Exceptions
+    * 
