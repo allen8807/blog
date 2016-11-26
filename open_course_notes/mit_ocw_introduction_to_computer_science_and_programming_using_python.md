@@ -537,5 +537,20 @@ Farmyard problem
 2016-11-20
 * Search 
 * 首先复习上节课的内容
+* 
+|  Ordered - Binary | Unordered - linear |
+|:-- |:--- |
+| logN | N  |
+| n logn - to get order | Amortize |
+| nlogn + logn | n |
+| nlogn + klogn | k*n |
 
-
+* 简单复习下二分法
+* 二分法是一个简单的分治法的例子
+* Divide and conquer algorithm  分治法 
+    * split the problem into several sub-problems of the same type.
+    * solve independently 
+    * combine solutions
+* 二分搜索法实际上是将问题分成两个，但是抛弃了另一个，这样结果合并也没有太大意义。所以子问题就是父问题的结果，但是这就是分治法的思想。
+* 要用这种思想来处理排序
+* Merge sort 归并排序 1945年 John von Neumann 约翰·冯·诺依曼发明
