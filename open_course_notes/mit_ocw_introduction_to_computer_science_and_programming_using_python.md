@@ -595,4 +595,16 @@ Farmyard problem
         * Divide and conquer 分治法
     * 这些都在工具箱里，希望你能看到一个问题说出最适合解决这个问题的算法，并将问题映射到相应的案例里去
 * 谈谈Python语法里最后一个异常Exceptions
-    * 
+    * unhandled
+    * handle
+    * try - except block
+* Exception vs assert?
+
+| Exception  |  assert|
+|:-- |:--- |
+| 处理不愿发生的事情 | Pre-conditions 测试条件|
+|  | post-coditions|
+
+* 为什么有异常处理？ 
+    * 如果有可能输入不是预期类型，需要异常，不希望有非预期的情况漏过去
+    * 防止用户输入让程序陷入困难的情况
