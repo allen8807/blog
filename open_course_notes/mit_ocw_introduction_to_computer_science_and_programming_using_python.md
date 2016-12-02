@@ -611,3 +611,12 @@ Farmyard problem
 
 ## 第十课 测试与调试
 2016-11-26
+* Testing and Debugging
+* 一些定义
+* Validation 验证
+    * Process to uncover problem & increase confidence 发现问题和增加程序可靠性的自信
+    * Testing and Reasoning 是测试和推理这两件事情的组合
+    * 推理是说明为什么这样一个测试集是合理的
+* Debugging 调试
+    * Process of ascertaining why the program failing 找出程序失败的原因
+    * 这个问题有两个方面 Function & performance 
