@@ -612,6 +612,7 @@ Farmyard problem
 ## 第十课 测试与调试
 2016-11-26
 * Testing and Debugging
+* 世界不是完美的
 * 一些定义
 * Validation 验证
     * Process to uncover problem & increase confidence 发现问题和增加程序可靠性的自信
