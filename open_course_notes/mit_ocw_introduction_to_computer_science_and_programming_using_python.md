@@ -630,4 +630,4 @@ Farmyard problem
     * Functions classes
 * Integration testing
     * Overall program
-* 先对小功能做测试，再整体测试
+* 先对小功能做测试，对每个功能进行独立测试，再整体测试
