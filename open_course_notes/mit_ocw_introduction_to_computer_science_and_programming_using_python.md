@@ -625,3 +625,9 @@ Farmyard problem
     * Abet validation & debugging 
     * 使用assert声明来尽早发现问题
 * Test和debug是不同的，测试是将输入输出对比说明书，而debug，我们研究是什么导致出现了问题。
+* Test: examine input/output pairs
+* Unit Testing 
+    * Functions classes
+* Integration testing
+    * Overall program
+* 先对小功能做测试，再整体测试
