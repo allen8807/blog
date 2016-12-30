@@ -29,6 +29,8 @@ Webx是一套基于Java Servlet API的通用Web框架。它在Alibaba集团内�
   * 考虑默认值和默认扩展。默认值和默认扩展应该是最安全、最常用的选择。对于默认值和默认扩展,用户在使用时不需要额外的配置。
 
 * Webx框架不仅鼓励层次化设计,它本身也是层次化的。你既可以使用全部的Webx框架,也可 以只使用部分的Webx框架。大体上,Webx框架可以划分成三个大层次。
+    * ![webx_1_2](../image/webx_1_2.png)
+
   * SpringExt:基于Spring,提供扩展组件的能力。它是整个框架的基础。
   * Webx Framework:基于Servlet API,提供基础的服务,例如:初始化Spring、初始化日志、接收请求、错误处理、开发模式等。Webx Framework只和servlet及spring相关——它不关心Web框架中常见的一些服务,例如Action处理、表单处理、模板渲染等。因此,事实上,你可以用Webx Framework来创建多种风格的Web框架。
   * Webx Turbine:基于Webx Framework,实现具体的网页功能,例如:Action处理、表单 处理、模板渲染等。
@@ -97,7 +99,19 @@ xmlns:loaders="http://www.alibaba.com/schema/services/resource-loading/loaders">
       ```
   * 上面的配置文件和前例中使用Spring Schema的配置文件差别很小。没错,SpringExt Schema 和Spring Schema是完全兼容的!唯一的差别是,我们把ResourceLoader和<resource- loading>所属的namespace分开了,然后将ResourceLoader的配置放在专属的namespace “loaders”中。
 
-待补充
+  * 你无须通知ResourceLoadingService的作者去修改它的schema，一种全新的ResourceLoader扩展就这样被注入到ResourceLoadingService中。正如同你在程序代码里，无须通知ResourceLoadingService的作者去修改它的实现类，就可以创建一种新的、可被ResourceLoadingService调用的ResourceLoader实现类。这意味着，我们在Spring配置文件的层面上，也满足了**OCP（Open-Close-Principle）原则**。
+
+* 2.2 SpringExt原理
+  * 2.2.1. XML Schema中的秘密
+  ```xml
+<resource-loading>
+     ... 
+    <resource pattern="/db"> 
+        <loaders:database-loader connection="jdbc:mysql:mydb" /> 
+    </resource>
+ </resource-loading>
+  ```
+    * 	这里运用了XML Schema中的`<xsd:any>`定义，相当于说：`<resource>` element下面，可以跟任意多个`<loaders:*>` elements。
 
 
 
