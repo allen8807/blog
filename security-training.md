@@ -18,7 +18,7 @@
     * Identify the difference between software security and network security.  认识到软件安全和网络安全的区别
     * Identify the business imperatives for software security, including:  认识到业务上对软件安全的必须性
       ```
-      –   High business costs of security breaches. 安全漏洞的高额商业代价
+      –   High business costs of security breaches. 安全漏洞的高额商业成本
       –   Compliance and legal implications of security breaches.  遵守和安全漏洞的法律影响
       –   Customer expectations of security.  用户的安全期待
       –   An increasing threat landscape. 不断增长的安全威胁远景
@@ -29,7 +29,28 @@
   * Software security focuses on protecting information and resources made accessible by applications running on computer systems.软件安全是保护计算机应用可访问的信息和资源
   * Software security is often confused with network security. Network security focuses on the protection of an organization’s IT infrastructure—the servers and related equipment that control the flow of data between networked systems.网络安全是保护一个组织的IT基础设施，控制网络系统的数据流
   * Network security controls are typically insufficient to mitigate software security risks.网络安全控制通常不足以减轻软件安全风险
-  * Software security attacks often occur at higher layers of operation, not visible to network security controls.
+  * Software security attacks often occur at higher layers of operation, not visible to network security controls.软件安全攻击通常发生在较高层操作，对网络安全控制不可见。
+
+* The Security Imperative
+
+  * Key reasons why organizations must develop and deploy secure software include:
+    * High business costs of security breaches
+    * Compliance and legal implications of security breaches
+    * Customer expectations of security
+    * An increasing threat landscape
+
+* The Business Costs of Software Security Breaches
+  * Software security breaches expose organizations to various risks that result in the following direct and indirect costs:直接间接成本
+    * Downtime and other operational losses if an application is hacked 停机时间和其他操作成本
+    * Financial claims and settlements 财务索赔和结算
+    * Compliance fines and penalties 合规罚款和处罚
+    * Loss of investor and customer confidence 失去投资人和客户信心
+    * Lost sales 销售额损失
+    * Damage to reputation 声誉受损
+    
+  * McAfee estimates the global annual cost of cybercrime at over $400 billion dollars.\* 
+    
+    \*Source: Net Losses: Estimating the Global Cost of Cybercrime, June 2014, McAfee, Intel Security
 
 
 
