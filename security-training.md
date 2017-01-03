@@ -54,11 +54,17 @@
 
     \*Source: Net Losses: Estimating the Global Cost of Cybercrime, June 2014, McAfee, Intel Security
 
-* Compliance and Legal Implications
+* Compliance and Legal Implications 合规和法律意义
 
-  * Federal and state regulations mandate software security and require protection of sensitive customer data.
-  * Even if an organization is not required by local regulations to develop secure software, they might still need to do so to conduct business in other states.
-  * It is difficult, if not impossible, to ignore software security without incurring significant fines or loss of business.
+  * Federal and state regulations mandate software security and require protection of sensitive customer data. 法规要求保护用户敏感数据
+  * Even if an organization is not required by local regulations to develop secure software, they might still need to do so to conduct business in other states.就算本地没有要求，要在其他地方开展业务也会有要求
+  * It is difficult, if not impossible, to ignore software security without incurring significant fines or loss of business. 重大罚款和业务损失
+  
+* Customers Expect Secure Solutions 用户期望安全解决方案
+  * Regulatory and legislative measures and the media have increased business awareness of the need for secure software and services. 监管，法规媒体提高了安全需求意识
+  * Failure to develop and deliver secure software and services could damage your organization’s reputation, and drive business to your competitors. 失败的安全开发会影响声誉
+  
+  
 
 
 
