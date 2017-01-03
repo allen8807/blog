@@ -61,12 +61,15 @@
   * Failure to develop and deliver secure software and services could damage your organization’s reputation, and drive business to your competitors. 失败的安全开发会影响声誉
   
   
-* An Increasing Threat Landscape 增长的威胁远景
+* An Increasing Threat Landscape 增长的威胁环境
   * In the past, hackers were motivated to attack systems and software to gain notoriety. Today, the number of attacks is increasing, and attackers are motivated by financial gains, political agendas, and corporate and international espionage.黑客以前是为了名声，现在是为了财，政以及作为间谍
   * Specialized hacking techniques are publicly documented and well understood by many. In addition, automated attack tools are freely available and accessible.专业的黑客技术已经被公开，自动黑客工具也很容易免费得到
   * This translates to a higher probability of being hacked, as well as higher expected costs for recovering from cyber attacks.这些意味着攻击可能性的提高和恢复成本的提高
   
-
+  
+* Module Summary
+  * In this module, you learned how software security differs from network security. 软件安全和网络安全的区别
+  * You also learned the key reasons why organizations must develop secure software, including high business costs of security breaches, compliance and legal implications of security breaches, customer expectations of security, and a changing threat landscape. 为什么进行安全开发的关键原因
   
   
   
