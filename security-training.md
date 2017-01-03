@@ -40,17 +40,25 @@
     * An increasing threat landscape
 
 * The Business Costs of Software Security Breaches
+
   * Software security breaches expose organizations to various risks that result in the following direct and indirect costs:直接间接成本
+
     * Downtime and other operational losses if an application is hacked 停机时间和其他操作成本
     * Financial claims and settlements 财务索赔和结算
     * Compliance fines and penalties 合规罚款和处罚
     * Loss of investor and customer confidence 失去投资人和客户信心
     * Lost sales 销售额损失
     * Damage to reputation 声誉受损
-    
-  * McAfee estimates the global annual cost of cybercrime at over $400 billion dollars.\* 
-    
+
+  * McAfee estimates the global annual cost of cybercrime at over $400 billion dollars.\*
+
     \*Source: Net Losses: Estimating the Global Cost of Cybercrime, June 2014, McAfee, Intel Security
+
+* Compliance and Legal Implications
+
+  * Federal and state regulations mandate software security and require protection of sensitive customer data.
+  * Even if an organization is not required by local regulations to develop secure software, they might still need to do so to conduct business in other states.
+  * It is difficult, if not impossible, to ignore software security without incurring significant fines or loss of business.
 
 
 
