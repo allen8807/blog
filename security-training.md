@@ -70,6 +70,17 @@
 * Module Summary
   * In this module, you learned how software security differs from network security. 软件安全和网络安全的区别
   * You also learned the key reasons why organizations must develop secure software, including high business costs of security breaches, compliance and legal implications of security breaches, customer expectations of security, and a changing threat landscape. 为什么进行安全开发的关键原因
+
+
+* Module Overview
+  * This module introduces models, standards, and guidelines that you can use to improve the security posture of your applications. These resources provide a roadmap to follow to design security into your applications. You don't need to become a security expert to use them.
+
+
+* Module Objectives
+  * After completing this module, you will be able to:
+    * Identify how security activities overlay the software development process.知道安全活动如何覆盖软件开发过程。
+    * Identify the major models, standards, and guidelines of the application security industry, and how they can help you improve the security posture of your applications.知道应用程序安全行业的主要模型，标准和指南，以及它们如何帮助您提高应用程序的安全状态。
+
   
   
   
