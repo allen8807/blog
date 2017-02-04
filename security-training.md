@@ -81,6 +81,7 @@
     * Identify how security activities overlay the software development process.知道安全活动如何覆盖软件开发过程。
     * Identify the major models, standards, and guidelines of the application security industry, and how they can help you improve the security posture of your applications.知道应用程序安全行业的主要模型，标准和指南，以及它们如何帮助您提高应用程序的安全状态。
 
+
   
   
   
