@@ -122,7 +122,7 @@
 * create iterations
 
 ## 第三课 一般代码样式，循环式程序
-2016-09-29
+### 2016-09-29
 * 之前已经学过三种东西DATA, OPERATIONS, COMMANDS
     * data（数据）
         * Numbers
