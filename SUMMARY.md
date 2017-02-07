@@ -14,8 +14,6 @@
   * [算法导论](open_course_notes/mit_ocw_introduction_to_algorithms.md)
   * [麻省理工学院公开课：计算机科学及编程导论](open_course_notes/mit_ocw_introduction_to_computer_science_and_programming_using_python/README.md)
     * [第一课 课程目标，数据类型，运算，变量](open_course_notes/mit_ocw_introduction_to_computer_science_and_programming_using_python/lecture_01.md)
-
-
 * [面试问题集](interview/README.md)
   * [ThreadPoolExecutor中策略的选择与工作队列的选择（java线程池）](interview/threadpoolexecutorzhong_ce_lve_de_xuan_ze_yu_gong_.md)
 * [Spring 编年史](spring-编年史.md)
