@@ -199,7 +199,7 @@
     * Turing complete language 这是被称为图灵完全化语言的特点
 
 ## 第四课 函数抽象与递归简介
-2016-10-10
+### 2016-10-10
 * We have assignment,conditionals,I/O,looping constructs (for,while)
 * A language is Turing complete 一个语言应该是图灵完备的，就是说可以写出任何程序。（但不是可以easily写出任何程序）
 * 串行化编程，代码不易阅读，尤其是代码量很大的时候
