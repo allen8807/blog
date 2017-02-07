@@ -609,7 +609,7 @@ Farmyard problem
     * 如果有可能输入不是预期类型，需要异常，不希望有非预期的情况漏过去
     * 防止用户输入让程序陷入困难的情况
 
-## 第十课 测试与调试
+## 第十一课 测试与调试
 2016-11-26
 * Testing and Debugging
 * 世界不是完美的
@@ -631,3 +631,4 @@ Farmyard problem
 * Integration testing
     * Overall program
 * 先对小功能做测试，对每个功能进行独立测试，再整体测试
+    * 因为对小对象测试比大对象容易多了 
