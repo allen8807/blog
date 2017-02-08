@@ -39,5 +39,15 @@
     * 1 bugs crawl into programs 虫子爬进系统。 bug是由错误的操作参数的
     * 2 bugs breed    错误会繁殖。 错误不会繁殖，但是错误会有很多。
 * Goal: Not to eliminate one bug. Bug-free. 调试的目的不是为了消除一个bug而是得到一个没有bug的程序
+* 发现了一个bug意味着可能有更多的bug
+* 调试器
+    * 最好的两个调试器，也是最古老的
+        * Print statement 输出
+        * Reading 阅读代码
+    * 其他调试器
+    * Be systematic 系统化地做调试 好的调试员与差的调试员的区别所在
+        * Reduce search space  减少搜索空间
+        * Localize the source of problem  定位问题所在
+        * 是一个搜索过程需要搜索算法
 
     
