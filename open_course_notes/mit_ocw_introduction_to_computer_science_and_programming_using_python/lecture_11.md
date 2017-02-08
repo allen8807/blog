@@ -14,10 +14,12 @@
     * Abet validation & debugging 
     * 使用assert声明来尽早发现问题
 * Test和debug是不同的，测试是将输入输出对比说明书，而debug，我们研究是什么导致出现了问题。
-* Test: examine input/output pairs
+* Test: examine input/output pairs 
 * Unit Testing 
     * Functions classes
 * Integration testing
     * Overall program
 * 先对小功能做测试，对每个功能进行独立测试，再整体测试
-    * 因为对小对象测试比大对象容易多了 
+    * 因为对小对象测试比大对象容易多了,调试小程序也更容易，最后再合成大程序进行测试。
+    * 一定要做单元测试
+    
