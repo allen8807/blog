@@ -34,5 +34,10 @@
     * 1947.09.09 Grace Murray Hopper 第一位美国海军女上将，第一批程序员之一
     * 测试反正切和余弦函数发现不能运行，最后再70号传送带那里发现卡住了一个虫子
     * 但是最早的来源是1896年电力手册上的，优秀的程序员要学会debug
-    * debug是通用能力
+    * debug是通用技能，可以用于各种系统
+* Myths of bugs 对于bug的错误认识
+    * 1 bugs crawl into programs 虫子爬进系统。 bug是由错误的操作参数的
+    * 2 bugs breed    错误会繁殖。 错误不会繁殖，但是错误会有很多。
+* Goal: Not to eliminate one bug. Bug-free. 调试的目的不是为了消除一个bug而是得到一个没有bug的程序
+
     
