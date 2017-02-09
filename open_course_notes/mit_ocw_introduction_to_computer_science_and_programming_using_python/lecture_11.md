@@ -37,7 +37,7 @@
     * debug是通用技能，可以用于各种系统
 * Myths of bugs 对于bug的错误认识
     * 1 bugs crawl into programs 虫子爬进系统。 bug是由错误的操作参数的
-    * 2 bugs breed    错误会繁殖。 错误不会繁殖，但是错误会有很多。
+    * 2 bugs breed    错误繁殖。 错误不会繁殖，但是错误会有很多。
 * Goal: Not to eliminate one bug. Bug-free. 调试的目的不是为了消除一个bug而是得到一个没有bug的程序
 * 发现了一个bug意味着可能有更多的bug
 * 调试器
@@ -49,5 +49,17 @@
         * Reduce search space  减少搜索空间
         * Localize the source of problem  定位问题所在
         * 调试是一个搜索过程需要搜索算法
+* 怎么让调试过程变得系统化？
+    * study program text
+    * how could it have produced this result
+    * is it part of family? 这个错误是不是只是一部分
+    * How to fix it ?
+* Scientific method 科F学方法
+    * Study a vailable data. 
+        * Test results 所有的测试结果，不光是有错的
+    * Program text 带着怀疑的态度阅读代码 skeptical eye
+    * Form a hypothesis  构造假设
+    * Design & run repeatable experiment
+    
 
     
