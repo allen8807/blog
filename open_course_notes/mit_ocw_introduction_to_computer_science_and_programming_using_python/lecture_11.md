@@ -68,9 +68,9 @@
         * 随机检验
     * 设计实验的两个步骤 ：
         * 1. Find simplest input that will provoke the bug. 用小规模的输入去复现bug. 
+        * 2. 找到出错部分的代码
             * Binary search 用二分搜索找
-            * 调试的例子
-        * 2 
+* 调试的例子
     
 
     
