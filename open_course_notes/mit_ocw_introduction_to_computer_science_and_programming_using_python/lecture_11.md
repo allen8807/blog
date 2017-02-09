@@ -60,7 +60,17 @@
     * Program text 带着怀疑的态度阅读代码 skeptical eye
     * Form a hypothesis  构造假设
     * Design & run repeatable experiment
-        * 设计一个有效实验的关键是什么？
+        * 设计一个有效实验的关键是什么？怎么设计有效的科学实验？
+        * Refute the hypothesis 必须有反驳我们实验的可能
+        * Useful intermediate resluts 有用的中间结果
+        * Expected result 期望的结果
+        * 可重复性
+        * 随机检验
+    * 设计实验的两个步骤 ：
+        * 1. Find simplest input that will provoke the bug. 用小规模的输入去复现bug. 
+            * Binary search 用二分搜索找
+            * 调试的例子
+        * 2 
     
 
     
