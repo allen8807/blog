@@ -48,6 +48,6 @@
     * Be systematic 系统化地做调试 好的调试员与差的调试员的区别所在
         * Reduce search space  减少搜索空间
         * Localize the source of problem  定位问题所在
-        * 是一个搜索过程需要搜索算法
+        * 调试是一个搜索过程需要搜索算法
 
     
