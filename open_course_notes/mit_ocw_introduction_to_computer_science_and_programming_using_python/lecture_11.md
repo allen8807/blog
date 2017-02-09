@@ -60,6 +60,7 @@
     * Program text 带着怀疑的态度阅读代码 skeptical eye
     * Form a hypothesis  构造假设
     * Design & run repeatable experiment
+        * 设计一个有效实验的关键是什么？
     
 
     
