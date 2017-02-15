@@ -20,3 +20,5 @@
     * 系统化编程 不在已经犯过的错误上浪费时间
 * Reconsider assumption 重新考虑你的假设 
     * 例如运行的不是你在写的程序
+* Debug code, not comments 调试的是代码不是注释
+
