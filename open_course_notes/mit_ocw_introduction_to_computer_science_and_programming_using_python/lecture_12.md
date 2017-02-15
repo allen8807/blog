@@ -21,4 +21,4 @@
 * Reconsider assumption 重新考虑你的假设 
     * 例如运行的不是你在写的程序
 * Debug code, not comments 调试的是代码不是注释
-
+* Get help
