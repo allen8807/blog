@@ -30,3 +30,8 @@
         * 清理代码，整理代码
     * Make sure that you can revert 保证可以回滚代码
         * Save old versions
+* 公式化问题的处理方法
+* Optimization problems 优化问题 优化问题一般有两个要点
+    * A function to maximize(min) 要求出最大或最小值
+    * A set of constrains 有一系列约束
+    * 典型问题 最短路径问题 shortest path
