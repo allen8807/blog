@@ -57,4 +57,14 @@
     * 求 Cg\*PG + Cs\*PS + Cr\*PR 的最大值
     * 约束条件是PG+PS+PR < = 8
 * 解决方法很简单，4磅金沙，3磅银沙，1磅葡萄干
-* Greedy algorithm 贪婪算法
+* Greedy algorithm 贪婪算法 上面描述的其实是一种贪婪算法
+    * 每一个步骤都在最大化你的价值，局部最优
+* 贪婪算法并不总是适用
+* Locally optinal decisions do not always lead to global optimum 局部最优不一定能得到全局最优
+* 变种 0/1 Knapsack problem 0/1 背包问题
+    * n items 每个要么都拿要么不拿
+    * 四个东西 手表，收音机，花瓶，画
+* 贪婪的贼 贪婪算法 先拿最有价值的
+* 动作慢的贼怎么做？ 穷举
+* 想要最大值的函数是 ∑PiXi X是0/1向量
+* 约束函数是 ∑WiXi < = C 背包容量
