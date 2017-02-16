@@ -34,4 +34,12 @@
 * Optimization problems 优化问题 优化问题一般有两个要点
     * A function to maximize(min) 要求出最大或最小值
     * A set of constrains 有一系列约束
-    * 典型问题 最短路径问题 shortest path
+    * 典型问题 
+        * 最短路径问题 shortest path
+        * 旅行商问题 Traveling sales problem (TSP)
+        * 装箱问题 Bin packing 装东西顺序之类的
+        * Sequence alignment problem 序列对比问题 DNA,RNA,自然语言
+        * Knapsack 背包问题
+            * 判断要带多少东西，最大化价值
+* Problem reduction 问题规约 举这么多例子是为了让大家进一步考虑问题规约
+* 处理一个问题，将它归结映射到一个老问题（已经解决的问题），利用前人的成果
