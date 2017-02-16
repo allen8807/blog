@@ -22,4 +22,10 @@
     * 例如运行的不是你在写的程序
 * Debug code, not comments 调试的是代码不是注释
 * Get help - Explain 寻求帮助，要会解释
-* Walk away
+* Walk away 休息一会
+* 修改错误的注意点
+    * Haste makes waste 欲速则不达
+        * 方案是否能解决问题并不引起其他问题
+    * Code should not always gain 代码不能总是增长
+        * 清理代码，整理代码
+    * Make sure that you can revert. 保证可以回滚代码
