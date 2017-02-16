@@ -28,4 +28,5 @@
         * 方案是否能解决问题并不引起其他问题
     * Code should not always gain 代码不能总是增长
         * 清理代码，整理代码
-    * Make sure that you can revert. 保证可以回滚代码
+    * Make sure that you can revert 保证可以回滚代码
+        * Save old versions
