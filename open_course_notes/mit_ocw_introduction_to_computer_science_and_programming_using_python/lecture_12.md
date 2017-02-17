@@ -70,7 +70,7 @@
     * 约束函数是 ∑WiXi < = C 背包容量
     * 穷举法是指数级的 Exponential
 * Dynamic programming 动态编程 数学家Bellman发明的词，因为军方为了不让别人知道研究的是什么。。。
-    * Overlapping sub-problems 重叠子问题 又被叫作Optimal substructure 最理想子结构
+    * Overlapping subproblems 重叠子问题 又被叫作Optimal substructure 最理想子结构
 * 先看一个重叠子问题的例子，用递归解决Fibonacci数问题
     * 递归的方法，增长率很高
     * 里面重叠子问题也很多，求fib(5) 会调用 fib(4) fib(3)，而求fib(4)又会调用fib(3) fib(2)，这里fib(3)调用了2次，其他的也是
