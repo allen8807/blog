@@ -26,7 +26,7 @@
     * 假设重量是$$ W = [5,3,2] $$ 
     * 假设价值是$$ V = [9,8,7] $$
     * $$ Max = 5 $$
-    * Depth-first, Left-first
+    * Depth-first, Left-first 深度优先，左侧优先
 * 如何构建决策树
     * 确定节点
     * $$ index , avaliable,value $$
