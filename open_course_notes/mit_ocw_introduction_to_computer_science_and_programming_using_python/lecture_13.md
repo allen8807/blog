@@ -32,6 +32,8 @@
     * $$ index , avaliable,value $$
     * $$ 2,5,0 $$
     * 回溯
+    * 决策树
+    * ![tree](./img/lec13_1.jpeg)
     
 
 
