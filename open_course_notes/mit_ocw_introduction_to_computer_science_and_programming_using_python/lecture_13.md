@@ -31,6 +31,7 @@
     * 确定节点
     * $$ index , avaliable,value $$
     * $$ 2,5,0 $$
+    * 回溯
 
 
 
