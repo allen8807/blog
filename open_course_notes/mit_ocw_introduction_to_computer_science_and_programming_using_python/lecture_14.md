@@ -3,5 +3,7 @@
 ### 2017-02-18
 * 先讲一下决策树，貌似不少人上节课没太明白
 * Binary Decision Tree
-* 
+* Optimal substructure
+* Memorization 默记法，动态规划的核心
+
 
