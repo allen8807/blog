@@ -5,5 +5,12 @@
 * Binary Decision Tree
 * Optimal substructure
 * Memorization 默记法，动态规划的核心
+* 是否能在线性时间内完成？
+* 看看时间空间复杂度
+* 时间复杂度 O(ns)
+    * n items
+    * s size
+* 空间复杂度 O(ns)
+* 某种意义上来说是空间换时间
 
 
