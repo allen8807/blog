@@ -12,5 +12,10 @@
     * s size
 * 空间复杂度 O(ns)
 * 某种意义上来说是空间换时间
+* Size of solution 计算时间不光和输入有关，也和问题规模有关
+* 最好还是根据输入规模来计算
+* 伪多项式算法 Pseudo Polynomial 
+    * Polynomial in numeric value of input
+    * 伪多项式时间算法 
 
 
