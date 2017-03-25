@@ -66,3 +66,14 @@
 * User-defined types
 * 数据和函数的结合是面向对象编程的核心也是它的定义
 * 称之为封装 Encapsulation 胶囊里装了数据和方法
+* 当人们讨论面向对象编程时，实际是在讨论消息传递。 in terms of message pass， a message passing metaphor. metaphor在这里只是表示一种思考方式
+* The way people will talk about this, is one object can pass a message to another object, and receiving object responds by executing one of its methods on object.
+* 考虑一个链表,一个圆
+```
+l.sort() 
+c.area()
+```
+* 每个列表的object都是list type的instance
+* 刚才讲的是instance，现在我们说一下类的概念
+* Class = collection of objects with characteristics in common. 类是具有相同特质的对象的集合
+
