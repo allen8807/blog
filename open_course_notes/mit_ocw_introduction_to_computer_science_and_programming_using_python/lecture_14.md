@@ -40,6 +40,29 @@
     * 2）Don't be intimidated by exponential problems. 别被指数型问题吓到了
     * 3）Dynaminc programming is broadly useful. 动态规划用途广泛。当使用递归算法是可以考虑是否用得上动态规划
     * 4）Program reduction. 问题降解，归约。 将问题归约到已经解决的问题去
-
-   
     
+* 下面将回到Python，讨论python语言和程序结构
+* Modlue(Modularity)
+    * 将程序模块化分解
+    * Collection of related functions. 模块是相关的函数集合
+    * Refer to functions using dot notation. 用点来调用 
+    ```
+    import math
+    math.sqrt(11) 
+    ```     
+* 不同的module可以避免混淆
+* Classes 类 
+* Object-Oriental programming 面线对象编程
+* Data abstraction 数据抽象
+* Abstract data types
+* 40年前就有的想法，最近10-15年才被广泛接受
+    * 例如Smalltalk，Clue 提供了语言学支持
+    * 但是直到Java诞生才被大众关注
+    * Java，C++，Python 现在没人会推荐不支持面向对象的语言
+* 面向对象编程里的对象究竟是什么？
+    * Object = collection of data and functions 对象是数据和函数的集合 函数是处理数据的
+    * 所以传递对象的同时，传递了处理对象数据的函数
+* 基础类型没关系，已经内置了
+* User-defined types
+* 数据和函数的结合是面向对象编程的核心也是它的定义
+* 称之为封装 Encapsulation 胶囊里装了数据和方法
