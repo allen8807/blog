@@ -31,6 +31,15 @@
     * 增加限制，既有重量又有容量限制
     * $$ \sum_{i=1}^{n}P_{i}X_{i}  $$
     * $$ \sum_{i=1}^{n}w_ix_i \leq C \quad and \quad  \sum_{i=1}^{n}v_ix_i \leq K  $$
-    *
+* 看这个问题是为了对比两个修改以前的算法，要理解一个算法是要有普适性的
+
+* 学生问题：如何选算法？
+* 动态规划算法永远不会比穷举法差
+* 总结：
+    * 1）In dynamic programming, One of the thing that's going on is we're trading time for space. 空间换时间
+    * 2）Don't be intimidated by exponential problems. 别被指数型问题吓到了
+    * 3）Dynaminc programming is broadly useful. 动态规划用途广泛。当使用递归算法是可以考虑是否用得上动态规划
+    * 4）Program reduction. 问题分解
+
    
     
