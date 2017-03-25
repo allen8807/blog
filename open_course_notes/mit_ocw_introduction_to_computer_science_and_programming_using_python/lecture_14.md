@@ -76,4 +76,4 @@ c.area()
 * 每个列表的object都是list type的instance
 * 刚才讲的是instance，现在我们说一下类的概念
 * Class = collection of objects with characteristics in common. 类是具有相同特质的对象的集合
-
+* 内置类型实际上是内置的类，能自己定义类实际上是对语言的扩展
