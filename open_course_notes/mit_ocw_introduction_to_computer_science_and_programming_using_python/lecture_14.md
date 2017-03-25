@@ -39,7 +39,7 @@
     * 1）In dynamic programming, One of the thing that's going on is we're trading time for space. 空间换时间
     * 2）Don't be intimidated by exponential problems. 别被指数型问题吓到了
     * 3）Dynaminc programming is broadly useful. 动态规划用途广泛。当使用递归算法是可以考虑是否用得上动态规划
-    * 4）Program reduction. 问题分解
+    * 4）Program reduction. 问题降解，归约。 将问题归约到已经解决的问题去
 
    
     
