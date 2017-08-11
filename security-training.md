@@ -109,6 +109,7 @@
          customers, resellers, and integrators.
 
   * Cloud Security Alliance \(CSA\) Notorious Nine Report 对云计算威胁最大的前9个的 报告
+
   * 2012年云安全联盟发布了10条大数据安全与挑战的报告
     * 1. Secure computations in distributed programming frameworks
     * 1. Security best practices for non-relational data stores
@@ -128,6 +129,34 @@
   * Comprehensive Lightweight Application Security Process \(CLASP\) 是OWASP的一个产品。综合轻量级应用程序安全流程
 
   * The Common Criteria for Information Technology Security Evaluation \(CC\)信息技术安全评估的通用标准
+
+  * In this module, you learned about the following secure development models, standards, and guidelines that help you efficiently improve your application security posture:
+
+
+
+    Open Web Application Security Project \(OWASP\) Top 10
+
+    Microsoft Security Development Lifecycle \(SDL\)
+
+    CWE/SANS Top 25 Most Dangerous Software Errors
+
+    Payment Application Data Security Standard \(PA-DSS\)
+
+    Cloud Security Alliance \(CSA\) Notorious Nine Report
+
+    Cloud Security Alliance \(CSA\) Top 10 Big Data Security and Privacy Challenges
+
+    OpenSAMM - Software Assurance Maturity Model \(SAMM\) 
+
+    Building Security In Maturity Model \(BSIMM\)
+
+    Comprehensive Lightweight Application Security Process \(CLASP\)
+
+    The Common Criteria for Information Technology Security Evaluation \(CC\) 
+
+
+
+    You learned that attacks and the techniques used to address them are constantly evolving, which requires you to stay current on the resources listed. You also learned that using these resources can greatly improve your application security posture, but it cannot make an application hacker proof or provide a guarantee of security.
 
 
 
