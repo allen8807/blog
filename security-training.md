@@ -124,6 +124,7 @@
     * 1. Data provenance
 
   * OpenSAMM \(The Software Assurance Maturity Model\) 软件保证成熟度模型
+
   * BSIMM \(Building Security In Maturity Model\) 构建安全成熟度模型 不提供安全开发模型，提供参与组织的经验和课
 
   * BSIMM的安全框架SSF
@@ -160,9 +161,14 @@ The Common Criteria for Information Technology Security Evaluation \(CC\)
 You learned that attacks and the techniques used to address them are constantly evolving, which requires you to stay current on the resources listed. You also learned that using these resources can greatly improve your application security posture, but it cannot make an application hacker proof or provide a guarantee of security.
 ```
 
-
-
 * 把安全实践结合到各软件流程中去
+* 介绍每个流程中的关键风险，自己结合到流程中去
+* Planning阶段
+  * 合法性的安全需求
+  * 客户的安全需求
+  * 安全培训
+* 合法性方面建议有个了解全局的律师
+* 客户安全方面了解要保护什么资产，要遵守什么，需要什么样的服务质量，什么数据是机密的
 
 
 
