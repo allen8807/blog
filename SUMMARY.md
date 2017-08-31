@@ -18,4 +18,6 @@
   * [ThreadPoolExecutor中策略的选择与工作队列的选择（java线程池）](interview/threadpoolexecutorzhong_ce_lve_de_xuan_ze_yu_gong_.md)
 * [Spring 编年史](spring-编年史.md)
 * [Security Training](security-training.md)
+  * [Fundamentals of Application Security](security-training/fundamentals-of-application-security.md)
+  * [Fundamentals of Secure Development](security-training/fundamentals-of-secure-development.md)
 
