@@ -17,9 +17,11 @@
 * 应用安全是指应用程序抵御恶意攻击的能力
 
 * 三个关键的应用安全指标CIA
+
   * Confidentiality 保密性 防止未经授权披露敏感数据
   * Integrity 完整性 防止未经授权的修改和删除
   * Availability 可用性 保证用户可以正常访问应用及服务
+
 * 安全的重要性
   * 收入损失
   * 声誉影响
@@ -37,6 +39,11 @@
   * Attack 攻击 利用漏洞实现威胁
   * Asset 资产 系统中有价值的资源
   * Risk 风险 资产损失的可能性
+* 风险管理
+  * Accept risk 接受风险 处理成本大于要保护的资产价值，但是要有应急预案
+  * Avoid risk 避免风险 移除组件甚至移除资产
+  * Transfer risk 
+  * Mitigate risk  
 
 
 
