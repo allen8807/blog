@@ -74,6 +74,25 @@
      * 熟稔于心: $$ x \to 0 $$
        * $$ \sin x = x - \frac16x^3+o(x^3) $$
        * $$ [Th] 无穷小A = 无穷小B + 高阶无穷小\alpha \Rightarrow A \sim B $$
+       * $$ x - \sin x \sim \frac16x^3 $$
+       * $$ \arcsin x = x + \frac16x^3+o(x^3) $$
+       * $$ \sin x = x - \frac16x^3+o(x^3) $$
+       * $$ x - \arcsin x \sim -\frac16x^3 $$
+       * $$ \tan x = x + \frac13x^3+o(x^3) $$
+       * $$ \arctan x = x - \frac13x^3+o(x^3) $$
+       * $$ \cos x = 1 - \frac{x^2}2 + \frac{x^4}{24} + o(x^4) $$
+       * $$ \ln(1+x) = x - \frac{x^2}2 + \frac{x^3}3 - \frac{x^4}{4} + o(x^4)  通项公式 (-1)^{n-1} \frac{x^n}n $$
+       * $$ e^x = 1+ x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots  通项公式  \frac{x^n}{n!} $$
+       * $$ \frac1{1-x} = 1 + x + x^2 + \dots ,|x| < 1 通项公式 x^n  $$
+       
+
+
+
+
+
+
+
+
        
        
  
