@@ -70,12 +70,12 @@
       * u<sup>v</sup> = e<sup>vlnu</sup>
       * $$ \lim u^v = e^{\lim v(u-1)} , 1<sup>∞</sup> $$
    * 泰勒公式
-     * 观点：任何可导函数 $$f(x) == a_nx^n$$ 
-     统一美
-     
-* $$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$     
-     
-    * HO  CO<sub>2</sub>
-爆米<sup>TM</sup>
+     * $$ 观点：任何可导函数f(x) = \sum a_nx^n统一美 $$
+     * 熟稔于心: $$ x \to 0 $$
+       * $$ \sin x = x - \frac16x^3+o(x^3) $$
+       * $$ [Th] 无穷小A = 无穷小B + 高阶无穷小\alpha \Rightarrow A \sim B $$
+       
+       
+ 
     
  
