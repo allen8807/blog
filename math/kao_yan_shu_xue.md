@@ -1,6 +1,7 @@
 # 考研数学 王宇 
 ## 极限
 ### 极限定义
+* $$ \lim_{x\to x_0} f(x) = A \Longleftrightarrow  \forall \varepsilon, \exists \delta, 0 < |x-x_0| < \delta时, |f(x) - A | < \varepsilon $$
 * 6*4+1种定义
 
 ### 极限性质
@@ -57,16 +58,24 @@
       * 及时提出极限不为0的因数
       * 恒等变形（有理化，提公因式，++--**//)
      * [小结]设置分母有原则，简单因式才下放
-      * 简单 x<sup>α</sup>, e<sup>βx</sup>
+      * 简单 x^α, e<sup>βx</sup>
       * 复杂 lnx,arcsinx,arctanx等 
       * lnu ~ u-1 ,u->1
       * 换元法
-  * $$ ∞-∞ $$
-    * 有分母，通分
-    * [注] 熟记各种三角公式
-    * 没有分母，创造分母，再通分，令x=(1/t),倒代换
-  * $$ ∞^0, 0^0, 1^∞ $$
-    * u<sup>v</sup> = e<sup>vlnu</sup>
-    * lim u<sup>v</sup> = e<sup>lim v(u-1) </sup> , 1<sup>∞</sup>
+    * $$ ∞-∞ $$
+      * 有分母，通分
+      * [注] 熟记各种三角公式
+      * 没有分母，创造分母，再通分，令x=(1/t),倒代换
+    * $$ ∞^0, 0^0, 1^∞ $$
+      * u<sup>v</sup> = e<sup>vlnu</sup>
+      * $$ \lim u^v = e^{\lim v(u-1)} , 1<sup>∞</sup> $$
+   * 泰勒公式
+     * 观点：任何可导函数 $$f(x) == a_nx^n$$ 
+     统一美
+     
+* $$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$     
+     
+    * HO  CO<sub>2</sub>
+爆米<sup>TM</sup>
     
  
