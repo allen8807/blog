@@ -17,4 +17,18 @@
     * 关键词就是朗读中需要重读的部分 语言节奏
 * 语调 语言中情感的表达
 * 朗读中的缩读和弱读
+    * What are you going to do when you get out of here?
+    * going to-gonna want to-wanna
+* 名词复数、动词第三人称单数 [s] [z]
+
+* Lesson 1 英语发音的类别 THE CLASSIFICATION OF ENGLISH PHONEMES
+* 元音，辅音
+* 前元音 
+* 听说练习
+* fit as a fiddle 
+* 中元音
+* 后元音
+* 使舌尖离开下齿
+
+
     
