@@ -20,4 +20,5 @@
 * [Security Training](security-training.md)
   * [Fundamentals of Application Security](security-training/fundamentals-of-application-security.md)
   * [Fundamentals of Secure Development](security-training/fundamentals-of-secure-development.md)
+* [新东方口语教程笔记](xdf/README.md)
 
