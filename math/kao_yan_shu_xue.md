@@ -26,7 +26,7 @@
  * $$ lim f(x) = 3 $$
  * $$ 2 < f(x) < 5 , (2,5) 并不是f(x) 的取值区间，这只是事实陈述$$
  * $$ lim我=你 => 即使给我整个世界，我也只在你的身边 $$
- * $$ 1-cosx > 0 ,x≠0$$ 
+ * $$ 1-\cos x > 0 ,x≠0$$ 
  
  
  ### 极限计算
@@ -46,11 +46,11 @@
     * [注1] lim f'(x)/g'(x) 存在或者为∞时才能用
     * [注2] 常用等价无穷小
      * x->0 
-      * $$ sinx ≈ x, arcsinx≈x $$
-      * $$ tanx≈x,arctanx ≈x $$
-      * $$ e^x-1 ≈ x, ln(1+x)≈x  $$
-      * $$ (1+x)^α-1 ≈ αx $$
-      * $$ 1-cosx≈(1/2)x^2 $$
+      * $$ \sin x \sim x, \arcsin x \sim x $$
+      * $$ \tan x \sim x, \arctan x \sim x $$
+      * $$ e^x-1 \sim x, \ln (1+x) \sim x  $$
+      * $$ (1+x)^ \alpha - 1 \sim \alpha x $$
+      * $$ 1- \cos x \sim \frac12x^2 $$
     * 习题
      * 宇哥考研 微博
      * [注]化简方式
