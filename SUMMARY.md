@@ -22,4 +22,6 @@
   * [Fundamentals of Secure Development](security-training/fundamentals-of-secure-development.md)
 * [新东方口语教程笔记](xdf/README.md)
   * [语音语调](xdf/yyyd.md)
+* [数学](math/README.md)
+  * [考研数学](math/kao_yan_shu_xue.md)
 
