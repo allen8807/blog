@@ -67,5 +67,6 @@
     * 没有分母，创造分母，再通分，令x=(1/t),倒代换
   * $$ ∞^0, 0^0, 1^∞ $$
     * u<sup>v</sup> = e<sup>vlnu</sup>
+    * lim u<sup>v</sup> = e<sup>lim v(u-1) </sup> , 1<sup>∞</sup>
     
  
