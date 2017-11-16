@@ -23,12 +23,35 @@
 
 * Lesson 1 英语发音的类别 THE CLASSIFICATION OF ENGLISH PHONEMES
 * 元音，辅音
-* 前元音 
-* 听说练习
-* fit as a fiddle 
-* 中元音
-* 后元音
-* 使舌尖离开下齿
-
-
+* 元音分类 A
+    * 前元音 
+        * 听说练习
+        * fit as a fiddle 
+    * 中元音
+    * 后元音
+        * 使舌尖离开下齿
+* 元音分类 B 
+    * 12个单素元音 8个复合元音
+* 元音分类 C
+    * 根据口唇形状
+    * 合口元音 Rounded Vowels
+    * 敞口元音 Unrounded Vowels
+    * 自然口型 Netutural Vowels
+* 元音分类 D
+    * 根据元音长度
+    * 长元音 The Long Vowels
+    * 短元音 The Short Vowels
+* 重点掌握 分类 AB
+* 辅音分类 A
+    * 根据声带振动
+    * 清辅音 浊辅音
+* 辅音分类 B
+    * 根据气流通过口腔的效果
+    * 爆破音 plosive 和连读有关
+    * 摩擦音 fricative 
+    * 塞擦音 破擦音 affricate 
+    * 鼻音 nasal
+    * 舌边音 lateral 
+    * 半元音 semi-vowel 
+    
     
