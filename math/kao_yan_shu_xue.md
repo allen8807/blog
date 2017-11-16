@@ -59,4 +59,8 @@
      * [小结]设置分母有原则，简单因式才下放
       * 简单 x<sup>α</sup>, e<sup>βx</sup>
       * 复杂 lnx,arcsinx,arctanx等 
+      * lnu ~ u-1 ,u->1
+      * 换元法
+  * ∞-∞
+   *有分母，通分
  
