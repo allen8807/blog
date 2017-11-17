@@ -18,3 +18,4 @@
         * 令$$ x_0 + \Delta x  = x $$
         * 等价写法 $$f'(x_0) = \lim_{ x \to x_0 } \frac{f(x) - f(x_0)}{x - x_0}  $$ 差值形式
         * $$ \lim_{\Delta x \to 0 } \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} =f'(x_0)$$ 增量写法
+* 见到$$f'(x_0)$$ 先用定义法来
