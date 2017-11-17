@@ -37,18 +37,25 @@
 * 1. 复合函数求导——一层一层剥开她的心
     * $$(f[g(x)])'=f'[g(x)]g'(x)$$
     * $$(uv)'=u'v+uv' $$
-    * $$[注](u_1u_2\dots u_n)=u'_1u_2\dots u_n +u_1u'_2\dots u_n+ \dots + u_1u_2\dots u'_n $$
+    * $$[注](u_1u_2\dots u_n)=\\u'_1u_2\dots u_n +u_1u'_2\dots u_n+ \dots + u_1u_2\dots u'_n $$
+    * $$(\frac uv)'= \frac{u'v-uv'}{v^2}$$
 * 2.隐函数求导
     * $$ 显: y=f(x) 隐: F(x,y)=0 ----(*),y=y(x) $$  
     * $$ 方法:在（*）式两边同时对x求导，注意y=y(x)即可（复合求导）$$
 * 3.对数求导法
     * 对于多项相乘相除，开方，乘方的式子，先取对数，再求导
     * [注] u=u(x)
-        * $$ (\ln|u|)'_x = $$
-            * $$ (\ln u)' = \frac1u \bullet u' ,u > 0 $$
-            * $$ (\ln (-u))' =\frac1{-u} \bullet (-u') = \frac1u \bullet u' ,u < 0 $$
+        * $$ (\ln|u|)'_x = \left\{ \begin{array}{ll} (\ln u)' = \frac1u \bullet u'  & \textrm{$u > 0$}\\ (\ln (-u))' =\frac1{-u} \bullet (-u') = \frac1u \bullet u'  & \textrm{$u < 0$} \end{array} \right. $$
         * 形式上相同，视绝对值而不见
         * $$ (\ln|u|)'_x = \frac1u \bullet u'$$
+* 4.反函数求导
+    * $$\frac{dx}{dy} = \frac1{y'}$$
+    * 其实就是隐函数和复合函数结合
+* 5.参数方程求导
+    * $$ y = \left\{ \begin{array}{ll} x=x(t) \\ y=y(t) &\end{array} \right. $$
+    * t为参数
+    * $$\frac{dy}{dx} = \frac{dy}{dt} \bullet \frac{dt}{dx} $$
+    * 结合反函数求导
 
 
 
