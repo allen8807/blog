@@ -31,7 +31,8 @@
 * $$(\tan x)' = \sec^2 x , (\cot x)'= -\csc^2 x$$
 * $$(\sec x)' = \sec x\tan x , (\csc x)'= -\csc x \cot x$$
 * $$(\arcsin x)' = \frac1{\sqrt{1-x^2}} , (\arccos x)'= -\frac1{\sqrt{1-x^2}} $$
-* $$(\arctan x)' = \cos x , (\cos x)'= -\sin x$$
+* $$(\arctan x)' = \frac1{1+x^2} , (\arccot x)'= -\frac1{1+x^2} $$
+
 
 
 
