@@ -20,3 +20,6 @@
         * $$ \lim_{\Delta x \to 0 } \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} =f'(x_0)$$ 增量写法
 * 见到$$f'(x_0)$$ 先用定义法来
 * $$ h \to 0, \cos h \to 1^- , 1- \cos h \to 0^+$$
+* $$\frac{|x|}x 在 x \to 0 时有界，但是极限不存在$$
+
+
