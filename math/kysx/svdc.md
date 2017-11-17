@@ -56,6 +56,8 @@
     * t为参数
     * $$\frac{dy}{dx} = \frac{dy}{dt} \bullet \frac{dt}{dx} $$
     * 结合反函数求导
+* 6.高阶导数（见强化班）
+##三、中值定理
 
 
 
