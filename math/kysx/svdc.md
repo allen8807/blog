@@ -48,6 +48,8 @@
             * $$ (\ln u)' = \frac1u \bullet u' ,u > 0 $$
             * $$ (\ln (-u))' =\frac1{-u} \bullet (-u') = \frac1u \bullet u' ,u < 0 $$
         * 形式上相同，视绝对值而不见
+        * $$ (\ln|u|)'_x = \frac1u \bullet u'$$
+
 
 
 
