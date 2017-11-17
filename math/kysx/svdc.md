@@ -33,6 +33,15 @@
 * $$(\arcsin x)' = \frac1{\sqrt{1-x^2}} , (\arccos x)'= -\frac1{\sqrt{1-x^2}} $$
 * $$(\arctan x)' = \frac1{1+x^2} , (arccot x)'= -\frac1{1+x^2} $$
 * $$(\ln (x+\sqrt{x^2+1})' = \frac1{\sqrt{x^2+1}} , (\ln (x+\sqrt{x^2-1})' = \frac1{\sqrt{x^2-1}} $$
+### 2.基本求导法
+* 1. 复合函数求导——一层一层剥开她的心
+    * $$(f[g(x)])'=f'[g(x)]g'(x)$$
+    * $$(uv)'=u'v+uv' $$
+    * $$[注](u_1u_2\dots u_n)=u'_1u_2\dots u_n +u_1u'_2\dots u_n+ \dots + u_1u_2\dots u'_n $$
+* 2.隐函数求导
+    * $$ 显: y=f(x) 隐: F(x,y)=0 ----(*),y=y(x) $$  
+    * $$ 方法:在（*）式两边同时对x求导，注意y=y(x)即可（复合求导）$$
+    *
 
 
 
