@@ -1,4 +1,4 @@
-# 极限
+# 第一讲 极限
 ## 极限定义
 * $$ \lim_{x\to x_0} f(x) = A \Longleftrightarrow  \forall \varepsilon, \exists \delta, 0 < |x-x_0| < \delta时, |f(x) - A | < \varepsilon $$
 * 6*4+1种定义
