@@ -31,7 +31,9 @@
 * $$(\tan x)' = \sec^2 x , (\cot x)'= -\csc^2 x$$
 * $$(\sec x)' = \sec x\tan x , (\csc x)'= -\csc x \cot x$$
 * $$(\arcsin x)' = \frac1{\sqrt{1-x^2}} , (\arccos x)'= -\frac1{\sqrt{1-x^2}} $$
-* $$(\arctan x)' = \frac1{1+x^2} , (\arccot x)'= -\frac1{1+x^2} $$
+* $$(\arctan x)' = \frac1{1+x^2} , (arccot x)'= -\frac1{1+x^2} $$
+* $$(\ln (x+\sqrt{x^2+1})' = \frac1{\sqrt{x^2+1}} , (\ln (x+\sqrt{x^2-1})' = \frac1{\sqrt{x^2-1}} $$
+
 
 
 
