@@ -22,5 +22,17 @@
 * $$ h \to 0, \cos h \to 1^- , 1- \cos h \to 0^+$$
 * $$\frac{|x|}x 在 x \to 0 时有界，但是极限不存在$$
 * 2A-A≠A （A只是符号，只有A存在时才做数量运算）
+## 二、计算
+### 1.基本求导公式
+* $$(x^\alpha)' = \alpha x^{\alpha -1} $$
+* $$ (a^x)'=a^x \ln a ,(e^x)'=e^x$$
+* $$(\ln x)'= \frac1x$$
+* $$(\sin x)' = \cos x , (\cos x)'= -\sin x$$
+* $$(\tan x)' = \sec^2 x , (\cot x)'= -\csc^2 x$$
+* $$(\sec x)' = \sec x\tan x , (\csc x)'= -\csc x \cot x$$
+* $$(\arcsin x)' = \frac1{\sqrt{1-x^2}} , (\arccos x)'= -\frac1{\sqrt{1-x^2}} $$
+* $$(\arctan x)' = \cos x , (\cos x)'= -\sin x$$
+
+
 
 
