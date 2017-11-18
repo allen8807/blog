@@ -73,6 +73,7 @@
         * $$ 设f(x)在x=x_0处 \left\{ \begin{array}{ll} (1)可导 \\ (2)取极值 \end{array} \right. ,则f'(x_0)=0 $$ 自己证明
     * $$[6]罗尔定理$$
         * $$ 设f(x)满足以下三条 \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导 \\ (3) f(a)=f(b) \end{array} \right. ,则 \exists \xi \in (a,b), 使 f'(\xi)=0 $$ 自己证明
+    * $$[7]拉格朗日$$
 
     
 
