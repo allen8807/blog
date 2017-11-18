@@ -70,14 +70,14 @@
     * 数缺形时少直观,形少数时难入微 ———— 华罗庚
 * 2.$$涉及f'(x)的定理$$
     * $$[5]费马定理$$
-        * $$ 设f(x)在x=x_0处 \left\{ \begin{array}{ll} (1)可导 \\ (2)取极值 \end{array} \right. ,则f'(x_0)=0 $$ 自己证明
+        * $$ 设f(x)在x=x_0处 \left\{ \begin{array}{ll} (1)可导 \\ (2)取极值 \end{array} \right. ,\\则f'(x_0)=0 $$ 自己证明
     * $$[6]罗尔定理$$
-        * $$ 设f(x)满足以下三条 \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导 \\ (3) f(a)=f(b) \end{array} \right. ,则 \exists \xi \in (a,b), 使 f'(\xi)=0 $$ 自己证明
+        * $$ 设f(x)满足以下三条 \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导 \\ (3) f(a)=f(b) \end{array} \right. ,\\则 \exists \xi \in (a,b), 使 f'(\xi)=0 $$ 自己证明
     * $$[7]拉格朗日中值定理$$
-        * $$ 设f(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \end{array} \right. ,则 \exists \xi \in (a,b), 使 f'(\xi)= \frac {f(b) -f(a)}{b-a} $$ 
+        * $$ 设f(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \end{array} \right. ,\\则 \exists \xi \in (a,b), 使 f'(\xi)= \frac {f(b) -f(a)}{b-a} $$ 
         * $$[注]若f(a)=f(b),则f'(\xi)=0，成为罗尔$$
     * $$[8]柯西中值定理$$
-        * $$ 设f(x),g(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \\ g'(x) ≠ 0\end{array} \right. ,则 \exists \xi \in (a,b), 使 \frac {f(b) -f(a)}{g(b)-g(a)} = \frac {f'(\xi)}{g'(\xi)}$$ 
+        * $$ 设f(x),g(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \\ g'(x) ≠ 0\end{array} \right. ,\\则 \exists \xi \in (a,b), 使 \frac {f(b) -f(a)}{g(b)-g(a)} = \frac {f'(\xi)}{g'(\xi)}$$ 
         * $$[注]若g(x)=x, \frac{f(b) -f(a)}{b-a} = \frac {f'(\xi)}1 \Rightarrow 拉格朗日$$
     * $$[9]泰勒定理（泰勒公式）$$
         * $$任何可导f(x) = \Sigma a_nx^n 统一美 $$ 
@@ -113,6 +113,19 @@
         * $$ 关键在于1到2步里的 f(x) \Rightarrow \mu $$
         * $$ f(\xi) = \frac{\int_{a}^{b} f(x)dx}{(b-a)} 也记为 \bar f 叫f(x)在[a,b]上的平均值$$
 * 2.罗尔定理的应用(定理6)
+    * $$F(x) = f(x) \bullet x \Rightarrow F'(x)=f'(x)\bullet x+f(x)\bullet 1$$
+        * $$ F'(\xi) =  f'(\xi)\bullet \xi+f(\xi) = 0 $$
+    * $$ F(x)=f(x)\bullet e^x \Rightarrow F'(x)=f'(x)\bullet e^x+f(x)\bullet e^x$$
+        * $$ F'(\xi) =  (f'(\xi)+f(\xi))e^{\xi}=0 $$
+        * $$ f'(\xi)+f(\xi) =0 $$
+    * $$ F(x)=f(x)\bullet e^{\varphi (x)} \Rightarrow \\F'(x)=f'(x)\bullet e^{\varphi (x)}+f(x)\bullet e^{\varphi (x)} \bullet \varphi' (x)$$
+        * $$ F'(\xi)=(f'(x)+f(\xi)\bullet \varphi'(\xi))\bullet e^{\varphi (x)} = 0 $$
+        * $$ f'(x)+f(\xi)\bullet \varphi'(\xi) = 0 $$
+        
+
+
+
+
 
 
 
