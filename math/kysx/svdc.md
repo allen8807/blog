@@ -64,7 +64,10 @@
     * $$[1](有界性定理)\exists K > 0 ,使 |f(x)| \le K , \forall x \in [a,b]$$
     * $$[2](最值定理)m \le f(x) \le M ,其中m,M分别为f(x)在[a,b]上的最小，最大值$$
     * $$[3](介值定理)若m \le \mu \le M, 则 \exists \xi \in [a,b], 使 f(\xi)=\mu$$
-    * $$[4](零点定理）若f(a)\bullet f(b)<0, 则 \exists \xi \in (a,b), 使 f(\xi)=0$$
+    * $$[4](零点定理）若f(a)\bullet f(b)<0, 则 \exists \xi \in (a,b), 使 f(\xi)=0$$ 柯西
+    * 不要让几何直观蒙蔽了双眼 ———— 柯西
+    * [1] - [4] 只用不证
+    * 数缺形时少直观,形少数时难入微 ———— 华罗庚
 
     
 
