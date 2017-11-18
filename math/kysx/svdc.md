@@ -79,4 +79,6 @@
     * $$[8]柯西中值定理$$
         * $$ 设f(x),g(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \\ g'(x) ≠ 0\end{array} \right. ,则 \exists \xi \in (a,b), 使 \frac {f(b) -f(a)}{g(b)-g(a)} = \frac {f'(\xi)}{g'(\xi)}$$ 
         * $$[注]若g(x)=x, \frac{f(b) -f(a)}{b-a} = \frac {f'(\xi)}1 \Rightarrow 拉格朗日$$
+    * $$[9]泰勒定理（泰勒公式）$$
+        * $$任何可导f(x) = \Sigma a_nx^n 统一美 $$ 
         
