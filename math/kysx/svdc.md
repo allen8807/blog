@@ -113,16 +113,21 @@
         * $$ 关键在于1到2步里的 f(x) \Rightarrow \mu $$
         * $$ f(\xi) = \frac{\int_{a}^{b} f(x)dx}{(b-a)} 也记为 \bar f 叫f(x)在[a,b]上的平均值$$
 * 2.罗尔定理的应用(定理6)
-    * $$F(x) = f(x) \bullet x \Rightarrow F'(x)=f'(x)\bullet x+f(x)\bullet 1$$
-        * $$ F'(\xi) =  f'(\xi)\bullet \xi+f(\xi) = 0 $$
-    * $$ F(x)=f(x)\bullet e^x \Rightarrow F'(x)=f'(x)\bullet e^x+f(x)\bullet e^x$$
-        * $$ F'(\xi) =  (f'(\xi)+f(\xi))e^{\xi}=0 $$
-        * $$ f'(\xi)+f(\xi) =0 $$
-    * $$ F(x)=f(x)\bullet e^{\varphi (x)} \Rightarrow \\F'(x)=f'(x)\bullet e^{\varphi (x)}+f(x)\bullet e^{\varphi (x)} \bullet \varphi' (x)$$
-        * $$ F'(\xi)=(f'(x)+f(\xi)\bullet \varphi'(\xi))\bullet e^{\varphi (x)} = 0 $$
-        * $$ f'(x)+f(\xi)\bullet \varphi'(\xi) = 0 $$
     * 罗尔定理两大关键
-        * 1.求导公式逆用法
+    * 1.求导公式逆用法
+        * $$F(x) = f(x) \bullet x \Rightarrow F'(x)=f'(x)\bullet x+f(x)\bullet 1$$
+            * $$ F'(\xi) =  f'(\xi)\bullet \xi+f(\xi) = 0 $$
+        * $$ F(x)=f(x)\bullet e^x \Rightarrow F'(x)=f'(x)\bullet e^x+f(x)\bullet e^x$$
+            * $$ F'(\xi) =  (f'(\xi)+f(\xi))e^{\xi}=0 $$
+            * $$ f'(\xi)+f(\xi) =0 $$
+        * $$ F(x)=f(x)\bullet e^{\varphi (x)} \Rightarrow \\F'(x)=f'(x)\bullet e^{\varphi (x)}+f(x)\bullet e^{\varphi (x)} \bullet \varphi' (x)$$
+            * $$ F'(\xi)=(f'(x)+f(\xi)\bullet \varphi'(\xi))\bullet e^{\varphi (x)} = 0 $$
+            * $$ f'(x)+f(\xi)\bullet \varphi'(\xi) = 0 $$
+    * 方法二 1.积分还原法
+        * 1.将欲证结论中的$$\xi 改为 x$$
+        * 2.积分,(为简单，令C=0)
+        * 3.移项，使等式一端为0，另一端记为F(x)
+    
         
 
 
