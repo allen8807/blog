@@ -75,6 +75,11 @@
         * $$ 设f(x)满足以下三条 \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导 \\ (3) f(a)=f(b) \end{array} \right. ,则 \exists \xi \in (a,b), 使 f'(\xi)=0 $$ 自己证明
     * $$[7]拉格朗日中值定理$$
         * $$ 设f(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \end{array} \right. ,则 \exists \xi \in (a,b), 使 f'(\xi)= \frac {f(b) -f(a)}{b-a} $$ 
+        * $$[注]若f(a)=f(b),则f'(\xi)=0，成为罗尔$$
+    * $$[8]柯西中值定理$$
+        * $$ 设f(x),g(x) \left\{ \begin{array}{ll} (1)[a,b]上连续 \\ (2) (a,b)内可导  \\ g'(x) ≠ 0\end{array} \right. ,则 \exists \xi \in (a,b), 使 \frac {f(b) -f(a)}{g(b)-g(a)} = \frac {f'(\xi)}{g'(\xi)}$$ 
+        * $$[注]若g(x)=x, \frac{f(b) -f(a)}{b-a} = \frac {f'(\xi)}1 \Rightarrow 拉格朗日$$
+
 
     
 
