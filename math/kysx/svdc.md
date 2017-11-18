@@ -123,13 +123,14 @@
         * $$ F(x)=f(x)\bullet e^{\varphi (x)} \Rightarrow \\F'(x)=f'(x)\bullet e^{\varphi (x)}+f(x)\bullet e^{\varphi (x)} \bullet \varphi' (x)$$
             * $$ F'(\xi)=(f'(x)+f(\xi)\bullet \varphi'(\xi))\bullet e^{\varphi (x)} = 0 $$
             * $$ f'(x)+f(\xi)\bullet \varphi'(\xi) = 0 $$
-    * 方法二 1.积分还原法
+    * 2.积分还原法
         * 1.将欲证结论中的$$\xi 改为 x$$
         * 2.积分,(为简单，令C=0)
         * 3.移项，使等式一端为0，另一端记为F(x)
     * $$ f'(x) = \frac {d f(x)}{dx} $$ 这里的dx是什么含义？
     * $$ \int udv = uv - \int vdu $$
     * $$ F(x)=f(x)g'(x) - g(x)f'(x) $$
+* 3.拉格朗日中值定理的应用（定理7）
     
         
 
