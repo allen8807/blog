@@ -112,6 +112,8 @@
         * $$ 1.m \le f(x) \le M \\ 2. m \le \mu \le M \\ 3. f(\xi) = \mu$$
         * $$ 关键在于1到2步里的 f(x) \Rightarrow \mu $$
         * $$ f(\xi) = \frac{\int_{a}^{b} f(x)dx}{(b-a)} 也记为 \bar f 叫f(x)在[a,b]上的平均值$$
+* 2.罗尔定理的应用(定理6)
+
 
 
 
