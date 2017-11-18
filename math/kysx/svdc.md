@@ -104,9 +104,14 @@
 ### 2.五大方面的应用
 * 1. 涉及f(x)的应用（定理1-4）
     * $$ 设f(x)在[a,b]上连续,证明 \exists \xi \in [a,b],\\使\int_{a}^{b} f(x)dx = f(\xi)(b-a)$$ [积分中值定理]
+    * 用介值定理证明
     * $$ 黎曼提出了定积分，莱布尼兹创造积分符号 \int $$ 
     * 定积分是一个面价值，定积分是一个数
     * $$[注]: 若a < b , f(x) \le g(x) \Rightarrow \int_a^bf(x)dx \le \int_a^bg(x)dx . 积分的保号性 $$
+    * 介值定理三部曲
+        * $$ 1.m \le f(x) \le M \\ 2. m \le \mu \le M \\ 3. f(\xi) = \mu$$
+        * $$ 关键在于1到2步里的 f(x) \Rightarrow \mu $$
+        * $$ f(\xi) = \frac{\int_{a}^{b} f(x)dx}{(b-a)} 也记为 \bar f 叫f(x)在[a,b]上的平均值$$
 
 
 
