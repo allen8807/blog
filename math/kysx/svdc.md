@@ -121,6 +121,8 @@
     * $$ F(x)=f(x)\bullet e^{\varphi (x)} \Rightarrow \\F'(x)=f'(x)\bullet e^{\varphi (x)}+f(x)\bullet e^{\varphi (x)} \bullet \varphi' (x)$$
         * $$ F'(\xi)=(f'(x)+f(\xi)\bullet \varphi'(\xi))\bullet e^{\varphi (x)} = 0 $$
         * $$ f'(x)+f(\xi)\bullet \varphi'(\xi) = 0 $$
+    * 罗尔定理两大关键
+        * 1.求导公式逆用法
         
 
 
