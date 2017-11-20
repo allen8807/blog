@@ -145,6 +145,7 @@
         * $$2.  泰勒展开成f'',f''', \dots $$
 ## 四、导数的几何应用
 * （极值点、最值点、拐点；单调性、凹凸性；渐近线）
+
 ### 1.极值与单调性
 * 1.极值定义
     * 1.广义极值
@@ -160,14 +161,27 @@
         * [注] 泰勒公式可证
             * $$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2 +o((x-x_0)^2)$$
             * $$ 移项 f(x)- f(x_0) = \frac{f''(x_0)}{2!}(x-x_0)^2 +o((x-x_0)^2) > 0 $$ 
-* 3.凹凸性与拐点
-    * 1.凹凸性
-        * $$ \forall x_1,x_2 \in I $$
-        * $$ \frac{f(x_1)+f(x_2)}2 > f(\frac{x_1+x_2}2) \Rightarrow 凹 反之为凸$$
-    * 2.拐点————连续曲线凹凸弧的分界点
-    * 3.判别法 设f(x)在I上二阶可导，
-        * $$1.若f''(x) > 0, \forall x \in I \Rightarrow f(x)凹 ,反之为凸$$
-        * $$2.若f(x)在x_0点处左右邻域f''(x)变号 \Rightarrow （x_0,f(x_0)是拐点 $$    
+
+            
+
+### 2.凹凸性与拐点
+* 1.凹凸性
+    * $$ \forall x_1,x_2 \in I $$
+    * $$ \frac{f(x_1)+f(x_2)}2 > f(\frac{x_1+x_2}2) \Rightarrow 凹 反之为凸$$
+* 2.拐点————连续曲线凹凸弧的分界点
+* 3.判别法 设f(x)在I上二阶可导，
+    * $$1.若f''(x) > 0, \forall x \in I \Rightarrow f(x)凹 ,反之为凸$$
+    * $$2.若f(x)在x_0点处左右邻域f''(x)变号 \Rightarrow （x_0,f(x_0)是拐点 $$    
+### 3.渐近线
+* 1.铅垂渐近线
+    * $$ 若\lim_{x \to x_0^+(或x_0^-)}f(x) = \infty \Rightarrow x = x_0 为铅垂渐近线$$
+    * (出现在:无定义点或区间端点)
+* 2.水平渐近线
+    * $$ 若\lim_{x \to +\infty(或-\infty)}f(x) = A \Rightarrow y = A 为水平渐近线$$
+* 3.斜渐近线
+    * $$ 若\lim_{x \to +\infty(或-\infty)}\frac{f(x)}x = a≠0 \\且\lim_{x \to +\infty(或-\infty)}[f(x) -a(x)] = b \exists \\ \Rightarrow y=ax+b  为斜渐近线$$
+
+
 
 
         
