@@ -54,6 +54,7 @@
         * $$\sqrt{a^2+x^2} \Rightarrow 令x=a \tan t, t \in (-\frac {\pi}2, \frac {\pi}2) $$
         * $$\sqrt{x^2-a^2} \Rightarrow 令x=a \sec t, \left\{ \begin{array}{ll} (1)x > 0, t \in (0, \frac {\pi}2) \\ (2) x < 0, t \in ( \frac {\pi}2, \pi) \end{array} \right. $$
         * 函数回代要保证单调性，单调函数才有反函数
+        * $$[注]若见到 \sqrt{ax^2+bx+c} \Rightarrow 化为\sqrt{\varphi^2(x)-k^2},\sqrt{k^2-\varphi^2(x)},\sqrt{\varphi^2(x)+k^2}再作三角换元$$
 
 
 
