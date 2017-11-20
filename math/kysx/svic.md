@@ -44,6 +44,7 @@
         * $$ 凑微分 \frac 1{\sqrt{u}}du=d(2\sqrt u)$$
         * $$ [Th]对于 \int f(x)dx, f(x)越复杂 \Rightarrow 越高兴$$
         * $$1. 先对复杂部分求导 2.再凑微分$$
+        * $$求导后，倒着看， \frac {d f(x)}{dx} = F(x) \Rightarrow d f(x) = F(x)dx$$
 
 
 
