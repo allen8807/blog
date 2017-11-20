@@ -42,6 +42,8 @@
             * $$ \int \frac1{ x^2 - a^2}dx=\frac 1{2a} \ln|\frac{x-a}{x+a}| + C $$
         * $$ \int \sqrt{a^2- x^2}dx= \frac{a^2}2 \arcsin {\frac xa} +\frac x2\sqrt{a^2-x^2} + C $$
         * $$ 凑微分 \frac 1{\sqrt{u}}du=d(2\sqrt u)$$
+        * $$ [Th]对于 \int f(x)dx, f(x)越复杂 \Rightarrow 越高兴$$
+        * $$1. 先对复杂部分求导 2.再凑微分$$
 
 
 
