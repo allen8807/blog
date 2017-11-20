@@ -180,6 +180,9 @@
     * $$ 若\lim_{x \to +\infty(或-\infty)}f(x) = A \Rightarrow y = A 为水平渐近线$$
 * 3.斜渐近线
     * $$ 若\lim_{x \to +\infty(或-\infty)}\frac{f(x)}x = a≠0 \\且\lim_{x \to +\infty(或-\infty)}[f(x) -a(x)] = b \exists \\ \Rightarrow y=ax+b  为斜渐近线$$
+### 4.最值
+* $$ 1.f(x)在[a,b]上,找\left\{ \begin{array}{ll} (1)f'(x) = 0 \Rightarrow x_0驻点 \\ (2) f'(x)不\exists \Rightarrow x_1不可导点 \\ (3) 端点a,b \end{array} \right. ,\\则 比较f(x_0),f(x_1),f(a),f(b) 取其最大（小）为最大（小）值$$
+* $$若在I上求出唯一极大(小)值点，则由实际背景 \Rightarrow 此点即为最大(小)值点$$ 
 
 
 
