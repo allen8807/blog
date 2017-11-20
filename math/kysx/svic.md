@@ -49,6 +49,16 @@
 * 2.换元法
     * 当凑微分不成功时，考虑换元 将复杂换成简单
     * 1.三角换元
+        * $$ 当f(x)中含有\sqrt{a^2-x^2},\sqrt{a^2+x^2},\sqrt{x^2-a^2}可做如下换元 $$
+        * $$\sqrt{a^2-x^2} \Rightarrow 令x=a \sin t, t \in (-\frac {\pi}2, \frac {\pi}2) $$
+        * $$\sqrt{a^2+x^2} \Rightarrow 令x=a \tan t, t \in (-\frac {\pi}2, \frac {\pi}2) $$
+        * $$\sqrt{x^2-a^2} \Rightarrow 令x=a \sec t, t \in (-\frac {\pi}2, \frac {\pi}2) $$
+
+        * 函数回代要保证单调性，单调函数才有反函数
+
+
+
+
 
 
 
