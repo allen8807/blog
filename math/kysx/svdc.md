@@ -22,6 +22,7 @@
 * $$ h \to 0, \cos h \to 1^- , 1- \cos h \to 0^+$$
 * $$\frac{|x|}x 在 x \to 0 时有界，但是极限不存在$$
 * 2A-A≠A （A只是符号，只有A存在时才做数量运算）
+
 ## 二、计算
 ### 1.基本求导公式
 * $$(x^\alpha)' = \alpha x^{\alpha -1} $$
@@ -33,6 +34,7 @@
 * $$(\arcsin x)' = \frac1{\sqrt{1-x^2}} , (\arccos x)'= -\frac1{\sqrt{1-x^2}} $$
 * $$(\arctan x)' = \frac1{1+x^2} , (arccot x)'= -\frac1{1+x^2} $$
 * $$(\ln (x+\sqrt{x^2+1})' = \frac1{\sqrt{x^2+1}} , (\ln (x+\sqrt{x^2-1})' = \frac1{\sqrt{x^2-1}} $$
+
 ### 2.基本求导法
 * 1. 复合函数求导——一层一层剥开她的心
     * $$(f[g(x)])'=f'[g(x)]g'(x)$$
@@ -57,6 +59,7 @@
     * $$\frac{dy}{dx} = \frac{dy}{dt} \bullet \frac{dt}{dx} $$
     * 结合反函数求导
 * 6.高阶导数（见强化班）
+
 ##三、中值定理
 ### 1.定理总结
 * 1.$$涉及f(x)的定理$$
@@ -101,6 +104,7 @@
             *$$若x_0=0,$$
                 * $$f(x)=f(0)+f'(0)x+\frac{f''(0)}{2!}x^2+ \frac {f'''(x_0)}{3!}x^3 +o(x^3) $$ 带佩亚诺余项的麦克劳林公式
     * [10] 积分中值定理，后面讲
+    
 ### 2.五大方面的应用
 * 1. 涉及f(x)的应用（定理1-4）
     * $$ 设f(x)在[a,b]上连续,证明 \exists \xi \in [a,b],\\使\int_{a}^{b} f(x)dx = f(\xi)(b-a)$$ [积分中值定理]
@@ -143,6 +147,7 @@
     * [注] 
         * $$ 1.  f(a)=f(b), f(c)=f(d) \Rightarrow \\ f'(\xi_1) = 0, f'(\xi_2) = 0 \Rightarrow f''(\xi)=0 $$
         * $$2.  泰勒展开成f'',f''', \dots $$
+        
 ## 四、导数的几何应用
 * （极值点、最值点、拐点；单调性、凹凸性；渐近线）
 
@@ -161,9 +166,7 @@
         * [注] 泰勒公式可证
             * $$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2 +o((x-x_0)^2)$$
             * $$ 移项 f(x)- f(x_0) = \frac{f''(x_0)}{2!}(x-x_0)^2 +o((x-x_0)^2) > 0 $$ 
-
             
-
 ### 2.凹凸性与拐点
 * 1.凹凸性
     * $$ \forall x_1,x_2 \in I $$
@@ -171,7 +174,8 @@
 * 2.拐点————连续曲线凹凸弧的分界点
 * 3.判别法 设f(x)在I上二阶可导，
     * $$1.若f''(x) > 0, \forall x \in I \Rightarrow f(x)凹 ,反之为凸$$
-    * $$2.若f(x)在x_0点处左右邻域f''(x)变号 \Rightarrow （x_0,f(x_0)是拐点 $$    
+    * $$2.若f(x)在x_0点处左右邻域f''(x)变号 \Rightarrow （x_0,f(x_0)是拐点 $$   
+     
 ### 3.渐近线
 * 1.铅垂渐近线
     * $$ 若\lim_{x \to x_0^+(或x_0^-)}f(x) = \infty \Rightarrow x = x_0 为铅垂渐近线$$
@@ -180,6 +184,7 @@
     * $$ 若\lim_{x \to +\infty(或-\infty)}f(x) = A \Rightarrow y = A 为水平渐近线$$
 * 3.斜渐近线
     * $$ 若\lim_{x \to +\infty(或-\infty)}\frac{f(x)}x = a≠0 \\且\lim_{x \to +\infty(或-\infty)}[f(x) -a(x)] = b \exists \\ \Rightarrow y=ax+b  为斜渐近线$$
+    
 ### 4.最值
 * $$ 1.f(x)在[a,b]上,找\left\{ \begin{array}{ll} (1)f'(x) = 0 \Rightarrow x_0驻点 \\ (2) f'(x)不\exists \Rightarrow x_1不可导点 \\ (3) 端点a,b \end{array} \right. ,\\则 比较f(x_0),f(x_1),f(a),f(b) 取其最大（小）为最大（小）值$$
 * $$若在I上求出唯一极大(小)值点，则由实际背景 \Rightarrow 此点即为最大(小)值点$$ 
