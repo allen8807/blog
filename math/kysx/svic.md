@@ -65,8 +65,16 @@
     * $$ \int udv 难 \Rightarrow \int vdu易 $$
     * "反（反三角函数）、对、幂、指或三"排在前面的求导，排在后面的积分
     * $$ \int xe^xdx = \int xde^x = xe^x - \int e^xdx = xe^x - e^x + C$$
+* 4.有理函数的积分
+    * $$1.定义 形如 \int \frac {P_n(x)}{Q_m(x)}dx (n<m)的积分$$
+    * $$2.方法$$
+        * $$1.将Q_m(x)因式分解 $$
+        * $$2.将\frac {P_n(x)}{Q_m(x)} 拆成若干最简有理分式之和$$
+    * $$3.拆分原则$$
+        * $$1.Q_m(x)分解出(ax+b)^k \Rightarrow 产生k项\\ \frac{A_1}{ax+b} +\frac{A_2}{(ax+b)^2} + \dots + \frac{A_k}{(ax+b)^k} ,k=1,2,\dots$$
+        * $$2.Q_m(x)分解出(px^2+qx+r)^k\Rightarrow 产生k项\\ \frac{A_1x+B_1}{px^2+qx+r} +\frac{A_2x+B_2}{(px^2+qx+r)^2} + \dots + \frac{A_kx+B_k}{(px^2+qx+r)^k} ,k=1,2,\dots$$
 
-
+        
 
 
 
