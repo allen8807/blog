@@ -165,6 +165,9 @@
         * $$ \forall x_1,x_2 \in I $$
         * $$ \frac{f(x_1)+f(x_2)}2 > f(\frac{x_1+x_2}2) \Rightarrow 凹 反之为凸$$
     * 2.拐点————连续曲线凹凸弧的分界点
+    * 3.判别法 设f(x)在I上二阶可导，
+        * $$1.若f''(x) > 0, \forall x \in I \Rightarrow f(x)凹 ,反之为凸$$
+        * $$2.若f(x)在x_0点处左右邻域f''(x)变号 \Rightarrow （x_0,f(x_0)是拐点 $$    
 
 
         
