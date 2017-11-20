@@ -40,6 +40,9 @@
             * $$ \int \frac1{a^2+ x^2}dx=\frac 1a \int \frac1{1+ (\frac xa)^2}d(\frac xa) = \frac1a\arctan {\frac xa} + C $$
             * $$ \int \frac1{a^2 - x^2}dx=\frac 1{2a} \ln|\frac{a+x}{a-x}| + C $$
             * $$ \int \frac1{ x^2 - a^2}dx=\frac 1{2a} \ln|\frac{x-a}{x+a}| + C $$
+        * $$ \int \sqrt{a^2- x^2}dx= \frac{a^2}2 \arcsin {\frac xa} +\frac x2\sqrt{a^2-x^2} + C $$
+        * $$ 凑微分 \frac 1{\sqrt{u}}du=d(2\sqrt u)$$
+
 
 
 
