@@ -61,6 +61,10 @@
         * 令复杂部分=t
         * 比如带根号的复杂部分
 * 3.分部积分法
+    * $$ \int udv = uv - \int vdu $$
+    * $$ \int udv 难 \Rightarrow \int vdu易 $$
+    * "反（反三角函数）、对、幂、指或三"排在后面的用积分
+    * $$ \int xe^xdx = \int xde^x = xe^x - \int e^xdx = xe^x - e^x + C$$
 
 
 
