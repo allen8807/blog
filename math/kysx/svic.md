@@ -8,6 +8,9 @@
     * $$ \int f(x)dx = F(x) + C $$
 * 2.定积分
     *[小结]
-         * $$ \int f(x)dx 函数族 $$
-         * $$ \int_a^b f(x)dx $$
-    
+         * $$ \int f(x)dx  ,函数族 $$
+         * $$ \int_a^b f(x)dx ,面积值(数）$$
+    * $$ N-L公式  \int_a^b f(x)dx = F(x)|_a^b = F(b) -F(a)$$
+## 二、计算（四大方法）
+* 1.凑微分法
+    *
