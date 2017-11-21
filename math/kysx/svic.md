@@ -93,6 +93,8 @@
     * $$ V_x=\int_a^b\pi\bullet y^2(x)dx$$
 * $$2.上述\sigma 绕y轴旋转一周所得旋转体$$
     * $$V_y= \int_a^b 2\pi x\bullet | y(x)|dx$$ ——柱壳(qiao)法
+* $$3.用积分表达和计算函数的平均值$$
+    * $$y(x)在[a,b]上的平均值\bar y \triangleq \frac{\int_a^by(x)dx}{b-a} $$
     
 
 
