@@ -83,6 +83,10 @@
     * $$可以得到递推式I_n=\frac{n-1}nI_{n-2}$$  
     * $$ I_n = \left\{ \begin{array}{ll} \frac{n-1}{n}\bullet\frac{n-3}{n-2}\dots\frac12\bullet\frac{\pi}2, & \textrm{$n为正偶数$} \\ \frac{n-1}{n}\bullet\frac{n-3}{n-2}\dots\frac23, & \textrm{$n为大于1的奇数$}  \end{array} \right.  华里士公式，华氏公式$$
 
+##四、一元积分学应用(几何）——重在计算
+###1.用积分表达和计算平面图形的面积
+* $$1.y=y_1(x),y=y_2(x),x=a,x=b (a < b)所围平面图形$$
+
 
 
 
