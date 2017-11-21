@@ -20,6 +20,10 @@
 ###1.链式求导规则 
 * $$设 z=f(u,v,w),u=u(y),v=v(x,y),w=w(x),\\称x,y叫自变量,u,v,w叫中间变量,z叫因变量$$
 * $$复合变量结构图$$
+![复合变量结构图](./img/mvdc1.png)
+* 有几条路就有几项相加，每条路上有几段就有几个相乘
+* $$\frac {\partial z}{\partial x} = \frac {\partial z}{\partial v} \bullet \frac {\partial v}{\partial x} + \frac {\partial z}{\partial w} \bullet \frac {dv}{dx}$$
+    * $$w 到 x 只有一条，所以用\frac {dv}{dx} 不用 \frac {\partial v}{\partial x}$$
 
 
  
