@@ -48,4 +48,7 @@
 
 * $$1.无条件极值 z=f(x,y)$$
     * 1.必要条件
-        * 设
+        * $$ 设z=f(x,y) 在(x_0,y_0)处 \left\{ \begin{array}{ll} 一阶偏导数存在, & \textrm{} \\ 取极值, & \textrm{}  \end{array} \right. \\ \Rightarrow f'_x(x_0,y_0)=0,f'_y(x_0,y_0)=0$$
+        * [注]适用于三元及以上
+
+
