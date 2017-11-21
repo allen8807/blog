@@ -27,9 +27,19 @@
 * 注意书写规范
 
 ###2.高阶偏导数
-* $$设 z=f(u,v,w) $$
+* $$设 z=f(u,v,w),u=u(y),v=v(x,y),w=w(x),\\称x,y叫自变量,u,v,w叫中间变量,z叫因变量$$
 * 四种二阶偏导数
     * $$ \frac {\partial(\frac {\partial z}{\partial x})}{\partial x} = \frac {\partial^2 z}{\partial x^2} $$
     * $$ \frac {\partial(\frac {\partial z}{\partial x})}{\partial y} = \frac {\partial^2 z}{\partial x \partial y } $$
     * $$ \frac {\partial(\frac {\partial z}{\partial y})}{\partial x} = \frac {\partial^2 z}{\partial y \partial x} $$
     * $$ \frac {\partial(\frac {\partial z}{\partial y})}{\partial y} = \frac {\partial^2 z}{\partial y^2} $$
+* 无论z对谁求导，也无论z已经求了几次导，新函数仍然与原来函数有完全相同的复合结构
+
+* [自注]这段没有看明白，到知乎上查了下，解释如下
+    * 1.偏导数是相对某个具体的坐标系才有意义的
+    * 2.链式法则是对复合函数才适用  
+* [自注]这里我的理解是所谓中间变量其实是“坐标系的基”，结合线性代数就好理解了。
+    * 而链式法则一开始就是在转换坐标系，机器人学里的链式法则也是在转换坐标系，所以链式法则只能用于复合函数
+    * 所以那句“无论求了几次导……”就好理解了，不管怎么求导，也不会改变坐标系的基的，因为在过程中转换坐标系完成求导，但是最终结果还是在原坐标系
+
+###3.多元函数的极最值（必考）
