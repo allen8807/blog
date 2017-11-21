@@ -49,6 +49,19 @@
 * $$1.无条件极值 z=f(x,y)$$
     * 1.必要条件
         * $$ 设z=f(x,y) 在(x_0,y_0)处 \left\{ \begin{array}{ll} 一阶偏导数存在, & \textrm{} \\ 取极值, & \textrm{}  \end{array} \right. \\ \Rightarrow f'_x(x_0,y_0)=0,f'_y(x_0,y_0)=0$$
-        * [注]适用于三元及以上
+        * [注]适用于三元及以上(常考2~5元)
+    * 2.充分条件
+        * $$记f''_{xx}(x_0,y_0)=A, f''_{xy}(x_0,y_0)=B, f''_{yy}(x_0,y_0)=C \\ \Rightarrow \Delta = B^2-AC  \left\{ \begin{array}{ll} \Delta < 0 \left\{ \begin{array}{ll} A > 0 \Rightarrow 极小  \\ A < 0  \Rightarrow 极大  \end{array} \right. \\ \Delta > 0 \Rightarrow 不是极值 \\  \Delta = 0 \Rightarrow 失效（用概念）\end{array} \right.$$
+        * [注] 只适用于二元。原因是因为这个判别式是海塞矩阵，二阶行列式，多元需要高阶的海塞矩阵
+
+* $$2.条件极值$$其实是最值
+    * $$提法:求u=f(x,y,z)在约束条件\left\{ \begin{array}{ll} \varphi(x,y,z) = 0   \\ \psi(x,y,z) = 0  \end{array} \right. 下的极值$$ 其实是最值
+    * 拉式乘数法 
+        * 1.作辅助函数
+            * $$ F(x,y,z,\lambda,\mu) = f(x,y,z) +  \lambda \varphi(x,y,z)+\mu\psi(x,y,z) $$五个独立变量
+        * 2.令五个偏导为0
+            * $$F'_x=0,F'_y=0,F'_z=0,F'_{\lambda}=0,F'_{\psi}=0 $$
+        * 3.解方程组的P_i
+            * $$比较u(P_i),M = u_{max}(P_i),m=u_{min}(P_j)$$
 
 
