@@ -6,5 +6,5 @@
     * $$\iint_{D}f(x,y) d \sigma  , d\sigma > 0$$
 * 2.对称性(必考)
     * 1.普通对称性
-        * $$设D关于y轴对称, \iint_Df(x,y)d\sigma = $$
+        * $$设D关于y轴对称,\\ \iint_Df(x,y)d\sigma = \left\{ \begin{array}{ll} 2\iint_{D_1}f(x,y)d\sigma , & \textrm{$f(x,y)=f(-x,y)$} \\ 0, & \textrm{$f(x,y)=-f(-x,y)$} \end{array} \right. $$
 
