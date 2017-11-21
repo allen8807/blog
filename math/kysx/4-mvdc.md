@@ -24,6 +24,7 @@
 * 有几条路就有几项相加，每条路上有几段就有几个相乘
 * $$\frac {\partial z}{\partial x} = \frac {\partial z}{\partial v} \bullet \frac {\partial v}{\partial x} + \frac {\partial z}{\partial w} \bullet \frac {dv}{dx}$$
     * $$w 到 x 只有一条，所以用\frac {dv}{dx} 不用 \frac {\partial v}{\partial x}$$
+* 注意书写规范
 
 
  
