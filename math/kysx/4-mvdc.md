@@ -26,11 +26,10 @@
     * $$w 到 x 只有一条，所以用\frac {dv}{dx} 不用 \frac {\partial v}{\partial x}$$
 * 注意书写规范
 
-
- 
-
-
-
-
-
-
+###2.高阶偏导数
+* $$设 z=f(u,v,w) $$
+* 四种二阶偏导数
+    * $$ \frac {\partial(\frac {\partial z}{\partial x})}{\partial x} = \frac {\partial^2 z}{\partial x^2} $$
+    * $$ \frac {\partial(\frac {\partial z}{\partial x})}{\partial y} = \frac {\partial^2 z}{\partial x \partial y } $$
+    * $$ \frac {\partial(\frac {\partial z}{\partial y})}{\partial x} = \frac {\partial^2 z}{\partial y \partial x} $$
+    * $$ \frac {\partial(\frac {\partial z}{\partial y})}{\partial y} = \frac {\partial^2 z}{\partial y^2} $$
