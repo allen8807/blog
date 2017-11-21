@@ -1,6 +1,6 @@
 # 第三讲 一元函数积分学 Single Variable Integral Calculus
 * 定义，计算，应用 
- 
+
 ## 一、定义
 * 1.不定积分
     * $$ \forall x \in I,使F'(x)=f(x),则称F(x)是f(x)在I上的一个原函数。$$
@@ -81,8 +81,8 @@
     * $$ 对于 \int_a^b f(x)dx  = \int_{\varphi^-1(a)}^{\varphi^-1(b)} f[\varphi(t)]\varphi'(t)dt, 令x=\varphi(t) \\ 且要求\varphi'(t)连续，并x=\varphi(t)不超出区间[a,b]$$
 * $$I_n= \int_0^{\frac {\pi}2}\sin^nxdx,n为大于1的整数$$  
     * $$可以得到递推式I_n=\frac{n-1}nI_{n-2}$$  
-    * $$ I_n = \left\{ \begin{array}{ll} (1)x > 0, t \in (0, \frac {\pi}2) \\ (2) x < 0, t \in ( \frac {\pi}2, \pi) \end{array} \right. $$
-    * $$ (\ln|u|)'_x = \left\{ \begin{array}{ll} (\ln u)' = \frac1u \bullet u'  & \textrm{$u > 0$}\\ (\ln (-u))' =\frac1{-u} \bullet (-u') = \frac1u \bullet u'  & \textrm{$u < 0$} \end{array} \right. $$
+    * $$ I_n = \left\{ \begin{array}{ll} \frac{n-1}{n}\bullet\frac{n-3}{n-2}\dots\frac12\bullet\frac{\pi}2, & \textrm{$n为正偶数$} \\ \frac{n-1}{n}\bullet\frac{n-3}{n-2}\dots\frac23, & \textrm{$n为大于1的奇数$}  \end{array} \right.  华里士公式，华氏公式$$
+
 
 
 
