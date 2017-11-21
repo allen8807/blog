@@ -1,5 +1,6 @@
 # 第五讲 二重积分 Double Integral
 * 概念，计算
+
 ### 一、概念
 * 1.比较
     * 和定积分比较，是一个曲顶柱体的体积
@@ -9,6 +10,7 @@
         * $$设D关于y轴对称,\\ \iint_Df(x,y)d\sigma = \left\{ \begin{array}{ll} 2\iint_{D_1}f(x,y)d\sigma , & \textrm{$f(x,y)=f(-x,y)$} \\ 0, & \textrm{$f(x,y)=-f(-x,y)$} \end{array} \right. $$
     * 2.轮换对称性（在直角系下）
         * 积分值与用何字母表示无关
+        
 
 ## 二、计算
 ###1.直角坐标系
