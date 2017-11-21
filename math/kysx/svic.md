@@ -74,6 +74,15 @@
         * $$1.Q_m(x)分解出(ax+b)^k \Rightarrow 产生k项\\ \frac{A_1}{ax+b} +\frac{A_2}{(ax+b)^2} + \dots + \frac{A_k}{(ax+b)^k} ,k=1,2,\dots$$
         * $$2.Q_m(x)分解出(px^2+qx+r)^k\Rightarrow 产生k项\\ \frac{A_1x+B_1}{px^2+qx+r} +\frac{A_2x+B_2}{(px^2+qx+r)^2} + \dots + \frac{A_kx+B_k}{(px^2+qx+r)^k} ,k=1,2,\dots$$
 
+##三、定积分的计算
+* $$ \int_a^b f(x)dx  = F(b) -F(a)$$
+* 1. 先按四大基本积分法求出F(x)
+* 2. 代入上下限，只不过要求记住换元法时的细节:
+    * $$ 对于 \int_a^b f(x)dx  = \int_{\varphi^-1(a)}^{\varphi^-1(b)} f[\varphi(t)]\varphi'(t)dt, 令x=\varphi(t) \\ 且要求\varphi'(t)连续，并x=\varphi(t)不超出区间[a,b]$$
+    
+
+
+
         
 
 
