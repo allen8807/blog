@@ -92,7 +92,7 @@
 * $$1.y=y(x)与x=a,x=b (a < b)及x轴所围\sigma绕x轴旋转一周所得旋转体$$
     * $$ V_x=\int_a^b\pi\bullet y^2(x)dx$$
 * $$2.上述\sigma 绕y轴旋转一周所得旋转体$$
-    * $$V_y= \int_a^b 2\pi x\bullet | y(x)|dx$$
+    * $$V_y= \int_a^b 2\pi x\bullet | y(x)|dx$$ ——柱壳(qiao)法
     
 
 
