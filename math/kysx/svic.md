@@ -79,7 +79,12 @@
 * 1. 先按四大基本积分法求出F(x)
 * 2. 代入上下限，只不过要求记住换元法时的细节:
     * $$ 对于 \int_a^b f(x)dx  = \int_{\varphi^-1(a)}^{\varphi^-1(b)} f[\varphi(t)]\varphi'(t)dt, 令x=\varphi(t) \\ 且要求\varphi'(t)连续，并x=\varphi(t)不超出区间[a,b]$$
-    
+* $$I_n= \int_0^{\frac {\pi}2}\sin^nxdx,n为大于1的整数$$  
+    * $$可以得到递推式I_n=\frac{n-1}nI_{n-2}$$  
+    * $$ I_n = \left\{ \begin{array}{ll} (1)x > 0, t \in (0, \frac {\pi}2) \\ (2) x < 0, t \in ( \frac {\pi}2, \pi) \end{array} \right. $$
+    * $$ (\ln|u|)'_x = \left\{ \begin{array}{ll} (\ln u)' = \frac1u \bullet u'  & \textrm{$u > 0$}\\ (\ln (-u))' =\frac1{-u} \bullet (-u') = \frac1u \bullet u'  & \textrm{$u < 0$} \end{array} \right. $$
+
+
 
 
 

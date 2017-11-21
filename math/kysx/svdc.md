@@ -1,5 +1,7 @@
 # 第二讲 一元函数微分学 Single Variable Differential Calculus
+
 ## 一、导数定义（牛顿）
+
 * 瞬时变化率
 * $$ \lim_{\Delta x \to 0 } \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} =f'(x_0) $$ 记为
 * [注]
@@ -46,7 +48,7 @@
     * $$ 方法:在（*）式两边同时对x求导，注意y=y(x)即可（复合求导）$$
 * 3.对数求导法
     * 对于多项相乘相除，开方，乘方的式子，先取对数，再求导
-    * [注] u=u(x)
+    * $$[注] u=u(x)$$
         * $$ (\ln|u|)'_x = \left\{ \begin{array}{ll} (\ln u)' = \frac1u \bullet u'  & \textrm{$u > 0$}\\ (\ln (-u))' =\frac1{-u} \bullet (-u') = \frac1u \bullet u'  & \textrm{$u < 0$} \end{array} \right. $$
         * 形式上相同，视绝对值而不见
         * $$ (\ln|u|)'_x = \frac1u \bullet u'$$
