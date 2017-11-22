@@ -25,6 +25,11 @@
 * $$\frac{|x|}x 在 x \to 0 时有界，但是极限不存在$$
 * 2A-A≠A （A只是符号，只有A存在时才做数量运算）
 
+## （强化班 二、微分定义 莱布尼茨）
+* $$1. \Delta y = f(x_0+\Delta x) -f(x_0)  真实增量$$
+* $$2. A \Delta x= f'(x_0)\Delta x 线性增量$$
+* $$3. \lim_{\Delta x \to 0} \frac {\Delta y - A \Delta x}{\Delta x} = 0 \Rightarrow f(x) 在x_0处可微 \Leftrightarrow 可导  $$
+
 ## 二、计算
 ### 1.基本求导公式
 * $$(x^\alpha)' = \alpha x^{\alpha -1} $$
