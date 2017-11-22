@@ -53,13 +53,18 @@
     * 2.考研中
         * $$1.n等分[a,b] \frac {b-a}n \to 0, n \to \infty$$
         * $$2.取右端点高 f(a+\frac {b-a}n i)$$
-        * $$ 则 \lim_{n to \infty} \Sigma_{i=1}^nf(a+\frac {b-a}n i)\frac {b-a}n = \int_a^bf(x)dx$$
-    * 3.$$令a=0,b=1,则\lim_{n to \infty} \Sigma_{i=1}^nf(\frac in)\frac 1n = \int_0^1f(x)dx$$
+        * $$ 则 \lim_{n \to \infty} \Sigma_{i=1}^nf(a+\frac {b-a}n i)\frac {b-a}n = \int_a^bf(x)dx$$
+    * 3.$$令a=0,b=1,则\lim_{n \to \infty} \Sigma_{i=1}^nf(\frac in)\frac 1n = \int_0^1f(x)dx$$
     * 三部曲
         * $$1.先提出\frac 1n$$
         * $$2.再凑出 \frac in$$
         * $$3.\frac 1n读作\int_0^1上的dx，\frac in读作\int_0^1上的x$$
 
+### 3.变限积分 （强化班）
+* $$1.\\\int_a^x f(t)dt————变上限积分函数\\\int_x^b f(t)dt————变下限积分函数\\\int_{\varphi_1(x)}^{\varphi_2(x)} f(t)dt————变限积分函数$$
+* 2.变限积分属于定积分范畴
+    * $$[a,b]有限,f(x)有界$$
+    * $$如\\int_a^x f(t)dt,|x-a|有限变量，f(t)有界，x取不到\infty,x有限$$
 
     
         
