@@ -31,6 +31,8 @@
     * $$\int_a^xf(t)dt \leftarrow f(x) \rightarrow f'(x)$$
     * $$\int_a^xf(t)dt 偶\leftarrow f(x) 奇 \rightarrow f'(x) 偶$$
     * $$\int_a^xf(t)dt(a=0,偶,a≠0,不确定)\leftarrow f(x)偶 \rightarrow f'(x)奇$$
+    * [预备Th]
+        * $$若f(x)以T为周期，可积，\\则\int_a^Tf(x)dx = \int_a^{a+T}f(x)dx, \forall a $$ 
 
     
 * [小结]
