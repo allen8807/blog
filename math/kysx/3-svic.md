@@ -24,21 +24,33 @@
     * $$ f(x)在[a,b]上连续 \Rightarrow \int_a^bf(x)dx 存在 $$
     * $$ f(x)在[a,b]上连续 \Rightarrow f(x) 在[a,b]上可积 $$
     * $$ f(x)在[a,b]上只有有限个间断点且有界 \int_a^bf(x)dx 存在 $$
+* [小结]
+     * $$ \int f(x)dx  ,函数族 $$
+     * $$ \int_a^b f(x)dx ,面积值(数）$$
+* $$ N-L公式  \int_a^b f(x)dx = F(x)|_a^b = F(b) -F(a)$$
+
+
+### 强化班总结
+
 * [注1]
     * $$f(x)连续 \Rightarrow F(x)=\int_a^xf(t)dt可导$$
     * $$f(x)可积 \Rightarrow F(x)=\int_a^xf(t)dt连续$$
 * [注2]
     * $$\int_a^xf(t)dt \leftarrow f(x) \rightarrow f'(x)$$
-    * $$\int_a^xf(t)dt 偶\leftarrow f(x) 奇 \rightarrow f'(x) 偶$$
-    * $$\int_a^xf(t)dt(a=0,偶,a≠0,不确定)\leftarrow f(x)偶 \rightarrow f'(x)奇$$
-    * [预备Th]
-        * $$若f(x)以T为周期，可积，\\则\int_a^Tf(x)dx = \int_a^{a+T}f(x)dx, \forall a $$ 
+    * 1.奇偶性
+        * $$\int_a^xf(t)dt 偶\leftarrow f(x) 奇 \rightarrow f'(x) 偶$$
+        * $$\int_a^xf(t)dt(a=0,偶,a≠0,不确定)\leftarrow f(x)偶 \rightarrow f'(x)奇$$
+    * 2.周期性
+        * $$1.可导f(x)以T为周期 \Rightarrow f'(x) 以T为周期$$
+        * $$2.可积f(x)以T为周期，则\\\int_a^xf(t)dt以T为周期的充要条件是 \int_a^Tf(x)dx = 0 $$
+        * [预备Th]
+            * $$若f(x)以T为周期，可积，\\则\int_a^Tf(x)dx = \int_a^{a+T}f(x)dx, \forall a $$
+    * 3.有界性
+        * $$[Th] 设f(x)在[a,b]有限区间内可导,\\且f'(x)有界,\forall x \in (a,b), 则 f(x) 有界, \forall x \in (a,b)$$
+    * 4.单调性(无明确结论)
+        
 
     
-* [小结]
-     * $$ \int f(x)dx  ,函数族 $$
-     * $$ \int_a^b f(x)dx ,面积值(数）$$
-* $$ N-L公式  \int_a^b f(x)dx = F(x)|_a^b = F(b) -F(a)$$
 
 
 
