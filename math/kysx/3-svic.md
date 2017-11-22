@@ -24,6 +24,10 @@
     * $$ f(x)在[a,b]上连续 \Rightarrow \int_a^bf(x)dx 存在 $$
     * $$ f(x)在[a,b]上连续 \Rightarrow f(x) 在[a,b]上可积 $$
     * $$ f(x)在[a,b]上只有有限个间断点且有界 \int_a^bf(x)dx 存在 $$
+* [注]
+    * $$1.f(x)连续 \Rightarrow F(x)=\int_a^xf(t)dt可导$$
+    * $$2.f(x)可积 \Rightarrow F(x)=\int_a^xf(t)dt连续$$
+
     
 * [小结]
      * $$ \int f(x)dx  ,函数族 $$
