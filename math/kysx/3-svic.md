@@ -163,6 +163,13 @@
     * $$y(x)在[a,b]上的平均值\bar y \triangleq \frac{\int_a^by(x)dx}{b-a} $$
     
 
+## 五 逻辑证明 强化班
+中值定理，不等式证明，方程根
+### 2.方程根
+* $$1.存在性:零点定理 f(a)\bullet f(b) < 0 \Rightarrow f(\xi) = 0 $$
+* $$2.唯一性 \left\{ \begin{array}{ll} 单调性 \left\{ \begin{array}{ll} f'(x) > 0 \Rightarrow f(x) 单调增 \\ f'(x) < 0 \Rightarrow f(x) 单调减 \end{array} \right. \\ 罗尔原话: 若f^{(n)}(x)=0至多k个根  \Rightarrow 则  f^{(n-1)}(x)=0至多k+1个根 \end{array} \right. $$
+
+### 3.不等式 核心工具是求导，研究性态
 
 
 
