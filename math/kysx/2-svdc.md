@@ -25,11 +25,18 @@
 * $$\frac{|x|}x 在 x \to 0 时有界，但是极限不存在$$
 * 2A-A≠A （A只是符号，只有A存在时才做数量运算）
 
+## （ 二、微分定义 莱布尼茨 强化班）
+* $$1. \Delta y = f(x_0+\Delta x) -f(x_0)  真实增量$$
+* $$2. A \Delta x= f'(x_0)\Delta x 线性增量$$
+* $$3. \lim_{\Delta x \to 0} \frac {\Delta y - A \Delta x}{\Delta x} = 0 \Rightarrow f(x) 在x_0处可微 \Leftrightarrow 可导  $$
+* $$考 \left\{ \begin{array}{ll} \Delta y = A \Delta x + o(\Delta x), A \Delta x 是线性主部,o(\Delta x)是误差(error)
+ \\ dy|_{x=x_0}=A \Delta x = y'(x_0)A \Delta x = Adx &\end{array} \right.$$
+
 ## 二、计算
 ### 1.基本求导公式
 * $$(x^\alpha)' = \alpha x^{\alpha -1} $$
 * $$ (a^x)'=a^x \ln a ,(e^x)'=e^x$$
-* $$(\ln x)'= \frac1x$$
+* $$(\ln |x|)'= \frac1x$$
 * $$(\sin x)' = \cos x , (\cos x)'= -\sin x$$
 * $$(\tan x)' = \sec^2 x , (\cot x)'= -\csc^2 x$$
 * $$(\sec x)' = \sec x\tan x , (\csc x)'= -\csc x \cot x$$

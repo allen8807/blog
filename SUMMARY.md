@@ -37,5 +37,11 @@
 * [新东方口语教程笔记](xdf/README.md)
   * [语音语调](xdf/yyyd.md)
 * [数学](math/README.md)
-  * [考研数学](math/kao_yan_shu_xue.md)
+  * [考研数学](math/kysx/README.md)
+    * [极限](math/kysx/1-limit.md)
+    * [一元函数微分学](math/kysx/2-svdc.md)
+    * [一元函数积分学](math/kysx/3-svic.md)
+    * [多元函数微分学](math/kysx/4-mvdc.md)
+    * [二重积分](math/kysx/5-di.md)
+    * [微分方程](math/kysx/6-df.md)
 

@@ -2,16 +2,82 @@
 * 定义，计算，应用 
 
 ## 一、定义
-* 1.不定积分
-    * $$ \forall x \in I,使F'(x)=f(x),则称F(x)是f(x)在I上的一个原函数。$$
-    * 全体原函数就叫不定积分，记成
-    * $$ \int f(x)dx = F(x) + C $$
-* 2.定积分
-    * [小结]
-         * $$ \int f(x)dx  ,函数族 $$
-         * $$ \int_a^b f(x)dx ,面积值(数）$$
-    * $$ N-L公式  \int_a^b f(x)dx = F(x)|_a^b = F(b) -F(a)$$
-    
+### 1.不定积分
+* 1.定义
+    * $$ \forall x \in I,使F'(x)=f(x),则\\称F(x)是f(x)在I上的一个原函数。\\全体原函数就叫不定积分，记成\\ \int f(x)dx = F(x) + C $$ 
+* 2.原函数存在定理（强化班）
+    * 1.连续函数必有原函数
+        * $$ 设f(x)在I上连续,\\证明F(x)= \int_a^x f(t)dt,(a,t \in I)必可导,\\且F'(x)=f(x), \forall x \in I    $$
+            * 证明使用积分中值定理
+            * $$ \int_a^bf(x)dx = f(\xi)(b-a)$$ 积分形式转化为函数形式
+    * $$2.含跳跃,可去,无穷间断点的f(x)在此区间无原函数$$
+        * $$跳跃处f(x_0 -0 ) ≠ f(x_0 + 0) \\ \Rightarrow F'(x_0) ≠ f(x_0) 所以不\exists F'(x)$$ 
+    * $$3.含振荡间断点的f(x)在此区间可能有也可能没有原函数$$
+
+### 2.定积分
+* 1.必要条件
+    * $$ \int_a^bf(x)dx 存在 \Leftrightarrow f(x) 在[a,b]上可积$$
+    * $$ \int_a^bf(x)dx 存在 \Rightarrow [a,b]有限区间$$
+    * $$ \int_a^bf(x)dx 存在 \Rightarrow f(x)在[a,b]上有界$$
+    * $$ f(x) 在[a,b]上可积 \Rightarrow f(x)在[a,b]上有界$$
+* 2.充分条件
+    * $$ f(x)在[a,b]上连续 \Rightarrow \int_a^bf(x)dx 存在 $$
+    * $$ f(x)在[a,b]上连续 \Rightarrow f(x) 在[a,b]上可积 $$
+    * $$ f(x)在[a,b]上只有有限个间断点且有界 \int_a^bf(x)dx 存在 $$
+* [小结]
+     * $$ \int f(x)dx  ,函数族 $$
+     * $$ \int_a^b f(x)dx ,面积值(数）$$
+* $$ N-L公式  \int_a^b f(x)dx = F(x)|_a^b = F(b) -F(a)$$
+
+
+### 强化班总结
+
+* [注1]
+    * $$f(x)连续 \Rightarrow F(x)=\int_a^xf(t)dt可导$$
+    * $$f(x)可积 \Rightarrow F(x)=\int_a^xf(t)dt连续$$
+* [注2]
+    * $$\int_a^xf(t)dt \leftarrow f(x) \rightarrow f'(x)$$
+    * 1.奇偶性
+        * $$\int_a^xf(t)dt 偶\leftarrow f(x) 奇 \rightarrow f'(x) 偶$$
+        * $$\int_a^xf(t)dt(a=0,偶,a≠0,不确定)\leftarrow f(x)偶 \rightarrow f'(x)奇$$
+    * 2.周期性
+        * $$1.可导f(x)以T为周期 \Rightarrow f'(x) 以T为周期$$
+        * $$2.可积f(x)以T为周期，则\\\int_a^xf(t)dt以T为周期的充要条件是 \int_a^Tf(x)dx = 0 $$
+        * [预备Th]
+            * $$若f(x)以T为周期，可积，\\则\int_a^Tf(x)dx = \int_a^{a+T}f(x)dx, \forall a $$
+    * 3.有界性
+        * $$[Th] 设f(x)在[a,b]有限区间内可导,\\且f'(x)有界,\forall x \in (a,b), 则 f(x) 有界, \forall x \in (a,b)$$
+    * 4.单调性(无明确结论)
+* [注3] 关于定积分的精确定义,黎曼积分,常义积分
+    * $$1.两个任意\left\{ \begin{array}{ll} [a,b]任意切分 \\ 任意取高  \end{array} \right. 之后,\\ \int_a^bf(x)dx存在（唯一），称f(x)可积。$$
+    * 2.考研中
+        * $$1.n等分[a,b] \frac {b-a}n \to 0, n \to \infty$$
+        * $$2.取右端点高 f(a+\frac {b-a}n i)$$
+        * $$ 则 \lim_{n \to \infty} \Sigma_{i=1}^nf(a+\frac {b-a}n i)\frac {b-a}n = \int_a^bf(x)dx$$
+    * 3.$$令a=0,b=1,则\lim_{n \to \infty} \Sigma_{i=1}^nf(\frac in)\frac 1n = \int_0^1f(x)dx$$
+    * 三部曲
+        * $$1.先提出\frac 1n$$
+        * $$2.再凑出 \frac in$$
+        * $$3.\frac 1n读作\int_0^1上的dx，\frac in读作\int_0^1上的x$$
+
+### 3.变限积分 （强化班）
+* $$1.\\\int_a^x f(t)dt————变上限积分函数\\\int_x^b f(t)dt————变下限积分函数\\\int_{\varphi_1(x)}^{\varphi_2(x)} f(t)dt————变限积分函数$$
+* 2.变限积分属于定积分范畴
+    * $$[a,b]有限,f(x)有界$$
+    * $$如\\int_a^x f(t)dt,|x-a|有限变量，f(t)有界，x取不到\infty,x有限$$
+* 3.求导公式
+    * $$(int_{\varphi_1(x)}^{\varphi_2(x)} f(t)dt)'_x=\\ f(\varphi_2(x))\varphi'_2(x)f(\varphi_1(x))\varphi'_1(x) - $$
+    * [注]上述求导公司使用条件被积函数只含t不能含x
+
+### 4.反常积分（强化班）
+* 1.定义
+    * $$1.破坏[a,b]有限性 \Rightarrow \\ \int_a^{+\infty}f(x)dx, \int_{-\infty}^bf(x)dx, \int_{-\infty}^{+\infty}f(x)dx 称“无穷区间的反常积分”$$
+    * $$2.破坏f(x)的有界性 \Rightarrow \\ \int_a^bf(x)dx,其中\lim_{x \to b^-}f(x)=\infty (称b为瑕点),称无界函数的反常积分,+\infty,-\infty,瑕点统称为奇(qi)点$$
+    * 2.判别条件"足够近，则收敛，不够近，则发散"
+        * $$P-积分\left\{ \begin{array}{ll} \int_1^{+\infty}\frac1{x^P}dx & \left\{ \begin{array}{ll} P > 1 \Rightarrow 收敛 \\ P \le 1 \Rightarrow 发散  \end{array} \right.
+ \\ \int_0^1\frac1{x^P}dx & \left\{ \begin{array}{ll} P < 1 \Rightarrow 收敛 \\ P \ge 1 \Rightarrow 发散  \end{array} \right.
+  \end{array} \right.$$ 
+            
 
 ## 二、计算（四大方法）
 * 1.凑微分法
@@ -97,6 +163,13 @@
     * $$y(x)在[a,b]上的平均值\bar y \triangleq \frac{\int_a^by(x)dx}{b-a} $$
     
 
+## 五 逻辑证明 强化班
+中值定理，不等式证明，方程根
+### 2.方程根
+* $$1.存在性:零点定理 f(a)\bullet f(b) < 0 \Rightarrow f(\xi) = 0 $$
+* $$2.唯一性 \left\{ \begin{array}{ll} 单调性 \left\{ \begin{array}{ll} f'(x) > 0 \Rightarrow f(x) 单调增 \\ f'(x) < 0 \Rightarrow f(x) 单调减 \end{array} \right. \\ 罗尔原话: 若f^{(n)}(x)=0至多k个根  \Rightarrow 则  f^{(n-1)}(x)=0至多k+1个根 \end{array} \right. $$
+
+### 3.不等式 核心工具是求导，研究性态
 
 
 
