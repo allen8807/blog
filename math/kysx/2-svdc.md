@@ -29,6 +29,8 @@
 * $$1. \Delta y = f(x_0+\Delta x) -f(x_0)  真实增量$$
 * $$2. A \Delta x= f'(x_0)\Delta x 线性增量$$
 * $$3. \lim_{\Delta x \to 0} \frac {\Delta y - A \Delta x}{\Delta x} = 0 \Rightarrow f(x) 在x_0处可微 \Leftrightarrow 可导  $$
+* $$考 \left\{ \begin{array}{ll} \Delta y = A \Delta x + o(\Delta x), A \Delta x 是线性主部,o(\Delta x)是误差(error)
+ \\ dy|_{x=x_0}=A \Delta x = y'(x_0)A \Delta x = Adx &\end{array} \right.$$
 
 ## 二、计算
 ### 1.基本求导公式
