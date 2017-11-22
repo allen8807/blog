@@ -70,7 +70,14 @@
     * [注]上述求导公司使用条件被积函数只含t不能含x
 
 ### 4.反常积分（强化班）
-* 
+* 1.定义
+    * $$1.破坏[a,b]有限性 \Rightarrow \\ \int_a^{+\infty}f(x)dx, \int_{-\infty}^bf(x)dx, \int_{-\infty}^{+\infty}f(x)dx 称“无穷区间的反常积分”$$
+    * $$2.破坏f(x)的有界性 \Rightarrow \\ \int_a^bf(x)dx,其中\lim_{x \to b^-}f(x)=\infty (称b为瑕点),称无界函数的反常积分,+\infty,-\infty,瑕点统称为奇(qi)点$$
+    * 2.判别条件"足够近，则收敛，不够近，则发散"
+        * $$P-积分\left\{ \begin{array}{ll} \int_1^{+\infty}\frac1{x^P}dx & \left\{ \begin{array}{ll} P > 1 \Rightarrow 收敛 \\ P \le 1 \Rightarrow 发散  \end{array} \right.
+ \\ \int_0^1\frac1{x^P}dx & \left\{ \begin{array}{ll} P < 1 \Rightarrow 收敛 \\ P \ge 1 \Rightarrow 发散  \end{array} \right.
+  \end{array} \right.$$ 
+            
 
     
         
