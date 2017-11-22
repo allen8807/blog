@@ -36,7 +36,7 @@
 ### 1.基本求导公式
 * $$(x^\alpha)' = \alpha x^{\alpha -1} $$
 * $$ (a^x)'=a^x \ln a ,(e^x)'=e^x$$
-* $$(\ln x)'= \frac1x$$
+* $$(\ln |x|)'= \frac1x$$
 * $$(\sin x)' = \cos x , (\cos x)'= -\sin x$$
 * $$(\tan x)' = \sec^2 x , (\cot x)'= -\csc^2 x$$
 * $$(\sec x)' = \sec x\tan x , (\csc x)'= -\csc x \cot x$$
