@@ -49,7 +49,19 @@
         * $$[Th] 设f(x)在[a,b]有限区间内可导,\\且f'(x)有界,\forall x \in (a,b), 则 f(x) 有界, \forall x \in (a,b)$$
     * 4.单调性(无明确结论)
 * [注3] 关于定积分的精确定义,黎曼积分,常义积分
-    * 
+    * $$1.两个任意\left\{ \begin{array}{ll} [a,b]任意切分 \\ 任意取高  \end{array} \right. 之后,\\ \int_a^bf(x)dx存在（唯一），称f(x)可积。$$
+    * 2.考研中
+        * $$1.n等分[a,b] \frac {b-a}n \to 0, n \to \infty$$
+        * $$2.取右端点高 f(a+\frac {b-a}n i)$$
+        * $$ 则 \lim_{n to \infty} \Sigma_{i=1}^nf(a+\frac {b-a}n i)\frac {b-a}n = \int_a^bf(x)dx$$
+    * 3.$$令a=0,b=1,则\lim_{n to \infty} \Sigma_{i=1}^nf(\frac in)\frac 1n = \int_0^1f(x)dx$$
+    * 三部曲
+        * $$1.先提出\frac 1n$$
+        * $$2.再凑出 \frac in$$
+        * $$3.\frac 1n读作\int_0^1上的dx，\frac in读作\int_0^1上的x$$
+
+
+    
         
 
     
