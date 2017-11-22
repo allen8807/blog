@@ -21,7 +21,9 @@
     * $$ \int_a^bf(x)dx 存在 \Rightarrow f(x)在[a,b]上有界$$
     * $$ f(x) 在[a,b]上可积 \Rightarrow f(x)在[a,b]上有界$$
 * 2.充分条件
-
+    * $$ f(x)在[a,b]上连续 \Rightarrow \int_a^bf(x)dx 存在 $$
+    * $$ f(x)在[a,b]上连续 \Rightarrow f(x) 在[a,b]上可积 $$
+    * $$ f(x)在[a,b]上只有有限个间断点且有界 \int_a^bf(x)dx 存在 $$
     
 * [小结]
      * $$ \int f(x)dx  ,函数族 $$
