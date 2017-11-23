@@ -28,7 +28,7 @@
 * $$\frac {\partial f}{\partial y}|_{(x_0,y_0)}=f_y'(x_0,y_0) \triangleq \lim_{\Delta y \to 0  } \frac {f(x_0 ,y_0+\Delta y)-f(x_0,y_0)}{\Delta y}$$
 * $$ \partial  偏微分符号，拉格朗日发明，法文，读音类似round$$
 
-###4.可微性 z=f(x,y)
+###4.可微性 z=f(x,y) (强化班)
 * $$1. \Delta z = f(x_0+ \Delta x, y_0+ \Delta y) - f(x_0,y_0)  全增量$$  
 * $$2. A\Delta x+B\Delta y \left\{ \begin{array}{ll} A = f_x'(x_0,y_0) \\ B = f_y'(x_0,y_0) \end{array} \right.  线性增量$$
 * $$3. \lim_{\Delta x \to 0, \Delta y \to 0}\frac{\Delta z - (A\Delta x+B\Delta y)}{\sqrt{(\Delta x)^2+(\Delta y)^2}} = 0 \Rightarrow f(x,y)在c可微$$
@@ -36,6 +36,16 @@
     * $$\Delta z = (A\Delta x+B\Delta y) + o(\sqrt{(\Delta x)^2+(\Delta y)^2} )$$ 全增量，线性主部，误差（error）
 * $$微分学中 \Delta x =dx, \Delta y =dy \\得 dz|_{(x_0,y_0)}=f_x'(x_0,y_0)dx+f_y'(x_0,y_0)dy, dz为全微分$$
 * $$ dz=f_x'(x,y)dx+f_y'(x,y)dy = \frac {\partial f}{\partial x}dx+\frac {\partial f}{\partial y}dy $$
+
+###5.偏导数的连续性z=f(x,y) (强化班)
+* $$1.用定义求f_x'(x_0,y_0),f_y'(x_0,y_0)$$
+* $$2.用公式求f_x'(x,y),f_y'(x,y)$$
+* $$3.验证\lim_{x \to x_0, y \to y_0}f'_x(x,y) 是否=f'_x(x_0,y_0) \\且\lim_{x \to x_0, y \to y_0}f'_y(x,y) 是否=f'_y(x_0,y_0) ,\\若均等，则称f(x,y)在(x_0,y_0)处偏导数连续$$
+
+###逻辑关系 z=f(x,y) (x_0,y_0)
+* $$ 偏导连续5 \Rightarrow 可微4 \Rightarrow 可偏导3 $$ 
+* $$ 可微4 \Rightarrow 连续2 \Rightarrow 极限存在1$$
+
 
 ##二、计算(必考)————多元函数微分法
 ###1.链式求导规则 
