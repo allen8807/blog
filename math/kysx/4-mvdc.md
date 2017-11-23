@@ -35,7 +35,7 @@
     * $$\Delta z - (A\Delta x+B\Delta y) = o(\sqrt{(\Delta x)^2+(\Delta y)^2} )$$
     * $$\Delta z = (A\Delta x+B\Delta y) + o(\sqrt{(\Delta x)^2+(\Delta y)^2} )$$ 全增量，线性主部，误差（error）
 * $$微分学中 \Delta x =dx, \Delta y =dy \\得 dz|_{(x_0,y_0)}=f_x'(x_0,y_0)dx+f_y'(x_0,y_0)dy, dz为全微分$$
-
+* $$ dz=f_x'(x,y)dx+f_y'(x,y)dy = \frac {\partial f}{\partial x}dx+\frac {\partial f}{\partial y}dy $$
 
 ##二、计算(必考)————多元函数微分法
 ###1.链式求导规则 
