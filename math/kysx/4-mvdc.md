@@ -2,9 +2,19 @@
 * 概念，计算，应用(极、最值) 
 
 ##一、概念
-###1.极限
-* $$设f(x,y)的定义域为D，P_0(x_0,y_0)是D的聚点，\\ \forall \varepsilon > 0, \exists \delta > 0, 当P(x,y) \in D \cap \mathring{U}(P_0,\delta)时，\\恒有|f(x,y)-A| < \varepsilon \Rightarrow \\ \lim_{x \to x_0, y \to y_0}f(x,y)=A$$ 
-    $$聚点的概念:理解为内点+边界点，但边界点不一定是D的$$
+###1.极限的存在性
+* 1.第一种定义法(数学专业,同济六、七版)
+    * $$设f(x,y)的定义域为D，P_0(x_0,y_0)是D的聚点，\\ \forall \varepsilon > 0, \exists \delta > 0, 当P(x,y) \in D \cap \mathring{U}(P_0,\delta)时，\\恒有|f(x,y)-A| < \varepsilon \Rightarrow \\ \lim_{x \to x_0, y \to y_0}f(x,y)=A$$ 
+        $$聚点的概念:理解为内点+边界点，但边界点不一定是D的$$
+* 2.第二种定义法(非数学专业高等数学教材)
+    * $$若二元函数f(x,y)在(x_0,y_0)的去心邻域内有定义，\\且(x,y)以任意方式趋向于(x_0,y_0)时,f(x,y)均 \to A 则\\ \lim_{x \to x_0, y \to y_0}f(x,y)=A$$
+* $$ \lim_{x \to x_0, y \to y_0} \Leftrightarrow \lim_{(x,y) \to (x_0, y_0)} $$ 同时趋向
+* [注]除了洛必达法则、单调有界准则、穷举法以外，可照搬一元函数求极限的方法。如
+    * 1.等价无穷小替换
+    * 2.无穷小 * 有界变量=无穷小
+        * $$ \lim_{x->0^+}x\ln x = 0$$
+    * 3.夹逼准则 等
+    
 
 ###2.连续性
 * $$若\lim_{x \to x_0, y \to y_0}f(x,y)=f(x_0,y_0),称f(x,y)在(x_0,y_0)连续$$
