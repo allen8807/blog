@@ -14,7 +14,7 @@
 * [注] 3类级数 可能=1类级数+2类级数
 
 ## 一、数项级数的判敛
-### $$1.正项级数 \Sigma_{n=1}^{\infty}u_n (u_n \ge 0) 的判敛 $$
+### $$1.正项级数 \Sigma_{n=1}^{\infty}u_n (u_n \ge 0) 的判敛 5种判别法$$
 * 1.收敛原则(考抽象)
     * $$\Sigma_{n=1}^{\infty}u_n 收敛 \Leftrightarrow \{S_n\}有上界 $$ 
     * 证
@@ -29,6 +29,23 @@
 * 4.比值判别法(达朗贝尔判别法)
     * $$设\Sigma_{n=1}^{\infty}u_n 为正项级数, 则$$
     * $$ \lim_{n \to \infty} \frac {u_{n+1}}{u_n}   =\rho \left\{ \begin{array}{ll} < 1 \Rightarrow  收\\ > 1 \Rightarrow  发  \\ = 1 该法失效,另谋他法(转用比较法)  \end{array} \right.  $$
+    * "向前进，我们就会看到希望（就会产生信心）！" ————达朗贝尔
+* 5.根值判别法(柯西判别法)
+    * $$设\Sigma_{n=1}^{\infty}u_n 为正项级数, 则$$
+    * $$ \lim_{n \to \infty} \sqrt[n]{u_n}   =\rho \left\{ \begin{array}{ll} < 1 \Rightarrow  收\\ > 1 \Rightarrow  发  \\ = 1 该法失效,另谋他法(转用比较法)  \end{array} \right.  $$
+
+* $$通项中含a^n,n!，考虑用4，5判别法$$
+
+
+### $$2.交错级数(\Sigma_{n=1}^{\infty}(-1)^nu_n,u_n > 0)的判敛$$
+* 1.莱布尼茨判别法
+    * $$若\Sigma_{n=1}^{\infty}(-1)^nu_n,u_n > 0 满足\\1. \lim_{n \to \infty} u_n = 0, \\ 2.u_n \ge u_{n+1} \\ \Rightarrow 级数收敛 $$
+*[注]比较
+    * $$ 1. \Sigma_{n=1}^{\infty} aq^{n-1} \left\{ \begin{array}{ll} |q|< 1 \Rightarrow 收敛,收敛于 \frac a{1-q} \\|q| \ge 1 \Rightarrow 发散 \end{array} \right. $$ 
+    *  $$ 2. p-级数  \Sigma_{n=1}^{\infty}\frac1{n^p} \left\{ \begin{array}{ll} p > 1 \Rightarrow 收敛 \\p \le 1 \Rightarrow 发散 \end{array} \right. $$ 
+    * $$3.广义p-级数  \Sigma_{n=2}^{\infty}\frac1{n(\ln n)^p} \left\{ \begin{array}{ll} p > 1 \Rightarrow 收敛 \\p \le 1 \Rightarrow 发散 \end{array} \right. $$ 超纲
+    * $$ 4. 交错p-级数  \Sigma_{n=1}^{\infty}(-1)^{n-1}\frac1{n^p} \left\{ \begin{array}{ll} p > 0 \Rightarrow 收敛 \\p \le 0 \Rightarrow \end{array} \right. $$ 
+
 
 
     
