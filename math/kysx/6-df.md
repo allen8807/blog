@@ -16,11 +16,20 @@
 * $$ \frac {dy}{dx} = f( \frac yx) ,换元，令\frac yx = u \Rightarrow y=u \bullet x \\  \Rightarrow y' = u' \bullet x + u \bullet 1 \Rightarrow u'x+u = f(u) \\ \Rightarrow \frac {du}{dx} \bullet x = f(u) - u \Rightarrow 继续分离变量 \int \frac{du}{f(u)-u} = \int \frac 
 {dx}{x} $$
 * 可接受隐式解
+* [注1]求解微分方程中,除了后面"一阶线性型"欲讲的特殊情形外,一律出现ln u,且u不知正负时,写ln|u|
+* [注2]
+    * 非线性方程中:通解≠全部解(通解+奇解=全部解)
+    * 线性方程中:通解=全部解
+    * 考研只考通解
+
+
+
 ### 3.一阶线性型
 * $$形如 y'+p(x)y=q(x),p(x),q(x)为已知函数,y未知$$
 * $$看成vu'+v'u$$
 * $$e^{\int pdx} \bullet y' + e^{\int pdx} \bullet p \bullet y = e^{\int pdx} \bullet q  \\ \Rightarrow (y \bullet e^{\int pdx})'=e^{\int pdx} \bullet q \\ \Rightarrow 两边积分 y \bullet e^{\int pdx}  = \int e^{\int pdx} \bullet qdx + C \\ \Rightarrow y = e^{-\int pdx}(\int e^{\int pdx} \bullet qdx + C ) 公式法$$
 * [自注] 这个通解公式在线性代数里有个其他解释
+
 
 ## 三、二阶方程求解
 * $$1.齐次方程 y'' + py' + qy = 0, p,q为常数$$
