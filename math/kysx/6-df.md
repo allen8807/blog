@@ -22,15 +22,21 @@
 {dx}{x} $$
 * 可接受隐式解
 
-
-
-
 ### 3.一阶线性型
 * $$形如 y'+p(x)y=q(x),p(x),q(x)为已知函数,y未知$$
 * $$看成vu'+v'u$$
 * $$e^{\int pdx} \bullet y' + e^{\int pdx} \bullet p \bullet y = e^{\int pdx} \bullet q  \\ \Rightarrow (y \bullet e^{\int pdx})'=e^{\int pdx} \bullet q \\ \Rightarrow 两边积分 y \bullet e^{\int pdx}  = \int e^{\int pdx} \bullet qdx + C \\ \Rightarrow y = e^{-\int pdx}(\int e^{\int pdx} \bullet qdx + C ) 公式法$$
 * [自注] 这个通解公式在线性代数里有个其他解释
 
+### 4.可降阶 （强化班）
+*[注]尚有两种类型的方程貌似二阶，实可降阶
+    * $$1.y''=f(x,y')型 ————缺y$$
+        * $$缺y\Rightarrow 干掉y',y'' ————赶尽杀绝y$$
+        * $$令y'=p,则y''=p' \\\Rightarrow p'=f(x,p) 变为以上三种类型$$
+    * $$2.y''=f(y,y')型————缺x$$
+        * $$缺x,决不允许x再出现————斩草除根x $$
+        * $$令y'=p,则y''=\frac{dp}{dx}=\frac{dp}{dy}\frac{dy}{dx}=\frac{dp}{dy}p$$
+        * $$故\frac{dp}{dy}p=f(y,p)$$
 
 ## 三、二阶方程求解
 * $$1.齐次方程 y'' + py' + qy = 0, p,q为常数$$
