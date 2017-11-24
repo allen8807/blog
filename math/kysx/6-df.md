@@ -12,15 +12,16 @@
 ### 1.变量可分离型
 * $$形如\frac {dy}{dx} = f(x,y) 若能分离成= g(x)\bullet h(y) \Rightarrow \int \frac {dy}{h(y)}= \int g(x) dx $$
 * 两边积分
-### 2.齐次型
-* $$ \frac {dy}{dx} = f( \frac yx) ,换元，令\frac yx = u \Rightarrow y=u \bullet x \\  \Rightarrow y' = u' \bullet x + u \bullet 1 \Rightarrow u'x+u = f(u) \\ \Rightarrow \frac {du}{dx} \bullet x = f(u) - u \Rightarrow 继续分离变量 \int \frac{du}{f(u)-u} = \int \frac 
-{dx}{x} $$
-* 可接受隐式解
 * [注1]求解微分方程中,除了后面"一阶线性型"欲讲的特殊情形外,一律出现ln u,且u不知正负时,写ln|u|
 * [注2]
     * 非线性方程中:通解≠全部解(通解+奇解=全部解)
     * 线性方程中:通解=全部解
     * 考研只考通解,数学专业考全部解
+### 2.齐次型
+* $$ \frac {dy}{dx} = f( \frac yx) ,换元，令\frac yx = u \Rightarrow y=u \bullet x \\  \Rightarrow y' = u' \bullet x + u \bullet 1 \Rightarrow u'x+u = f(u) \\ \Rightarrow \frac {du}{dx} \bullet x = f(u) - u \Rightarrow 继续分离变量 \int \frac{du}{f(u)-u} = \int \frac 
+{dx}{x} $$
+* 可接受隐式解
+
 
 
 
