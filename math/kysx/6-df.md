@@ -46,14 +46,29 @@
 ### 2.二阶非齐次方程 
 * $$1. y'' + py' + qy =e^{\alpha x} \bullet P_m(x)  $$
     * $$y_通=y_齐通+y^*_{非齐特}$$
-    * $$1.照搬1 \Rightarrow y_齐通 $$
+    * $$1.照搬1齐次方程通解 \Rightarrow y_齐通 $$
     * $$2.设定y^* = e^{\alpha x} \bullet Q_m(x) \bullet x^k, Q_m(x)为一般多项式（如ax^2+bx+c)$$
     * $$对于k,一看二算三比较$$
         * $$ 一看:自由项中的 \alpha $$
         * $$ 二算:\lambda^2+p\lambda+q =0 \Rightarrow \lambda_1, \lambda_2 $$
         * $$三比 \left\{ \begin{array}{ll} \alpha ≠ \lambda_1, \alpha ≠ \lambda_2 \Rightarrow k = 0\\ \alpha = \lambda_1或 \alpha = \lambda_2 \Rightarrow  k=1 \\ \alpha = \lambda_1 = \lambda_2  \Rightarrow k = 2 \end{array} \right. $$
+    * $$y^*代回原方程，用待定系数,求出Q_m(x)的系数，确定y^*$$
 * $$2.y'' + py' + qy =e^{\alpha x} \bullet (P_m(x)\cos \beta x + P_n(x)\sin \beta x )$$
-    * $$1.设定y^* = e^{\alpha x} \bullet Q_l^{(1)}(x) \bullet x^k, Q_l^{(2)}(x) , l = max(m,n)为一般多项式（如ax^2+bx+c)$$
+    * $$设定y^* = e^{\alpha x} \bullet (Q_l^{(1)}(x) \bullet \cos \beta x + Q_l^{(2)}(x)\sin \beta x ) \bullet x^k,\\ l = max(m,n)$$
+    * $$对于k,一看二算三比较$$
+        * $$ 一看:自由项中的 \alpha ,\beta , ( \alpha \pm \beta i)$$
+        * $$ 二算:\lambda^2+p\lambda+q =0 \Rightarrow \lambda_1, \lambda_2 $$
+        * $$三比 \left\{ \begin{array}{ll}  \lambda_{1,2} ≠ \alpha \pm \beta i \Rightarrow k = 0\\ \lambda_{1,2} = \alpha \pm \beta i  \Rightarrow  k=1 \end{array} \right. $$
+    * $$y^*代回原方程，用待定系数,求出Q_l(x)的系数，确定y^*$$
+    * $$照搬1齐次方程通解 \Rightarrow y_齐通 $$
+    * $$y_通=y_齐通+y^*_{非齐特}$$
+
+## 四、应用题（强化班）
+* 1.背景公平————信息给予
+* 2.翻译成数学表达式
+
+
+
 
 
 
