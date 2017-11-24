@@ -26,6 +26,10 @@
     * $$设\Sigma_{n=1}^{\infty}u_n, \Sigma_{n=1}^{\infty}v_n 为正项级数, 则$$
     * $$\lim_{n \to \infty} \frac {u_n}{v_n} (\frac 00 型) =  \left\{ \begin{array}{ll} 0 \Rightarrow u_n 小 & \left\{ \begin{array}{ll} \Sigma_{n=1}^{\infty}v_n  收 \Rightarrow \Sigma_{n=1}^{\infty}u_n 收\\ \Sigma_{n=1}^{\infty}u_n 发 \Rightarrow \Sigma_{n=1}^{\infty}v_n 发    \end{array} \right.  \\ \infty \Rightarrow v_n 小 &  \left\{ \begin{array}{ll} \Sigma_{n=1}^{\infty}u_n  收 \Rightarrow \Sigma_{n=1}^{\infty}v_n 收\\ \Sigma_{n=1}^{\infty}v_n 发 \Rightarrow \Sigma_{n=1}^{\infty}u_n 发    \end{array} \right.     \\ A≠0 \Rightarrow & u_n,v_n同敛散 \end{array} \right.  $$
     * A≠0是重中之重
+* 4.比值判别法(达朗贝尔判别法)
+    * $$设\Sigma_{n=1}^{\infty}u_n 为正项级数, 则$$
+    * $$ \lim_{n \to \infty} \frac {u_{n+1}}{u_n}   =\rho \left\{ \begin{array}{ll} < 1 \Rightarrow  收\\ > 1 \Rightarrow  发  \\ = 1 该法失效,另谋他法(转用比较法)  \end{array} \right.  $$
+
 
     
 
