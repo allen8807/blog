@@ -38,11 +38,13 @@
         * $$令y'=p,则y''=\frac{dp}{dx}=\frac{dp}{dy}\frac{dy}{dx}=\frac{dp}{dy}p$$
         * $$故\frac{dp}{dy}p=f(y,p)$$
 
-## 三、二阶方程求解
-* $$1.齐次方程 y'' + py' + qy = 0, p,q为常数$$
+## 三、二阶方程求解 （高阶方程2-4阶 强化班）
+### $$1.二阶齐次方程 y'' + py' + qy = 0, p,q为常数$$
     * $$1. 写 \lambda^2+p\lambda+q =0 \Rightarrow \Delta = p^2-4q$$
     * $$2. \left\{ \begin{array}{ll} \Delta  > 0 \Rightarrow \lambda_1 ≠ \lambda_2 \Rightarrow y = C_1e^{\lambda_1x} + C_2e^{\lambda_2x}\\ \Delta  = 0 \Rightarrow \lambda_1 = \lambda_2 =\lambda \Rightarrow y = (C_1+C_2x)e^{\lambda x} \\ \Delta  < 0 \Rightarrow \lambda_{1,2} =-\frac p2 \pm \frac {\sqrt{4q-p^2}}2i = \alpha \pm \beta i \Rightarrow y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x) \end{array} \right. $$
-* $$2.非齐次方程 y'' + py' + qy =e^{\alpha x} \bullet P_m(x)  $$
+    
+### 2.二阶非齐次方程 
+* $$1. y'' + py' + qy =e^{\alpha x} \bullet P_m(x)  $$
     * $$y_通=y_齐通+y^*_{非齐特}$$
     * $$1.照搬1 \Rightarrow y_齐通 $$
     * $$2.设定y^* = e^{\alpha x} \bullet Q_m(x) \bullet x^k, Q_m(x)为一般多项式（如ax^2+bx+c)$$
@@ -50,6 +52,11 @@
         * $$ 一看:自由项中的 \alpha $$
         * $$ 二算:\lambda^2+p\lambda+q =0 \Rightarrow \lambda_1, \lambda_2 $$
         * $$三比 \left\{ \begin{array}{ll} \alpha ≠ \lambda_1, \alpha ≠ \lambda_2 \Rightarrow k = 0\\ \alpha = \lambda_1或 \alpha = \lambda_2 \Rightarrow  k=1 \\ \alpha = \lambda_1 = \lambda_2  \Rightarrow k = 2 \end{array} \right. $$
+* $$2.y'' + py' + qy =e^{\alpha x} \bullet (P_m(x)\cos \beta x + P_n(x)\sin \beta x )$$
+    * $$1.设定y^* = e^{\alpha x} \bullet Q_l^{(1)}(x) \bullet x^k, Q_l^{(2)}(x) , l = max(m,n)为一般多项式（如ax^2+bx+c)$$
+
+
+
 
 
 
