@@ -56,6 +56,9 @@
 ### 1.幂级数
 * $$\left\{ \begin{array}{ll} \Sigma_{n=0}^{\infty}a_nx_n = \Sigma_{n=0}^{\infty}\frac {y^{(n)}}{n!}x^n  & 麦克劳林展开\\ \Sigma_{n=0}^{\infty}a_n(x - x_0)^n = \Sigma_{n=0}^{\infty}\frac {y^{(n)}}{n!}(x-x_0)^n   &泰勒展开\end{array} \right.$$
 * $$1.具体到x=x_0,代入\Sigma_{n=0}^{\infty}a_nx^n \Rightarrow \Sigma_{n=0}^{\infty}a_nx_0^n \Rightarrow 判敛$$
+    * $$\left\{ \begin{array}{ll} 若收敛,称x_0为收敛点\\ 若发散,称x_0为发散点 \end{array} \right.$$
+* $$2.目标:找到所有的收敛点的集合\Rightarrow 收敛域$$
+
 
     
 
