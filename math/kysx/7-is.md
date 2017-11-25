@@ -44,11 +44,12 @@
     * $$ 1. \Sigma_{n=1}^{\infty} aq^{n-1} \left\{ \begin{array}{ll} |q|< 1 \Rightarrow 收敛,收敛于 \frac a{1-q} \\|q| \ge 1 \Rightarrow 发散 \end{array} \right. $$ 
     *  $$ 2. p-级数  \Sigma_{n=1}^{\infty}\frac1{n^p} \left\{ \begin{array}{ll} p > 1 \Rightarrow 收敛 \\p \le 1 \Rightarrow 发散 \end{array} \right. $$ 
     * $$3.广义p-级数  \Sigma_{n=2}^{\infty}\frac1{n(\ln n)^p} \left\{ \begin{array}{ll} p > 1 \Rightarrow 收敛 \\p \le 1 \Rightarrow 发散 \end{array} \right. $$ 超纲
-    * $$ 4. 交错p-级数  \Sigma_{n=1}^{\infty}(-1)^{n-1}\frac1{n^p} \left\{ \begin{array}{ll} p > 0 \Rightarrow 收敛 \\p \le 0 \Rightarrow \end{array} \right. $$ 
+    * $$ 4. 交错p-级数  \Sigma_{n=1}^{\infty}(-1)^{n-1}\frac1{n^p} \left\{ \begin{array}{ll} p > 1  & \Rightarrow 绝对收敛 \\ 0 < p \le 1 & \Rightarrow 条件收敛  \end{array} \right. $$ 
 
 ### $$3.任意项级数(\Sigma_{n=1}^{\infty}u_n,u_n符号无限制)的判敛$$
 * $$1.思路上:\Sigma_{n=1}^{\infty}u_n \to \Sigma_{n=1}^{\infty}|u_n| \ge 0$$
 * $$2.理论上\left\{ \begin{array}{ll} 若\Sigma_{n=1}^{\infty}|u_n| \Rightarrow \Sigma_{n=1}^{\infty}u_n 绝对收敛 \\ 若 \left\{ \begin{array}{ll} 若\Sigma_{n=1}^{\infty}|u_n| 发 \Rightarrow \Sigma_{n=1}^{\infty}u_n 条件收敛\\  \Sigma_{n=1}^{\infty}u_n 收\end{array} \right. \end{array} \right. $$ 
+    * 可能拆成正项+交错 
 
 
 
