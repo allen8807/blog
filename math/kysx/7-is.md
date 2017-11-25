@@ -50,8 +50,12 @@
 * $$1.思路上:\Sigma_{n=1}^{\infty}u_n \to \Sigma_{n=1}^{\infty}|u_n| \ge 0$$
 * $$2.理论上\left\{ \begin{array}{ll} 若\Sigma_{n=1}^{\infty}|u_n| \Rightarrow \Sigma_{n=1}^{\infty}u_n 绝对收敛 \\ 若 \left\{ \begin{array}{ll} 若\Sigma_{n=1}^{\infty}|u_n| 发 \Rightarrow \Sigma_{n=1}^{\infty}u_n 条件收敛\\  \Sigma_{n=1}^{\infty}u_n 收\end{array} \right. \end{array} \right. $$ 
     * 可能拆成正项+交错 
+* 还是用前面的6个方法来处理
 
-
+## 二、幂级数的收敛域
+### 1.幂级数
+* $$\left\{ \begin{array}{ll} \Sigma_{n=0}^{\infty}a_nx_n = \Sigma_{n=0}^{\infty}\frac {y^{(n)}}{n!}x^n  & 麦克劳林展开\\ \Sigma_{n=0}^{\infty}a_n(x - x_0)^n = \Sigma_{n=0}^{\infty}\frac {y^{(n)}}{n!}(x-x_0)^n   &泰勒展开\end{array} \right.$$
+* $$1.具体到x=x_0,代入\Sigma_{n=0}^{\infty}a_nx^n \Rightarrow \Sigma_{n=0}^{\infty}a_nx_0^n \Rightarrow 判敛$$
 
     
 
