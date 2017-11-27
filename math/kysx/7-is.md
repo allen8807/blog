@@ -75,9 +75,12 @@
 * 1.熟稔于心 7个公式见书
     * $$e^x =\Sigma_{n=0}^{\infty}\frac {x^n}{n!} = 1 + x + \frac{x^2}{2!} + \dots + \frac {x^n}{n!} + \dots   -\infty < x < +\infty$$
     * $$\ln(1+x)=\Sigma_{n=0}^{\infty}(-1)^{n-1}\frac {x^n}{n} -1 < x \le 1$$
+    * $$\frac1{1-x}=\Sigma_{n=0}^{\infty}x^n , |x| < 1$$
+
 * 2.计算方法
     * 1.直接展开法
     * 2.先积后导法
+        * $$ \int f(x)dx)' = f(x) $$
 
 
 
