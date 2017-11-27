@@ -73,14 +73,22 @@
  
 ## 三、展开与求和(函数展开成幂级数及幂级数求和函数,深刻理解泰勒公式)
 * 1.熟稔于心 7个公式见书
-    * $$e^x =\Sigma_{n=0}^{\infty}\frac {x^n}{n!} = 1 + x + \frac{x^2}{2!} + \dots + \frac {x^n}{n!} + \dots   -\infty < x < +\infty$$
-    * $$\ln(1+x)=\Sigma_{n=0}^{\infty}(-1)^{n-1}\frac {x^n}{n} -1 < x \le 1$$
-    * $$\frac1{1-x}=\Sigma_{n=0}^{\infty}x^n , |x| < 1$$
+    * $$e^x =\Sigma_{n=0}^{\infty}\frac {x^n}{n!} = 1 + x + \frac{x^2}{2!} + \dots + \frac {x^n}{n!} + \dots  , x \in (-\infty,\infty)$$
+    
+    * $$ \sin x = \Sigma_{n=0}^{\infty}\frac {(-1)^n}{(2n+1)!}x^{2n+1}, x \in (-\infty,\infty)$$ 
+    * $$ \cos x = \Sigma_{n=0}^{\infty}\frac {(-1)^n}{(2n)!}x^{2n}, x \in (-\infty,\infty)$$ 
+    * $$\ln(1+x)=\Sigma_{n=0}^{\infty}(-1)^{n-1}\frac {x^n}{n}, x \in (-1,1]$$
+    * $$\frac1{1-x}=\Sigma_{n=0}^{\infty}x^n , x \in (-1,1)$$
+    * $$\frac1{1+x}=\Sigma_{n=0}^{\infty}(-1)^nx^n , x \in (-1,1)$$
+    * $$(1+x)^{\alpha}=1+\Sigma_{n=1}^{\infty}\frac{\alpha(\alpha-1)\dots(\alpha-(n-1))}{n!}x^n , x \in (-1,1)$$
 
 * 2.计算方法
     * 1.直接展开法
     * 2.先积后导法
         * $$ \int f(x)dx)' = f(x) $$
+    * 3.分母上有an+b,用先导后积 用定积分
+        * $$ f(x) = \int_a^x f'(t)dt + f(a)$$
+        * 先导后积公式
 
 
 
