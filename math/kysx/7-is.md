@@ -106,6 +106,8 @@
 * $$ f(x) \sim S(x)=\frac{a_0}{2} + \Sigma_{n=1}^{\infty}(a_n\cos \frac {n\pi x}{l} + b_n\sin \frac {n\pi x}{l} ) $$
     * $$ 1. [-l,l]上f(x)的展开 \left\{ \begin{array}{ll} a_0 = \frac 1l \int_{-l}^lf(x)dx \\ a_n = \frac 1l \int_{-l}^lf(x)\cos \frac {n\pi x}{l}dx  \\ b_n = \frac 1l \int_{-l}^lf(x)\sin \frac {n\pi x}{l}dx \end{array} \right. $$ 
     *  $$2. [-l,l]上f(x)\\是奇或偶的展开\left\{ \begin{array}{ll} 1.奇函数 a_0 = 0, a_n = 0,\\ b_n = \frac 2l \int_{0}^lf(x)\sin \frac {n\pi x}{l}dx,称为正弦级数 \\2.偶函数 a_0 = \frac 2l \int_{0}^lf(x)dx,\\ a_n = \frac 2l \int_{0}^lf(x)\cos \frac {n\pi x}{l}dx , b_n=0 称为余弦级数 \end{array}\\ \right. $$
+    * $$3.[0,l]上f(x)展开成正弦级数或余弦级数\\ \left\{ \begin{array}{ll} 1.作奇延拓,f(x)奇函数 \rightarrow 正弦级数  \\2.作偶延拓,f(x)偶函数 \rightarrow 余弦级数 \end{array}\\ \right. $$
+
     
     
 
