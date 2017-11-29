@@ -99,6 +99,14 @@
     * [注]以上两点为套话
 * $$则f(x)的傅氏级数S(x)在[-l,l]上处处收敛且$$
 * $$ S(x)= \left\{ \begin{array}{ll} f(x) & x为连续点\\ \frac{f(x-0)+f(x+0)}{2} & 为间断点\\ \frac{f(-l+0)+f(l-0)}{2} & x为端点\end{array} \right. $$ 
+* 推导过程太复杂，记住结论
+* $$f(x-0)表示左极限，f(x+0)表示右极限$$
+
+### 2.周期为2l的函数的傅氏展开
+* $$ f(x) \sim S(x)=\frac{a_0}{2} + \Sigma_{n=1}^{\infty}(a_n\cos \frac {n\pi x}{l} + b_n\sin \frac {n\pi x}{l} ) $$
+    * $$ 1. [-l,l]上f(x)的展开 \left\{ \begin{array}{ll} a_0 = \frac 1l \int_{-l}^lf(x)dx \\ a_n = \frac 1l \int_{-l}^lf(x)\cos \frac {n\pi x}{l}dx  \\ b_n = \frac 1l \int_{-l}^lf(x)\sin \frac {n\pi x}{l}dx \end{array} \right. $$ 
+    *  $$2. [-l,l]上f(x)\\是奇或偶的展开\left\{ \begin{array}{ll} 1.奇函数 a_0 = 0, a_n = 0,\\ b_n = \frac 2l \int_{0}^lf(x)\sin \frac {n\pi x}{l}dx,称为正弦级数 \\2.偶函数 a_0 = \frac 2l \int_{0}^lf(x)dx,\\ a_n = \frac 2l \int_{0}^lf(x)\cos \frac {n\pi x}{l}dx , b_n=0 称为余弦级数 \end{array}\\ \right. $$
+    
     
 
 
