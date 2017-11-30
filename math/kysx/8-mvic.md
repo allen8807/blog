@@ -65,6 +65,20 @@ P & Q & R
     * $$dv = r^2\sin\varphi d\theta d\varphi dr \qquad 记住即可 $$
     * $$\left\{ \begin{array}{ll} x = r\sin\varphi \bullet \cos\theta \\ y = r\sin\varphi \bullet \sin\theta \\ z = r\cos\varphi \end{array} \right.$$ 
     * $$ I =  \iiint_{\Omega}f(x,y,z)dv \\ = \int_{\theta_1}^{\theta_2}d\theta \int_{\varphi_1}^{\varphi_2}d\varphi \int_{r_1}^{r_2}f(x,y,z)r^2\sin\varphi dr \\ = \int_{\theta_1}^{\theta_2}d\theta \int_{\varphi_1}^{\varphi_2}d\varphi \int_{r_1}^{r_2}f(r\sin\varphi \cos\theta, r\sin\varphi\sin\theta, r\cos\varphi)r^2\sin\varphi dr  $$
+    
+## 三、第一型积分
+### 1.第一型曲线积分(和定积分，二重积分，三重积分本质一致都是面积)
+
+* 1.定义
+    * 对比定积分，底边由直线变曲线，dx变ds弧微分，L:y=y(x)
+    * $$ \int_Lf(x,y)ds $$
+    * $$ ds =\sqrt{ (dx)^2 + (dy)^2}$$
+* 2.计算口诀:一投二代三计算
+    * $$1.参数方程 L: \left\{ \begin{array}{ll} x = x(t) \\ y = y(t)  \end{array} \right. \qquad \alpha \le t \le \beta $$
+        * $$ \int_Lf(x,y)ds = \int_{\alpha}^{\beta}f(x(t),y(t))\sqrt {(x'(t))^2+(y'(t))^2}dt$$
+    * $$2.显式方程 L: \left\{ \begin{array}{ll} y = y(x) \\ (x = x) \end{array} \right. \qquad a \le x \le b $$
+        * $$ \int_Lf(x,y)ds = \int_a^bf(x,y(x))\sqrt {1+(y'(x))^2}dx$$
+
 
     
 
