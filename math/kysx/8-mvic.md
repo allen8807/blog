@@ -37,7 +37,7 @@
     * $$ \vec u = P(x,y,z)\vec i + Q\vec j + R\vec k  $$
     * $$ 散度 div \vec u = \frac {\partial P}{\partial x} + \frac {\partial Q}{\partial y} + \frac {\partial R}{\partial z} $$
     
-* $$4.旋度$$
+* $$4.旋度, 三阶行列式$$
     * $$ \vec rot \quad \vec u =  $$
 
 
