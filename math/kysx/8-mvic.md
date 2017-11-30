@@ -123,6 +123,9 @@ P & Q & R
     * $$\oint\oint_{\Sigma_外}Pdydz+Qdzdx+Rdxdy = \\ \iiint_{\Omega}(\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z})dv $$
     * $$成立要求: \left\{ \begin{array}{ll} 1.\Sigma封闭取外侧 \\ 2. P,Q,R,\frac{\partial P}{\partial x},\frac{\partial Q}{\partial y},\frac{\partial R}{\partial z}在\Omega中连续  \end{array} \right.$$
 
+## 五、空间第二型曲线积分
+### 1.斯托克斯公式
+* $$设\Omega为空间某区域,\Sigma为\Omega内分片光滑有向曲面片,L为逐段光滑的\Sigma的边界,其方向与\Sigma外法向符合右手定则$$
 
 
 
