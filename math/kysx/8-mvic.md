@@ -18,7 +18,17 @@
         * $$M_1(x_1.y_1,z_1)在\Gamma上,M_1绕L旋转一周得纬圆,P(x,y,z)为纬圆上一点$$
         * $$ M_0,M_1,P构成圆锥$$
         * $$\left\{ \begin{array}{ll} (x_1-x_0)^2+(y_1-y_0)^2+(z_1-z_0)^2=(x-x_0)^2+(y-y_0)^2+(z-z_0)^2\\l(x-x_1)+m(y-y_1)+n(z-z_1)=0\\F(x_1,y_1,z_1)=0 \\G(x_1,y_1,z_1)=0    \end{array} \right.  \\ \Rightarrow \Sigma: f(x,y,z)= 0 ——空间曲面方程 $$
-    
+
+### 2.场论初步
+* $$u=u(x,y) —— 数量场 field 没有向量方向，例如温度场$$
+* $$\vec u = \vec u(x,y) —— 向量场，有方向，有大小 如重力场$$
+
+* $$1.方向导数 u=u(x,y)$$             
+    * $$P_0(x_0,y_0), P_1(x_0+t\cos\alpha,y_0+t\sin \alpha),P_0到P_1为\vec l$$
+    * 1.定义法 
+        * $$ \frac {\partial u}{\partial \vec l} | _{P_0} \triangleq \lim_{t\to 0^+} \frac{u(x_0+t\cos\alpha,y_0+t\sin \alpha) - u(x_0,y_0}{t} $$
+    * 2.公式法
+        * $$ 若u(x,y)在P_0处可微,\\则\frac {\partial u}{\partial \vec l} | _{P_0}=u'_x|_{P_0} \bullet \cos \alpha + u'_y|_{P_0} \bullet \sin \alpha $$
     
 
 
