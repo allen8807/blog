@@ -54,6 +54,16 @@ P & Q & R
 * 1.直角系与柱面系下
     * $$dv=dxdydz (直角系下)$$
     * $$dv=d\theta rdrdz (直角+极 = 柱)$$
+    * 法一:先一后二法(先z后xy法，投影穿线法)
+        * 后积先定限，限内画条线，先交写下限，后交写上限
+        * 某个例子
+        * $$I= \iiint_{\Omega}zdv = \iint_{D_{_1xy}:x^2+y^2\le 1}d\sigma \bullet \int_1^2 zdz \\+ \iint_{D_{_2xy}:1\le x^2+y^2\le 4}d\sigma \bullet \int_{\sqrt{x^2+y^2}}^2 zdz  $$
+    * 法二:(先xy后z的方法，定限截面法)
+        * $$\iiint_{\Omega}zdv = \int_1^2 dz \iint_{D_{xy}:x^2+y^2\le z^2}zd\sigma   $$
+
+    
+
+
 
 
 
