@@ -51,6 +51,9 @@ P & Q & R
 * $$ \iiint_{\Omega}f(x,y,z)dv $$
 
 ### 2.计算
+* 1.直角系与柱面系下
+    * $$dv=dxdydz (直角系下)$$
+    * $$dv=d\theta rdrdz (直角+极 = 柱)$$
 
 
 
