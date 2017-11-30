@@ -105,8 +105,7 @@ P & Q & R
 * 2.格林公式法(间接法,green公式)
     * 正方向，沿着正方向走，左手在D内
     * $$ \oint_{L^+}P(x,y)dx+Q(x,y)dy \\=\iint_D(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})dxdy  $$
-    * $$成立要求: \left\{ \begin{array}{ll} 1.L封闭取正向 
- \\ 2. P,Q,\frac{\partial Q}{\partial x},\frac{\partial P}{\partial y}在D中连续  \end{array} \right.$$
+    * $$成立要求: \left\{ \begin{array}{ll} 1.L封闭取正向 \\ 2. P,Q,\frac{\partial Q}{\partial x},\frac{\partial P}{\partial y}在D中连续  \end{array} \right.$$
 
 ### 2.第二型曲面积分——无几何背景
 #### 1.概念
@@ -122,8 +121,7 @@ P & Q & R
     * $$[注] 指定\vec n_外,\vec k = 钝角 \Rightarrow -dxdy$$
 * 2.高斯公式法
     * $$\oint\oint_{\Sigma_外}Pdydz+Qdzdx+Rdxdy = \\ \iiint_{\Omega}(\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z})dv $$
-    * $$成立要求: \left\{ \begin{array}{ll} 1.\Sigma封闭取外侧 
- \\ 2. P,Q,R,\frac{\partial P}{\partial x},\frac{\partial Q}{\partial y},\frac{\partial R}{\partial z}在\Omega中连续  \end{array} \right.$$
+    * $$成立要求: \left\{ \begin{array}{ll} 1.\Sigma封闭取外侧 \\ 2. P,Q,R,\frac{\partial P}{\partial x},\frac{\partial Q}{\partial y},\frac{\partial R}{\partial z}在\Omega中连续  \end{array} \right.$$
 
 
 
