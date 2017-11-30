@@ -29,6 +29,16 @@
         * $$ \frac {\partial u}{\partial \vec l} | _{P_0} \triangleq \lim_{t\to 0^+} \frac{u(x_0+t\cos\alpha,y_0+t\sin \alpha) - u(x_0,y_0}{t} $$
     * 2.公式法
         * $$ 若u(x,y)在P_0处可微,\\则\frac {\partial u}{\partial \vec l} | _{P_0}=u'_x|_{P_0} \bullet \cos \alpha + u'_y|_{P_0} \bullet \sin \alpha $$
+
+* $$2.梯度gradient u=u(x,y) $$
+    * $$\vec {grad}\ U |_{P_0} =\{ u'_x|_{P_0} , u'_y|_{P_0} \}$$
     
+* $$3.散度 \vec u = \vec u(x,y,z) = \{P,Q,R\} 旋转 $$
+    * $$ \vec u = P(x,y,z)\vec i + Q\vec j + R\vec k  $$
+    * $$ 散度 div \vec u = \frac {\partial P}{\partial x} + \frac {\partial Q}{\partial y} + \frac {\partial R}{\partial z} $$
+    
+* $$4.旋度$$
+    * $$ \vec rot \quad \vec u =  $$
+
 
 
