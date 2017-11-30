@@ -61,6 +61,11 @@ P & Q & R
     * 法二:(先xy后z的方法，定限截面法)
         * $$\iiint_{\Omega}zdv = \int_1^2 dz \iint_{D_{xy}:x^2+y^2\le z^2}zd\sigma   $$
 
+* 2.球面系下
+    * $$dv = r^2\sin\varphi d\theta d\varphi dr \qquad 记住即可 $$
+    * $$\left\{ \begin{array}{ll} x = r\sin\varphi \bullet \cos\theta \\ y = r\sin\varphi \bullet \sin\theta \\ z = r\cos\varphi \end{array} \right.$$ 
+    * $$ I =  \iiint_{\Omega}f(x,y,z)dv \\ = \int_{\theta_1}^{\theta_2}d\theta \int_{\varphi_1}^{\varphi_2}d\varphi \int_{r_1}^{r_2}f(x,y,z)r^2\sin\varphi dr \\ = \int_{\theta_1}^{\theta_2}d\theta \int_{\varphi_1}^{\varphi_2}d\varphi \int_{r_1}^{r_2}f(r\sin\varphi \cos\theta, r\sin\varphi\sin\theta, r\cos\varphi)r^2\sin\varphi dr  $$
+
     
 
 
