@@ -87,12 +87,25 @@ P & Q & R
     * $$对比二重积分，底面变为曲面，d\sigma 变为dS 面密度,曲面质量$$
     * $$ \iint_{\Sigma}f(x,y,z)dS $$
     * $$ dS =\sqrt{1+(z'_x)^2+(z'_y)^2}dxdy $$
-* 2.计算口诀 :一投二代三计算
+* 2.计算口诀:一投二代三计算
     * $$\iint_{\Sigma:z=z(x,y)}f(x,y,z)dS \\ = \iint_{D_{xy}}f(x,y,z(x,y))\sqrt{1+(z'_x)^2+(z'_y)^2}dxdy $$
 
 ## 四、第二型积分
 ### 1.第二型曲线积分——无几何背景
+* $$ 给力场 \vec F=\vec F(x,y) = P(x,y)\vec i + Q(x,y)\vec j $$
+* $$ 弧微分向量d\vec s = \{dx,dy\}=dx\vec i+dy\vec j  $$
+* $$ dW=P(x,y)dx+Q(x,y)dy$$
+* $$ W = \int_LdW = \int_LP(x,y)dx+Q(x,y)dy ——物理意义做功$$
 
+### 2.计算
+* 1.直接法:一投二代三计算
+    * $$1.参数方程 L: \left\{ \begin{array}{ll} x = x(t) \\ y = y(t)  \end{array} \right. \qquad t:\alpha  \to \beta 起点到终点 $$
+    * $$\int_LP(x,y)dx+Q(x,y)dy = \\ \int_{\alpha}^{\beta}(P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t))dt$$
+* 2.格林公式法(间接法,green公式)
+    * 正方向，沿着正方向走，左手在D内
+    * $$ \oint_{L^+}P(x,y)dx+Q(x,y)dy \\=\iint_D(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})dxdy  $$
+    * $$成立要求: \left\{ \begin{array}{ll} 1.L封闭取正向 
+ \\ 2. P,Q,\frac{\partial Q}{\partial x},\frac{\partial P}{\partial y}在D中连续  \end{array} \right.$$
 
 
     
