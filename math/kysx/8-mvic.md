@@ -92,12 +92,13 @@ P & Q & R
 
 ## 四、第二型积分
 ### 1.第二型曲线积分——无几何背景
+#### 1.概念
 * $$ 给力场 \vec F=\vec F(x,y) = P(x,y)\vec i + Q(x,y)\vec j $$
 * $$ 弧微分向量d\vec s = \{dx,dy\}=dx\vec i+dy\vec j  $$
 * $$ dW=P(x,y)dx+Q(x,y)dy$$
 * $$ W = \int_LdW = \int_LP(x,y)dx+Q(x,y)dy ——物理意义做功$$
 
-### 2.计算
+#### 2.计算
 * 1.直接法:一投二代三计算
     * $$1.参数方程 L: \left\{ \begin{array}{ll} x = x(t) \\ y = y(t)  \end{array} \right. \qquad t:\alpha  \to \beta 起点到终点 $$
     * $$\int_LP(x,y)dx+Q(x,y)dy = \\ \int_{\alpha}^{\beta}(P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t))dt$$
@@ -106,6 +107,17 @@ P & Q & R
     * $$ \oint_{L^+}P(x,y)dx+Q(x,y)dy \\=\iint_D(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})dxdy  $$
     * $$成立要求: \left\{ \begin{array}{ll} 1.L封闭取正向 
  \\ 2. P,Q,\frac{\partial Q}{\partial x},\frac{\partial P}{\partial y}在D中连续  \end{array} \right.$$
+
+### 2.第二型曲面积分——无几何背景
+#### 1.概念
+* $$ 给流场 \vec u = \vec u(x,y,z) = P(x,y,z)\vec i + Q(x,y,z)\vec j + R(x,y,z)\vec k $$
+* $$ d\vec S = dydz\vec i + dzdx\vec j+ dxdy\vec k \\ \Rightarrow d\Phi = Pdydz+Qdzdx+Rdxdy$$
+* $$\Phi = \iint_{\Sigma}Pdydz+Qdzdx+Rdxdy ——通量$$
+
+#### 2.计算
+* 1.直接法:一投二代三计算
+
+
 
 
     
