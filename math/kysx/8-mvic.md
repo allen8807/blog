@@ -31,14 +31,21 @@
         * $$ 若u(x,y)在P_0处可微,\\则\frac {\partial u}{\partial \vec l} | _{P_0}=u'_x|_{P_0} \bullet \cos \alpha + u'_y|_{P_0} \bullet \sin \alpha $$
 
 * $$2.梯度gradient u=u(x,y) $$
-    * $$\vec {grad}\ U |_{P_0} =\{ u'_x|_{P_0} , u'_y|_{P_0} \}$$
+    * $$\overrightarrow {grad}\ U |_{P_0} =\{ u'_x|_{P_0} , u'_y|_{P_0} \}$$
     
 * $$3.散度 \vec u = \vec u(x,y,z) = \{P,Q,R\} 旋转 $$
     * $$ \vec u = P(x,y,z)\vec i + Q\vec j + R\vec k  $$
-    * $$ 散度 div \vec u = \frac {\partial P}{\partial x} + \frac {\partial Q}{\partial y} + \frac {\partial R}{\partial z} $$
+    * $$ 散度 div\ \vec u = \frac {\partial P}{\partial x} + \frac {\partial Q}{\partial y} + \frac {\partial R}{\partial z} $$
     
 * $$4.旋度, 三阶行列式$$
-    * $$ \vec rot \quad \vec u =  $$
+    * $$ \vec rot \quad \vec u = \left| \begin{array}{ccc}
+\vec i & \vec j & \vec k \\
+\frac{\partial }{\partial x} & \frac{\partial }{\partial y}  & \frac{\partial }{\partial z}  \\
+P & Q & R
+\end{array} \right| $$
+
+## 二、三重积分
+### 1.定义
 
 
 
