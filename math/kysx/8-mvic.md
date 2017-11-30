@@ -116,6 +116,15 @@ P & Q & R
 
 #### 2.计算
 * 1.直接法:一投二代三计算
+    * 一个一个算
+    * $$ \iint_{\Sigma:z=z(x,y)}R(x,y,z)dxdy = \\ \iint_{D_{xy}}R(x,y,z(x,y)(\pm dxdy)$$
+    * $$[注] 指定\vec n_外,\vec k = 锐角 \Rightarrow +dxdy$$
+    * $$[注] 指定\vec n_外,\vec k = 钝角 \Rightarrow -dxdy$$
+* 2.高斯公式法
+    * $$\oint\oint_{\Sigma_外}Pdydz+Qdzdx+Rdxdy = \\ \iiint_{\Omega}(\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z})dv $$
+    * $$成立要求: \left\{ \begin{array}{ll} 1.\Sigma封闭取外侧 
+ \\ 2. P,Q,R,\frac{\partial P}{\partial x},\frac{\partial Q}{\partial y},\frac{\partial R}{\partial z}在\Omega中连续  \end{array} \right.$$
+
 
 
 
