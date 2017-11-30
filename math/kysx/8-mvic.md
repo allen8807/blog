@@ -125,7 +125,12 @@ P & Q & R
 
 ## 五、空间第二型曲线积分
 ### 1.斯托克斯公式
-* $$设\Omega为空间某区域,\Sigma为\Omega内分片光滑有向曲面片,L为逐段光滑的\Sigma的边界,其方向与\Sigma外法向符合右手定则$$
+* $$设\Omega为空间某区域,  \Sigma为\Omega内分片光滑有向曲面片, \\L为逐段光滑的\Sigma的边界,其方向与\Sigma外法向符合右手定则$$
+* $$\oint_LPdx+Qdx+Rdz=\iint_{\Sigma}\left| \begin{array}{ccc}
+\cos\alpha & \cos\beta & \cos\gamma \\
+\frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z} \\
+P & Q & R
+\end{array} \right|dS\\其中\vec n_0=\{\cos\alpha,\cos\beta,\cos\gamma\}为\Sigma的单位法向量$$
 
 
 
