@@ -73,11 +73,23 @@ P & Q & R
     * 对比定积分，底边由直线变曲线，dx变ds弧微分，L:y=y(x)
     * $$ \int_Lf(x,y)ds $$
     * $$ ds =\sqrt{ (dx)^2 + (dy)^2}$$
+    * $$ ds =\sqrt{ 1 + (y'_x)^2}dx$$
+    
 * 2.计算口诀:一投二代三计算
     * $$1.参数方程 L: \left\{ \begin{array}{ll} x = x(t) \\ y = y(t)  \end{array} \right. \qquad \alpha \le t \le \beta $$
         * $$ \int_Lf(x,y)ds = \int_{\alpha}^{\beta}f(x(t),y(t))\sqrt {(x'(t))^2+(y'(t))^2}dt$$
     * $$2.显式方程 L: \left\{ \begin{array}{ll} y = y(x) \\ (x = x) \end{array} \right. \qquad a \le x \le b $$
         * $$ \int_Lf(x,y)ds = \int_a^bf(x,y(x))\sqrt {1+(y'(x))^2}dx$$
+        
+### 2.第一型曲面积分
+
+* 1.定义
+    * $$对比二重积分，底面变为曲面，d\sigma 变为dS 面密度,曲面质量$$
+    * $$ \iint_{\Sigma}f(x,y,z)dS $$
+    * $$ dS =\sqrt{1+(z'_x)^2+(z'_y)^2}dxdy $$
+* 2.计算口诀 :一投二代三计算
+    * $$\iint_{\Sigma:z=z(x,y)}f(x,y,z)dS \\ = \iint_{D_{xy}}f(x,y,z(x,y))\sqrt{1+(z'_x)^2+(z'_y)^2}dxdy $$
+
 
 
     
