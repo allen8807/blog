@@ -40,3 +40,34 @@
     * 动力学模型 Kinectics
     * 进化模型 Evolution
 
+* 下面讲一下python的绘图库pylab
+    * 不过这是2008年的课，现在似乎是matplotlib绘图比较流行了
+    
+* 下面是我的仿真代码
+
+```python
+import math 
+import random
+import numpy
+import matplotlib.pyplot as plt
+
+pt0 = 0 
+mean = [0 for x in range(0, 10000)]
+print "calc start"
+for j in range(1000):
+	pt0 = 0
+	for i in range(10000):
+		t = random.choice([1,1,1,1,1,-1,-1,-1,-1,-1])
+		pt0 = pt0 + t
+		mean[i] = (abs(pt0) + mean[i]*j)/(j+1.0)  
+	
+print "calc end"
+x = range(10000)
+plt.plot(x, mean)
+
+plt.title('line chart')
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.show()
+```
