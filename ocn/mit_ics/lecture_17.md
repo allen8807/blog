@@ -23,6 +23,20 @@
 * 1.Inner loop that simulate 1 trial
 * 2."Enclose" inner loop in a loop that conducts appropriate # of trials
 * 3.Calculate & present statistics 
+* 通过计算平均值，使得结果光滑，但这是正确的结果吗？
+* 100次重复500步，得到平均结果为4步，但是单次结果明显和这个不一样10-40步都有
+* 从简单的做起，1步，重复四次，发现计算平均值的方法错了
+* 修正后，得到500步的平均距离为20步
 
-* Label axes
+* Label axes - & look
+* Ask if answer makes sense
+    * Consistent with other evidence
+* Systematic about debugging
+    * simple example
+
+* 随机漫步模型
+    * 布朗运动 Browning motion
+    * 股票市场 stock market 错了
+    * 动力学模型 Kinectics
+    * 进化模型 Evolution
 
