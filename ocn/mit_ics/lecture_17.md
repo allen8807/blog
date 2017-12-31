@@ -9,3 +9,4 @@
 * Evaluating quality of answers
 * Start simple
 * Simulate random walk
+* 建模 Location, Compass Pt, Field, Drunk
