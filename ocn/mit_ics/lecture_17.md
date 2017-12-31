@@ -24,3 +24,5 @@
 * 2."Enclose" inner loop in a loop that conducts appropriate # of trials
 * 3.Calculate & present statistics 
 
+* Label axes
+
