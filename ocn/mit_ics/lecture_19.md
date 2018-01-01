@@ -20,4 +20,4 @@
 
 ## 第二十课 统计试验模拟程序，预测pi值
 ### Lecture 20: Monte Carlo simulations, estimating pi
-### 2010-01-01
+### 2018-01-01
