@@ -21,3 +21,8 @@
 ## 第二十课 统计试验模拟程序，预测pi值
 ### Lecture 20: Monte Carlo simulations, estimating pi
 ### 2018-01-01
+* 对仿真模型分类 （分歧）
+    * 判断问题是stochastic还是deterministic 是一个随机问题还是个确定性问题。前者不是确定结果，后者是确定结果
+    * static vs dynamic 静态还是动态 动态问题有时间的问题，主要精力在动态问题
+        * 动态问题的一个例子 Queuing network model 排队网络问题
+    * discrete vs continuous 离散和连续
