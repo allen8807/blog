@@ -26,3 +26,25 @@
     * static vs dynamic 静态还是动态 动态问题有时间的问题，主要精力在动态问题
         * 动态问题的一个例子 Queuing network model 排队网络问题
     * discrete vs continuous 离散和连续
+
+* Monte Carlo simulation 蒙特卡洛随机过程 赌博游戏中有随机性而且是离散的
+    * 演绎统计学 inferential statistics
+    * Random sample tends to exhibit the same properties as the population from which it is drawn. 随机样本趋向于展现它所在分类的相同的属性
+* 仿真了掷硬币的例子，掷1个硬币，掷3个硬币
+* 引出下面的问题：
+* 过去的行为能预测未来的行为吗？
+    * 金融危机前的预测模型？
+* 一般建立一个模型，希望能够预测
+* 有趣的是可以用随机性技术去获得问题的解决方法，这个可能不是固有的随机性 not inherently stochastic 
+* 下面用随机方法计算pi
+    * 其实就是概率面积法，向单位面积的正方形里扔飞镖，统计有多少落在四分之一圆里 Buffon Laplace
+* pi的历史，1650BC 埃及 3.16， 圣经3，阿基米德 223/71 - 22/7 约3.1418  
+* 一千万次仿真结果在最后趋向稳定
+* 但这意味着我们获得了正确结果吗？不，并不是。请听下回分解
+* 十亿次的结果
+
+## 第二十一课 验证模拟仿真程序结果，线性回归，曲线拟合，预测pi值
+### Lecture 21: Validating simulation results, curve fitting, linear regression
+### 2018-01-02
+* 十亿次的结果是3.14161124 ，即使100亿次也不会更接近多少，越往后趋向变化越慢
+
