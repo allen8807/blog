@@ -43,7 +43,7 @@
 * 但这意味着我们获得了正确结果吗？不，并不是。请听下回分解
 * 十亿次的结果
 
-## 第二十一课 验证模拟仿真程序结果，线性回归，曲线拟合，预测pi值
+## 第二十一课 验证模拟仿真程序结果，线性回归，曲线拟合
 ### Lecture 21: Validating simulation results, curve fitting, linear regression
 ### 2018-01-02
 * 十亿次的结果是3.14161124 ，即使100亿次也不会更接近多少，越往后趋向变化越慢
@@ -52,5 +52,17 @@
 * Biased sample？会不会选了有偏见的样本？
 * statistical validity 不意味着 correctness 统计可靠不意味着结果正确
     * 有些假设基础就是错的
-*三样东西相互影响
-
+* 三样东西相互影响
+    * Data 数据
+    * Models that explain data 理论模型
+    * Consequence of Models 模型的结果
+* Spring constant （stiffness）弹簧常量
+* 用胡克定律研究过程来看仿真拟合 Hookes law： F = -Kx
+    * Fit line to data
+* Objective function 目标函数
+    * Least square fit 最小二乘法
+    * ∑(observation_i-prediction )^2
+    * 让它最小
+* 一个抛物线的散点，应该用二次来拟合
+* linear regression 线性回归不仅只能用在线性拟合上
+* 
