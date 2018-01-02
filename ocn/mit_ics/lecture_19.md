@@ -64,5 +64,16 @@
     * ∑(observation_i-prediction )^2
     * 让它最小
 * 一个抛物线的散点，应该用二次来拟合
-* linear regression 线性回归不仅只能用在线性拟合上
-* 
+    * linear regression 线性回归不仅只能用在线性拟合上
+* R^2 - coefficient of determination 统计学上的决定系数 
+    * R^2 = 1 - (EE)/DV 
+        * EE是 errors of estimation 统计误差，它表示的是预测数据和测量数据之间有多少不同
+        * DV是方差 data variance ，测量数据的方差
+    * 这个系数的含义是模型中影响结果的变量比例
+    * 例如系数是0.9意味着90%的变量改变可以用这个模型解释，另外10%不呢解释，这不能解释的变量叫潜在变量，lurking variables 
+* 过拟合问题 overfit
+    * closer，tighter 不意味着 better
+    * 因为建立模型是希望预测 
+* 一个大的准则：没有理论指导的统计，只是在做一些奇怪的事情
+    * 正如Disraeli所说，世间有三种谎言：谎言，糟糕的谎言还有统计数据。
+    * There are three kinds of lies: lies, damned lies, and statistics.
