@@ -47,4 +47,10 @@
 ### Lecture 21: Validating simulation results, curve fitting, linear regression
 ### 2018-01-02
 * 十亿次的结果是3.14161124 ，即使100亿次也不会更接近多少，越往后趋向变化越慢
+* How many samples? 需要多少样本？
+* How accurate? 结果有多精确？
+* Biased sample？会不会选了有偏见的样本？
+* statistical validity 不意味着 correctness 统计可靠不意味着结果正确
+    * 有些假设基础就是错的
+*三样东西相互影响
 
